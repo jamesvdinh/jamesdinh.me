@@ -164,7 +164,6 @@ const Description = styled.ul`
 
 const Image = styled.div`
     display: none;
-    border: 1px solid #3e3e3e64;
     height: fit-content;
     width: fit-content;
 

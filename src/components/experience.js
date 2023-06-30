@@ -21,6 +21,7 @@ const Experience = () => {
                         {/* Image elements */}
                         <Image className={isActive === 0 ? "active" : ""}><StaticImage style={Thumbnail} src="../images/gilroy-hacks.png" loading="lazy" alt="gilroy hacks logo" /></Image>
                         <Image className={isActive === 1 ? "active" : ""}><StaticImage style={Thumbnail} src="../images/youth-commission.png" loading="lazy" alt="youth commission logo" /></Image>
+                        <Image className={isActive === 2 ? "active" : ""}><StaticImage style={Thumbnail} src="../images/tutor.png" loading="lazy" alt="youth commission logo" /></Image>
                         <Image className={isActive === 3 ? "active" : ""}><StaticImage style={Thumbnail} src="../images/gavilan-summer-internship.png" loading="lazy" alt="gavilan college internship logo" /></Image>
                         <Image className={isActive === 4 ? "active" : ""}><StaticImage style={Thumbnail} src="../images/gilroy-gardens.png" loading="lazy" alt="gilroy gardens logo" /></Image>
                         <TitleContainer>
@@ -168,7 +169,6 @@ const Description = styled.ul`
 
 const Image = styled.div`
     display: none;
-    border: 1px solid #3e3e3e64;
     height: fit-content;
     width: fit-content;
 
