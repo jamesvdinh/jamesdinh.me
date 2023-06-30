@@ -59,6 +59,10 @@ export const experienceData = [
             {
                 name: "Bank Account",
                 url: "https://bank.hackclub.com/gilroy-hacks"
+            },
+            {
+                name: "Budget",
+                url: "https://docs.google.com/spreadsheets/d/1y-clzD7EaTE_OGFx0K5pHwPU3JDCI2Ze8RC6oQMtVhU/edit#gid=1732160294"
             }
         ]
     },
@@ -127,5 +131,20 @@ export const experienceData = [
                 url: "https://www.gilroygardens.org/"
             },
         ]
+    }
+]
+
+export const projectData = [
+    {
+        title: "ASL Hand Recognition App",
+        date: "Jan - May 2023",
+        tags: [
+            "TensorFlow",
+            "MediaPipe",
+            "OpenCV",
+            "Jupyter Notebook",
+            "Python"
+        ],
+        description: ""
     }
 ]

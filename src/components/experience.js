@@ -10,7 +10,7 @@ const Experience = () => {
     return (
         <>
             <Heading id="experience">Experience</Heading>
-            <EducationContainer>
+            <ExperienceContainer>
                 <ButtonContainer>
                 {experienceData.map((item, index) => 
                         <ButtonFlex key={index}><Button key={index} onClick={() => setIsActive(index)} className={isActive === index ? "active" : ""}>{item.title}</Button></ButtonFlex>
@@ -18,7 +18,7 @@ const Experience = () => {
                 </ButtonContainer>
                 <ContentContainer>
                     <HeadContainer>
-                        {/* Image elements */}
+                        {/* Image elements (okay, look ik this isn't the most "EFFICIENT" and most DRY format but don't blame me alright?? graphql is just rly confusing -_- */}
                         <Image className={isActive === 0 ? "active" : ""}><StaticImage style={Thumbnail} src="../images/gilroy-hacks.png" loading="lazy" alt="gilroy hacks logo" /></Image>
                         <Image className={isActive === 1 ? "active" : ""}><StaticImage style={Thumbnail} src="../images/youth-commission.png" loading="lazy" alt="youth commission logo" /></Image>
                         <Image className={isActive === 2 ? "active" : ""}><StaticImage style={Thumbnail} src="../images/tutor.png" loading="lazy" alt="youth commission logo" /></Image>
@@ -37,18 +37,17 @@ const Experience = () => {
                         <LinkButton href={item.url} key={index} target="_blank">{item.name}</LinkButton>
                     )}</LinkContainer>
                 </ContentContainer>
-            </EducationContainer>
+            </ExperienceContainer>
         </>
     )
 }
 
 export default Experience;
 
-const EducationContainer = styled.section`
+const ExperienceContainer = styled.section`
     display: flex;
     margin: auto;
     justify-content: center;
-    padding: 20px;
 
     @media (max-width: 500px) {
         flex-flow: row wrap;
