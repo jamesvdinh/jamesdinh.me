@@ -9,6 +9,9 @@
  */
 module.exports = {
   pathPrefix: "/jamesdinh.me",
+  flags: {
+    DEV_SSR: true
+  },
   siteMetadata: {
     title: `James Dinh`,
     description: `James Dinh's personal website, built with React and Gatsby`,

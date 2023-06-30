@@ -3,7 +3,6 @@ import styled from "styled-components";
 import * as palette from './styles/GlobalStyles';
 import { experienceData } from "../data/MenuData";
 import { StaticImage } from "gatsby-plugin-image";
-import { Link } from "gatsby";
 
 const Experience = () => {
     const [isActive, setIsActive] = useState(0);
@@ -34,7 +33,7 @@ const Experience = () => {
                         <li key={index}>{item}</li>
                     )}</Description>
                     <LinkContainer>{experienceData[isActive].link.map((item, index) => 
-                        <LinkButton to={item.url} key={index} target="_blank">{item.name}</LinkButton>
+                        <LinkButton href={item.url} key={index} target="_blank">{item.name}</LinkButton>
                     )}</LinkContainer>
                 </ContentContainer>
             </EducationContainer>
@@ -190,7 +189,7 @@ const LinkContainer = styled.div`
     justify-content: space-evenly;
 `
 
-const LinkButton = styled(Link)`
+const LinkButton = styled.a`
     background-color: #786ca514;
     display: flex;
     text-decoration: none;

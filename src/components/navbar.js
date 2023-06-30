@@ -7,6 +7,8 @@ import { StaticImage } from 'gatsby-plugin-image'
 import {FaBars} from 'react-icons/fa'
 import * as palette from './styles/GlobalStyles'
 
+const isBrowser = typeof window !== "undefined"
+
 const NavBar = () => {
   const [colorChange, setColorchange] = useState(false);
   const changeNavbarColor = () => {
@@ -17,7 +19,9 @@ const NavBar = () => {
         setColorchange(false);
     }
   };
-  window.addEventListener('scroll', changeNavbarColor);
+  if (isBrowser) {
+    window.addEventListener('scroll', changeNavbarColor);
+  }
 
   // menu btn
   const [openMenu, setOpenMenu] = useState(false);
