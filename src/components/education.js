@@ -177,4 +177,5 @@ const Thumbnail = {
     maxHeight: "75px",
     minWidth: "60px",
     minHeight: "60px",
+    borderRadius: "3px",
 }

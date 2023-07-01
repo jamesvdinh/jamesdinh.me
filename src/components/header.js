@@ -39,12 +39,20 @@ const Name = styled.h1`
     color: #c1a5ef;
     font-family: Calibre, Inter, "San Francisco", "SF Pro Text", -apple-system, system-ui, sans-serif;
     line-height: 1.5;
+
+    @media (max-width: 495px) {
+        font-size: 50px;
+    }
 `
 
 const Title = styled.h2`
     display: flex;
     font-family: Calibre, Inter, "San Francisco", "SF Pro Text", -apple-system, system-ui, sans-serif;
     font-size: 50px;
+    
+    @media (max-width: 495px) {
+        font-size: 30px;
+    }
 `
 
 const Description = styled.p`

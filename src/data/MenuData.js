@@ -101,12 +101,12 @@ export const experienceData = [
     {
         img: "../images/gavilan-summer-internship.png",
         title: "Gavilan College Summer Internship",
-        subtitle: "Physics and Arduino Programming Summer Intern",
+        subtitle: "Research Intern",
         date: "June - Aug 2022",
         description: [
-            "Physics and Arduino Programming Internship, advised by Dr. Sewan Fan (Gavilan Physics Dept.)",
+            "Physical analysis of water-powered rockets, advised by Dr. Sewan Fan (Gavilan Physics Dept.)",
             "Constructed a water-powered rocket that saves custom Arduino accelerometer circuit data in order to analyze changes in temperature, height, and pressure",
-            "Attended meetings every Friday for 3 hours to work on rocket launches, programming, and soldering"
+            "Attended meetings every Friday for 3 hours to discuss findings and work on rocket launches, programming, and soldering"
         ],
         link: [
             {
@@ -137,6 +137,7 @@ export const experienceData = [
 export const projectData = [
     {
         title: "ASL Hand Recognition App",
+        url: "https://jamesvdinh.github.io/",
         date: "Jan - May 2023",
         tags: [
             "TensorFlow",
@@ -145,6 +146,25 @@ export const projectData = [
             "Jupyter Notebook",
             "Python"
         ],
-        description: ""
+        img: [
+            "../images/asl-pic-1.png",
+            "../images/google-site.png",
+            "../images/research-paper.png",
+        ],
+        description: "A web application that assists Deaf/Hard of Hearing individuals in learning American Sign Language (or ASL). Utilized MediaPipe and TensorFlow to train a model using a dataset of 87,000 images from the NIDCD. Implemented a TensorFlow model to recognize ASL letters from a computer webcam",
+        link: [
+            {
+                name: "Demo",
+                url: "https://jamesvdinh.github.io/",
+            },
+            {
+                name: "GitHub",
+                url: "https://github.com/jamesvdinh/jamesvdinh.github.io",
+            },
+            {
+                name: "Research Paper",
+                url: "https://docs.google.com/document/d/1g73K_jQwfBhyOlLoQQG9i2JNmKlebSzt9dzH-WRfLMQ/edit?usp=sharing",
+            }
+        ]
     }
 ]

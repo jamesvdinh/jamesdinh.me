@@ -1,0 +1,17 @@
+.splide__arrow {
+    background-color: #b78abe7b;
+    transition: all 0.5s;
+
+    & svg {
+        fill: #cd87ec;
+    }
+}
+
+.splide__pagination__page {
+    background-color: #b78abe7b;
+    transition: all 0.2s;
+
+    &.is-active {
+        background-color: #cd87ec
+    }
+}
