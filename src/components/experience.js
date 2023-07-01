@@ -2,7 +2,7 @@ import React, {useState} from "react";
 import styled from "styled-components";
 import * as palette from './styles/GlobalStyles';
 import { experienceData } from "../data/MenuData";
-// import { StaticImage } from "gatsby-plugin-image";
+import { StaticImage } from "gatsby-plugin-image";
 
 const Experience = () => {
     const [isActive, setIsActive] = useState(0);
@@ -19,11 +19,11 @@ const Experience = () => {
                 <ContentContainer>
                     <HeadContainer>
                         {/* Image elements (okay, look ik this isn't the most "EFFICIENT" and most DRY format but don't blame me alright?? graphql is just rly confusing -_- */}
-                        {/* <Image className={isActive === 0 ? "active" : ""}><StaticImage style={Thumbnail} src="../images/gilroy-hacks.png" loading="lazy" alt="gilroy hacks logo" /></Image>
+                        <Image className={isActive === 0 ? "active" : ""}><StaticImage style={Thumbnail} src="../images/gilroy-hacks.png" loading="lazy" alt="gilroy hacks logo" /></Image>
                         <Image className={isActive === 1 ? "active" : ""}><StaticImage style={Thumbnail} src="../images/youth-commission.png" loading="lazy" alt="youth commission logo" /></Image>
                         <Image className={isActive === 2 ? "active" : ""}><StaticImage style={Thumbnail} src="../images/tutor.png" loading="lazy" alt="youth commission logo" /></Image>
                         <Image className={isActive === 3 ? "active" : ""}><StaticImage style={Thumbnail} src="../images/gavilan-summer-internship.png" loading="lazy" alt="gavilan college internship logo" /></Image>
-                        <Image className={isActive === 4 ? "active" : ""}><StaticImage style={Thumbnail} src="../images/gilroy-gardens.png" loading="lazy" alt="gilroy gardens logo" /></Image> */}
+                        <Image className={isActive === 4 ? "active" : ""}><StaticImage style={Thumbnail} src="../images/gilroy-gardens.png" loading="lazy" alt="gilroy gardens logo" /></Image>
                         <Image><img style={Thumbnail} src={experienceData[isActive].img} loading="lazy" alt="" /></Image>
                         <TitleContainer>
                             <Title>{experienceData[isActive].title}</Title>

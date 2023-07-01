@@ -147,5 +147,11 @@ const LinkList = styled.div`
 `
 
 const LinkIcon = styled.a`
-    margin: 3px 5px;
+    margin: 3px 7px;
+    color: ${palette.titleColor};
+    transition: all 0.3s;
+
+    &:hover {
+        filter: brightness(1.2);
+    }
 `
