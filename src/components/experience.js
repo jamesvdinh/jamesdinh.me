@@ -2,10 +2,26 @@ import React, {useState} from "react";
 import styled from "styled-components";
 import * as palette from './styles/GlobalStyles';
 import { experienceData } from "../data/MenuData";
-import { StaticImage } from "gatsby-plugin-image";
+import { GatsbyImage } from "gatsby-plugin-image";
+import { graphql, useStaticQuery } from "gatsby";
 
 const Experience = () => {
     const [isActive, setIsActive] = useState(0);
+    const data = useStaticQuery(graphql`
+        query {
+            allFile(filter: {sourceInstanceName: {eq: "images"}}, sort: {name: ASC}) {
+                edges {
+                    node {
+                        id
+                        relativePath
+                        childImageSharp {
+                            gatsbyImageData
+                        }
+                    }
+                }
+            }
+        }
+    `)
 
     return (
         <>
@@ -18,13 +34,12 @@ const Experience = () => {
                 </ButtonContainer>
                 <ContentContainer>
                     <HeadContainer>
-                        {/* Image elements (okay, look ik this isn't the most "EFFICIENT" and most DRY format but don't blame me alright?? graphql is just rly confusing -_- */}
-                        <Image className={isActive === 0 ? "active" : ""}><StaticImage style={Thumbnail} src="../images/gilroy-hacks.png" loading="lazy" alt="gilroy hacks logo" /></Image>
-                        <Image className={isActive === 1 ? "active" : ""}><StaticImage style={Thumbnail} src="../images/youth-commission.png" loading="lazy" alt="youth commission logo" /></Image>
-                        <Image className={isActive === 2 ? "active" : ""}><StaticImage style={Thumbnail} src="../images/tutor.png" loading="lazy" alt="youth commission logo" /></Image>
-                        <Image className={isActive === 3 ? "active" : ""}><StaticImage style={Thumbnail} src="../images/gavilan-summer-internship.png" loading="lazy" alt="gavilan college internship logo" /></Image>
-                        <Image className={isActive === 4 ? "active" : ""}><StaticImage style={Thumbnail} src="../images/gilroy-gardens.png" loading="lazy" alt="gilroy gardens logo" /></Image>
-                        <Image><img style={Thumbnail} src={experienceData[isActive].img} loading="lazy" alt="" /></Image>
+                        {data.allFile.edges.map(({node}) => {
+                            if (node.relativePath === experienceData[isActive].img) {
+                                return <Image key={node.id} className="active"><GatsbyImage style={Thumbnail} image={node.childImageSharp.gatsbyImageData} loading="lazy" alt={experienceData[isActive].img} /></Image>
+                            }
+                            return null; // failsafe for null values
+                        })}
                         <TitleContainer>
                             <Title>{experienceData[isActive].title}</Title>
                             <Subtitle>{experienceData[isActive].subtitle}</Subtitle>
@@ -114,11 +129,11 @@ const Button = styled.button`
     }
 
     &:hover {
-        background-color: #786ca514;
+        background-color: #786ca520;
     }
 
     &.active {
-        background-color: #786ca532;
+        background-color: #786ca540;
     }
 
     &.active:hover {
@@ -127,6 +142,7 @@ const Button = styled.button`
 
     @media (max-width: 500px) {
         text-align: center;
+        background-color: #ae9ee908;
     }
 `
 
@@ -191,7 +207,7 @@ const LinkContainer = styled.div`
 `
 
 const LinkButton = styled.a`
-    background-color: #786ca514;
+    background-color: #7553ac45;
     display: flex;
     text-decoration: none;
     color: inherit;
@@ -204,6 +220,6 @@ const LinkButton = styled.a`
     cursor: pointer;
 
     &:hover {
-        background-color: #786ca532;
+        background-color: #7553ac23;
     }
 `

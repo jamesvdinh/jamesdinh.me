@@ -8,7 +8,7 @@ const Header = () => {
                 <Greeting>Hi, tôi tên là</Greeting>
                 <Name>James Dinh.</Name>
                 <Title>I'm a Computer Science Student.</Title>
-                <Description>My current focus is on academics, but on the side, I love to build websites, practice piano, and play chess!</Description>
+                <Description>When I'm not focused on schoolwork, you can find me building websites, practicing piano, or playing chess!</Description>
             </ParentContainer>
         </>
     )
@@ -39,6 +39,7 @@ const Name = styled.h1`
     color: #c1a5ef;
     font-family: Calibre, Inter, "San Francisco", "SF Pro Text", -apple-system, system-ui, sans-serif;
     line-height: 1.5;
+    font-weight: bold;
 
     @media (max-width: 495px) {
         font-size: 50px;
@@ -49,6 +50,7 @@ const Title = styled.h2`
     display: flex;
     font-family: Calibre, Inter, "San Francisco", "SF Pro Text", -apple-system, system-ui, sans-serif;
     font-size: 50px;
+    font-weight: bold;
     
     @media (max-width: 495px) {
         font-size: 30px;

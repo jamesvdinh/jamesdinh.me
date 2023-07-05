@@ -8,6 +8,7 @@ export const menuData = [
 
 export const educationData = [
     {
+        img: "gavilan.png",
         title: "Gavilan College",
         subtitle: [
             "A.S. in Computer Programming",
@@ -23,6 +24,7 @@ export const educationData = [
         ]
     },
     {
+        img: "geca.jpg",
         title: "Dr. TJ Owens Gilroy Early College Academy",
         subtitle: [
             "High School Diploma"
@@ -40,7 +42,7 @@ export const educationData = [
 
 export const experienceData = [
     {
-        img: "../images/gilroy-hacks.png",
+        img: "gilroy-hacks.png",
         title: "Gilroy Hacks",
         subtitle: "Co-Founder, Event Director",
         date: "Jan 2022 - Jun 2023",
@@ -67,7 +69,7 @@ export const experienceData = [
         ]
     },
     {
-        img: "",
+        img: "youth-commission.png",
         title: "Gilroy Youth Commission",
         subtitle: "Youth Commissioner",
         date: "Oct 2022 - Jun 2023",
@@ -86,7 +88,7 @@ export const experienceData = [
         ]
     },
     {
-        img: "",
+        img: "tutor.png",
         title: "Private Tutoring",
         subtitle: "Commissioned Weekly Tutoring",
         date: "Sep - Dec 2022",
@@ -99,7 +101,7 @@ export const experienceData = [
         link: []
     },
     {
-        img: "../images/gavilan-summer-internship.png",
+        img: "gavilan-summer-internship.png",
         title: "Gavilan College Summer Internship",
         subtitle: "Research Intern",
         date: "June - Aug 2022",
@@ -116,7 +118,7 @@ export const experienceData = [
         ]
     },
     {
-        img: "../images/gilroy-gardens.png",
+        img: "gilroy-gardens.png",
         title: "Gilroy Gardens",
         subtitle: "Foods & Merch Associate",
         date: "Sep - Dec 2021",
@@ -138,18 +140,17 @@ export const projectData = [
     {
         title: "ASL Hand Recognition App",
         url: "https://jamesvdinh.github.io/",
-        date: "Jan - May 2023",
+        date: "2023",
         tags: [
-            "TensorFlow",
+            "Jupyter Notebook",
             "MediaPipe",
             "OpenCV",
-            "Jupyter Notebook",
-            "Python"
+            "Python",
+            "TensorFlow"
         ],
         img: [
-            "../images/asl-pic-1.png",
-            "../images/google-site.png",
-            "../images/research-paper.png",
+            "asl-pic-1.png",
+            "asl-pic-2.jpg",
         ],
         description: "A web application that assists Deaf/Hard of Hearing individuals in learning American Sign Language (or ASL). Utilized MediaPipe and TensorFlow to train a model using a dataset of 87,000 images from the NIDCD. Implemented a TensorFlow model to recognize ASL letters from a computer webcam",
         link: [
@@ -164,6 +165,88 @@ export const projectData = [
             {
                 name: "Research Paper",
                 url: "https://docs.google.com/document/d/1g73K_jQwfBhyOlLoQQG9i2JNmKlebSzt9dzH-WRfLMQ/edit?usp=sharing",
+            },
+            {
+                name: "Slides Presentation",
+                url: "https://docs.google.com/presentation/d/1s4tyiZyS0UuMa0Vl-X4qmB4Aot7Keay6WYfPSoVRJEA/edit?usp=sharing",
+            }
+        ]
+    },
+    {
+        title: "Principal Component Analysis Research Project",
+        url: "https://github.com/jamesvdinh/PCA",
+        date: "2021",
+        tags: [
+            "MatPlotLib",
+            "Python"  
+        ],
+        img: [
+            "pca-2.png",
+            "pca-1.png",
+        ],
+        description: "A mathematical concept explanation on Principal Component Analysis (PCA), advised by Professor El Ghaoui (UC Berkeley EECS Dept.). Authored a concise article that explains the concept of PCA and examples of real-world applications. Created a program that calculated and plotted vector projections by using Python and Matplotlib",
+        link: [
+            {
+                name: "GitHub",
+                url: "https://github.com/jamesvdinh/PCA",
+            }
+        ]
+    },
+    {
+        title: "Custom Arduino Accelerometer",
+        url: "https://nextcloud.andrewkdinh.com/s/3JKxDdw9NeM234r",
+        date: "2022",
+        tags: [
+            "Arduino",
+            "TinyDuino",
+            "C++"
+        ],
+        img: [
+            "internship-1.jpg",
+            "internship-2.jpg",
+        ],
+        description: "Physics and Arduino Programming Internship, advised by Dr. Sewan Fan (Gavilan Physics Dept.). Constructed a water-powered rocket that saves custom Arduino accelerometer circuit data in order to analyze changes in temperature, height, and pressure",
+        link: [
+            {
+                name: "Poster Summary",
+                url: "https://nextcloud.andrewkdinh.com/s/3JKxDdw9NeM234r",
+            }
+        ]
+    },
+    {
+        title: "2020 Vision",
+        url: "https://github.com/jamesvdinh/2020-Vision",
+        date: "2020",
+        tags: [
+            "C++"
+        ],
+        img: [
+            "2020vision.png"
+        ],
+        description: "A program that can provide informative and detailed information on the most recent COVID-19 statistics while providing assessment results on COVID safety.",
+        link: [
+            {
+                name: "GitHub",
+                url: "https://github.com/jamesvdinh/2020-Vision",
+            }
+        ]
+    },
+    {
+        title: "Glutamate",
+        url: "https://github.com/jamesvdinh/Glutamate",
+        date: "2021",
+        tags: [
+            "C#",
+            ".NET"
+        ],
+        img: [
+            "glutamate.png"
+        ],
+        description: "A flashcard creator and template app, useful for students wanting an easy and simple way of creating flashcards for studying.",
+        link: [
+            {
+                name: "GitHub",
+                url: "https://github.com/jamesvdinh/Glutamate",
             }
         ]
     }

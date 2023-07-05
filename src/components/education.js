@@ -2,10 +2,26 @@ import React, {useState} from "react";
 import styled from "styled-components";
 import * as palette from './styles/GlobalStyles'
 import { educationData } from "../data/MenuData";
-import { StaticImage } from "gatsby-plugin-image";
+import { GatsbyImage } from "gatsby-plugin-image";
+import { graphql, useStaticQuery } from "gatsby";
 
 const Education = () => {
     const [isActive, setIsActive] = useState(0);
+    const data = useStaticQuery(graphql`
+        query {
+            allFile(filter: {sourceInstanceName: {eq: "images"}}, sort: {name: ASC}) {
+                edges {
+                    node {
+                        id
+                        relativePath
+                        childImageSharp {
+                            gatsbyImageData
+                        }
+                    }
+                }
+            }
+        }
+    `)
 
     return (
         <>
@@ -18,8 +34,12 @@ const Education = () => {
                 </ButtonContainer>
                 <ContentContainer>
                     <HeadContainer>
-                        <Image className={isActive === 0 ? "active" : ""}><StaticImage style={Thumbnail} src="../images/gavilan.png" loading="lazy" alt="gilroy hacks logo" /></Image>
-                        <Image className={isActive === 1 ? "active" : ""}><StaticImage style={Thumbnail} src="../images/geca.jpg" loading="lazy" alt="youth commission logo" /></Image>
+                        {data.allFile.edges.map(({node}) => {
+                            if (node.relativePath === educationData[isActive].img) {
+                                return <Image key={node.id} className="active"><GatsbyImage style={Thumbnail} image={node.childImageSharp.gatsbyImageData} loading="lazy" alt={educationData[isActive].img} /></Image>
+                            }
+                            return null; // failsafe for null values
+                        })}
                         <TitleContainer>
                             <Title>{educationData[isActive].title}</Title>
                             <Subtitle>{educationData[isActive].subtitle.map((item, index) => 
@@ -108,11 +128,11 @@ const Button = styled.button`
     }
 
     &:hover {
-        background-color: #786ca514;
+        background-color: #786ca520;
     }
 
     &.active {
-        background-color: #786ca532;
+        background-color: #786ca540;
     }
 
     &.active:hover {
@@ -121,6 +141,7 @@ const Button = styled.button`
 
     @media (max-width: 500px) {
         text-align: center;
+        background-color: #ae9ee908;
     }
 `
 

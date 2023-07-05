@@ -7,17 +7,19 @@ import '@splidejs/react-splide/css';
 import { GatsbyImage } from "gatsby-plugin-image";
 import './styles/styles.scss'
 import { graphql, useStaticQuery } from "gatsby";
+import LinkIcon from "./linkicon";
+import { NextUIProvider } from "@nextui-org/react";
 
 const Projects = () => {
-    const project1_data = useStaticQuery(graphql`
+    const data = useStaticQuery(graphql`
         query {
-            allFile(filter: { relativeDirectory: {eq: "project1"}}, sort: {name: ASC}) {
+            allFile(filter: {sourceInstanceName: {eq: "images"}}, sort: {name: ASC}) {
                 edges {
                     node {
+                        id
+                        relativePath
                         childImageSharp {
-                            gatsbyImageData(
-                                height: 200
-                            )
+                            gatsbyImageData(height: 200)
                         }
                     }
                 }
@@ -29,29 +31,38 @@ const Projects = () => {
         <>
             <Heading id="experience">Projects</Heading>
             <ProjectContainer>
-                <ProjectEntry>
-                    <Title><TitleAnchor href={projectData[0].url} target="_blank">{projectData[0].title}</TitleAnchor></Title>
-                    <Date>{projectData[0].date}</Date>
-                    <TagContainer>{projectData[0].tags.map((item, index) => 
-                        <Tag key={index}>{item}</Tag>
-                    )}</TagContainer>
-                    <SlideShow aria-label="Slideshow Images"
-                        options={{
-                            rewind: true,
-                            height: 200,
-                            lazyLoad: true,
-                        }}
-                    >
-                    {project1_data.allFile.edges.map(({node}) => {
-                        return <SplideSlide key={node.index}><GatsbyImage style={SlideImg} image={node.childImageSharp.gatsbyImageData} alt="" /></SplideSlide>
-                    })}
-                    </SlideShow>
-                    <Description>{projectData[0].description}</Description>
-                    <LinkList>{projectData[0].link.map((item, index) =>
-                        <LinkIcon href={item.url} key={index}>{item.name}</LinkIcon>
-                    )}
-                    </LinkList>
-                </ProjectEntry>
+                {projectData.map((item, index) => 
+                    <ProjectEntry key={index}>
+                        <Title><TitleAnchor href={item.url} target="_blank">{item.title}</TitleAnchor></Title>
+                        <Date>{item.date}</Date>
+                        <TagContainer>{item.tags.map((item, index) => 
+                            <Tag key={index}>{item}</Tag>
+                        )}</TagContainer>
+                        <SlideShow aria-label="Slideshow Images"
+                            options={{
+                                rewind: true,
+                                height: 200,
+                                lazyLoad: true,
+                            }}
+                        >
+                            {data.allFile.edges.map(({node}) => {
+                                for (const path of item.img) {
+                                    if (node.relativePath === path) {
+                                        return <SplideSlide key={node.id}><GatsbyImage style={SlideImg} image={node.childImageSharp.gatsbyImageData} alt={path} /></SplideSlide>
+                                    }
+                                }
+                                return null; // failsafe for null values
+                            })}
+                        </SlideShow>
+                        <Description>{item.description}</Description>
+                        <LinkList>{item.link.map((item, index) =>
+                            <IconAnchor href={item.url} target="_blank" key={index}>
+                                <LinkIcon item={item.name}></LinkIcon>
+                            </IconAnchor>
+                        )}
+                        </LinkList>
+                    </ProjectEntry>
+                )}
             </ProjectContainer>
         </>
     )
@@ -65,17 +76,21 @@ const Heading = styled.h1`
 
 const ProjectContainer = styled.div`
     display: flex;
+    flex-flow: row wrap;
     justify-content: center;
-    align-items: center;
+    align-items: baseline;
     margin: 30px auto;
-    max-width: 430px;
     padding: 0 15px;
+    max-width: 1230px;
 `
 
 const ProjectEntry = styled.div`
     background-color: #322634;
     padding: 20px 10px;
+    min-width: 360px;
+    max-width: 380px;
     border-radius: 3px;
+    margin: 10px;
 `
 
 const TitleAnchor = styled.a`
@@ -96,6 +111,7 @@ const TitleAnchor = styled.a`
 const Title = styled.h2`
     font-size: 24px;
     line-height: 35px;
+    padding: 0 5px;
 `
 
 const Date = styled.h3`
@@ -108,7 +124,7 @@ const TagContainer = styled.div`
     flex-flow: row wrap;
     justify-content: center;
     align-items: center;
-    margin: 5px auto 10px;
+    margin: 5px 10px 10px;
 `
 
 const Tag = styled.div`
@@ -144,10 +160,11 @@ const Description = styled.div`
 const LinkList = styled.div`
     display: flex;
     justify-content: center;
+    margin: 3px auto;
 `
 
-const LinkIcon = styled.a`
-    margin: 3px 7px;
+const IconAnchor = styled.a`
+    margin: 3px 15px;
     color: ${palette.titleColor};
     transition: all 0.3s;
 

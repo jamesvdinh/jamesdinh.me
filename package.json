@@ -5,6 +5,8 @@
   "version": "0.1.0",
   "author": "Kyle Mathews <mathews.kyle@gmail.com>",
   "dependencies": {
+    "@nextui-org/react": "^1.0.0-beta.13",
+    "@react-icons/all-files": "^4.1.0",
     "@splidejs/react-splide": "^0.7.12",
     "babel-plugin-styled-components": "^2.1.3",
     "gatsby": "^5.11.0",

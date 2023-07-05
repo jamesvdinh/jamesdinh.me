@@ -15,6 +15,7 @@ import Education from "./education"
 import styled from "styled-components"
 import Experience from "./experience"
 import Projects from "./projects"
+import { NextUIProvider } from "@nextui-org/react"
 
 const Layout = ({ children }) => {
   const data = useStaticQuery(graphql`
@@ -29,14 +30,14 @@ const Layout = ({ children }) => {
 
   return (
     <>
-    <GlobalStyle />
-      <NavBar siteTitle={data.site.siteMetadata?.title || `Title`} />
-      <Header />
-      <MainContainer>
-        <Education />
-        <Experience />
-        <Projects />
-      </MainContainer>
+      <GlobalStyle />
+        <NavBar siteTitle={data.site.siteMetadata?.title || `Title`} />
+        <Header />
+        <MainContainer>
+          <Education />
+          <Experience />
+          <Projects />
+        </MainContainer>
     </>
   )
 }
