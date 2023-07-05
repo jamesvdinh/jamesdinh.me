@@ -71,6 +71,7 @@ const EducationContainer = styled.section`
 
 const Heading = styled.h1`
     color: ${palette.headingColor};
+    padding-top: 70px;
 `
 
 const ButtonContainer = styled.div`

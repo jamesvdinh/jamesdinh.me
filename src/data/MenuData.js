@@ -140,7 +140,7 @@ export const projectData = [
     {
         title: "ASL Hand Recognition App",
         url: "https://jamesvdinh.github.io/",
-        date: "2023",
+        subtitle: "Sign Lanugage Recognition Utility App",
         tags: [
             "Jupyter Notebook",
             "MediaPipe",
@@ -175,7 +175,7 @@ export const projectData = [
     {
         title: "Principal Component Analysis Research Project",
         url: "https://github.com/jamesvdinh/PCA",
-        date: "2021",
+        subtitle: "Mathematical Concept Explanation",
         tags: [
             "MatPlotLib",
             "Python"  
@@ -195,7 +195,7 @@ export const projectData = [
     {
         title: "Custom Arduino Accelerometer",
         url: "https://nextcloud.andrewkdinh.com/s/3JKxDdw9NeM234r",
-        date: "2022",
+        subtitle: "Custom-programmed accelerometer",
         tags: [
             "Arduino",
             "TinyDuino",
@@ -214,9 +214,33 @@ export const projectData = [
         ]
     },
     {
+        title: "Gilroy Hacks Website",
+        url: "https://gilroyhacks.com/",
+        subtitle: "2022",
+        tags: [
+            "HTML",
+            "CSS",
+            "JavaScript"
+        ],
+        img: [
+            "gilroyhacks.png"
+        ],
+        description: "Official website for my 501(c)(3) hackathon organization, Gilroy Hacks, built entirely from scratch.",
+        link: [
+            {
+                name: "Website",
+                url: "https://gilroyhacks.com/",
+            },
+            {
+                name: "GitHub",
+                url: "https://github.com/jamesvdinh/gilroy-hacks",
+            }
+        ]
+    },
+    {
         title: "2020 Vision",
         url: "https://github.com/jamesvdinh/2020-Vision",
-        date: "2020",
+        subtitle: "2020",
         tags: [
             "C++"
         ],
@@ -234,7 +258,7 @@ export const projectData = [
     {
         title: "Glutamate",
         url: "https://github.com/jamesvdinh/Glutamate",
-        date: "2021",
+        subtitle: "2021",
         tags: [
             "C#",
             ".NET"

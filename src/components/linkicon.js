@@ -1,9 +1,9 @@
 import React from "react";
-import styled from "styled-components";
 import { Tooltip } from '@nextui-org/react';
 import { FiGithub, FiCode } from "react-icons/fi";
 import { TbSlideshow } from "react-icons/tb";
 import { HiOutlineDocumentText } from "react-icons/hi";
+import { SlGlobe } from "react-icons/sl";
 
 const LinkIcon = ({item}) => {
     switch (item) {
@@ -17,6 +17,8 @@ const LinkIcon = ({item}) => {
             return <Tooltip content="Slides Presentation" color="secondary" placement="bottom"><TbSlideshow size={22} /></Tooltip>
         case 'Poster Summary':
             return <Tooltip content="Poster Summary" color="secondary" placement="bottom"><TbSlideshow size={22} /></Tooltip>
+        case 'Website':
+            return <Tooltip content="Website" color="secondary" placement="bottom"><SlGlobe size={22} /></Tooltip>
         default:
             return null;
     }

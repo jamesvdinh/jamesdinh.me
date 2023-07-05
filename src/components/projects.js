@@ -8,7 +8,6 @@ import { GatsbyImage } from "gatsby-plugin-image";
 import './styles/styles.scss'
 import { graphql, useStaticQuery } from "gatsby";
 import LinkIcon from "./linkicon";
-import { NextUIProvider } from "@nextui-org/react";
 
 const Projects = () => {
     const data = useStaticQuery(graphql`
@@ -29,12 +28,12 @@ const Projects = () => {
     
     return (
         <>
-            <Heading id="experience">Projects</Heading>
+            <Heading id="projects">Projects</Heading>
             <ProjectContainer>
                 {projectData.map((item, index) => 
                     <ProjectEntry key={index}>
                         <Title><TitleAnchor href={item.url} target="_blank">{item.title}</TitleAnchor></Title>
-                        <Date>{item.date}</Date>
+                        <Date>{item.subtitle}</Date>
                         <TagContainer>{item.tags.map((item, index) => 
                             <Tag key={index}>{item}</Tag>
                         )}</TagContainer>
@@ -72,6 +71,7 @@ export default Projects;
 
 const Heading = styled.h1`
     color: ${palette.headingColor};
+    padding-top: 70px;
 `
 
 const ProjectContainer = styled.div`
