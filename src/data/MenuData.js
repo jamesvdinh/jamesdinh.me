@@ -167,7 +167,7 @@ export const projectData = [
             "asl-pic-1.png",
             "asl-pic-2.jpg",
         ],
-        description: "A web application that assists Deaf/Hard of Hearing individuals in learning American Sign Language (or ASL). Utilized MediaPipe and TensorFlow to train a model using a dataset of 87,000 images from the NIDCD. Implemented a TensorFlow model to recognize ASL letters from a computer webcam",
+        description: "A web application that assists Deaf/Hard of Hearing individuals in learning American Sign Language (or ASL). Utilized MediaPipe and TensorFlow to train a model using a dataset of 87,000 images from the NIDCD. Implemented a TensorFlow model to recognize ASL letters from a computer webcam.",
         link: [
             {
                 name: "Demo",
@@ -199,7 +199,7 @@ export const projectData = [
             "pca-1.png",
             "pca-2.png",
         ],
-        description: "A mathematical concept explanation on Principal Component Analysis (PCA), advised by Professor El Ghaoui (UC Berkeley EECS Dept.). Authored a concise article that explains the concept of PCA and examples of real-world applications. Created a program that calculated and plotted vector projections by using Python and Matplotlib",
+        description: "A mathematical concept explanation on Principal Component Analysis (PCA), advised by Professor El Ghaoui (UC Berkeley EECS Dept.). Authored a concise article that explains the concept of PCA and examples of real-world applications.",
         link: [
             {
                 name: "GitHub",
@@ -220,7 +220,7 @@ export const projectData = [
             "internship-1.jpg",
             "internship-2.png",
         ],
-        description: "Physics and Arduino Programming Internship, advised by Dr. Sewan Fan (Gavilan Physics Dept.). Constructed a water-powered rocket that saves custom Arduino accelerometer circuit data in order to analyze changes in temperature, height, and pressure",
+        description: "Physics and Arduino Programming Internship, advised by Dr. Sewan Fan (Gavilan Physics Dept.). Constructed a water-powered rocket that saves custom Arduino accelerometer circuit data in order to analyze changes in temperature, height, and pressure.",
         link: [
             {
                 name: "Poster Summary",
@@ -264,7 +264,7 @@ export const projectData = [
             "kronos-1.png",
             "kronos-2.png"
         ],
-        description: "A time manager built to effectively reduce stress in students and make their schedules more efficient. Includes customizable break intervals and lengths, multiple assignment functionality, and a built-in music player.",
+        description: "A time manager built to effectively reduce stress in students and make their schedules more efficient.",
         link: [
             {
                 name: "GitHub",
@@ -284,6 +284,10 @@ export const projectData = [
         ],
         description: "A program that can provide informative and detailed information on the most recent COVID-19 statistics while providing assessment results on COVID safety.",
         link: [
+            {
+                name: "Demo",
+                url: "https://replit.com/@wellfedbison/2020-Vision",
+            },
             {
                 name: "GitHub",
                 url: "https://github.com/jamesvdinh/2020-Vision",
