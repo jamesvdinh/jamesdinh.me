@@ -26,26 +26,50 @@ const NavBar = () => {
   // menu btn
   const [openMenu, setOpenMenu] = useState(false);
 
+  var openNavClick = false;
+  var nav_is_open = false;
+
   const handleChange = (event) => {
-    setOpenMenu(event.target.checked);
+    setOpenMenu(true);
+    
+    nav_is_open = true;
+    openNavClick = true;
+    // Check if user clicks outside of navbar menu
+    if (isBrowser) {
+      document.addEventListener(
+      "click",
+      function (event) {
+        // If user either clicks X button OR clicks outside the modal window, then close modal
+        if (!openNavClick && nav_is_open) {
+          if (event.target.matches(".menu-btn") || !event.target.closest(".nav-container") || event.target.matches(".navlink")) {
+            setOpenMenu(false);
+            nav_is_open = false;
+          }
+        }
+        openNavClick = false;
+      },
+      false
+    );}
   }
+
   return (
     <>
-      <Nav className={colorChange ? "scrolled" : "top"}>
+      <Nav className={`nav-container ${colorChange ? "scrolled" : "top"}`}>
         <NavLogo href="/">
           <StaticImage style={Logo} src="../images/jd.png" alt="logo" />
         </NavLogo>
         <CheckBox
           type="checkbox"
           id="menu-btn"
+          className="menu-btn"
           value={openMenu}
-          onChange={handleChange}/>
+          onClick={handleChange}/>
         <MenuIcon htmlFor="menu-btn">
           <Bars />
         </MenuIcon>
         <NavMenu className={openMenu ? "shown" : ""}>
           {menuData.map((item, index) => (
-            <NavLink to={item.link} key={index}>
+            <NavLink to={item.link} key={index} className="navlink">
               {item.title}
             </NavLink>
           ))}

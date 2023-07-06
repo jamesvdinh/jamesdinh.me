@@ -37,7 +37,7 @@ const Projects = () => {
             <Heading id="projects">Projects</Heading>
             <ProjectContainer>
                 {projectData.map((item, index) => 
-                    <ProjectEntry key={index} className={[(index > 5) && 'excess', isOpen && 'open'].filter(e => !!e).join(' ')}>
+                    <ProjectEntry key={index} className={[(index > 5) && 'excess', (index > 5 && isOpen) && 'open'].filter(e => !!e).join(' ')}>
                         <Title><TitleAnchor href={item.url} target="_blank">{item.title}</TitleAnchor></Title>
                         <Date>{item.subtitle}</Date>
                         <TagContainer>{item.tags.map((item, index) => 
@@ -105,6 +105,18 @@ const ProjectEntry = styled.div`
 
     &.open {
         display: block;
+        animation: fade-in 0.3s ease;
+    }
+
+    @keyframes fade-in {
+        0% {
+            opacity: 0;
+            transform: translateY(10px);
+        }
+        100% {
+            opacity: 100;
+            transform: translateY(0px);
+        }
     }
 `
 
