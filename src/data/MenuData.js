@@ -12,8 +12,8 @@ export const educationData = [
         title: "Gavilan College",
         subtitle: [
             "A.S. in Computer Programming",
-            "A.A. in Natural Science Emphasis",
-            "A.A. in Multiple Subjects Emphasis"
+            "A.A. in Natural Science",
+            "A.A. in Liberal Arts"
         ],
         date: "Aug 2019 - May 2023",
         description: [
@@ -41,6 +41,23 @@ export const educationData = [
 ]
 
 export const experienceData = [
+    {
+        img: "catalyzesv.jpg",
+        title: "Catalyze SV",
+        subtitle: "Backend Web Developer",
+        date: "Jun 2023 - present",
+        description: [
+            "Built an interactive map that displays nearby development projects in the Bay Area, helping to connect the public to property developers",
+            "Developed a sort-through filter menu to easily locate projects around a specified address which improved user experience",
+            "Participated in weekly meetings to provide input and expertise which facilitated team productivity"
+        ],
+        link: [
+            {
+                name: "Website",
+                url: "https://www.catalyzesiliconvalley.org/"
+            }
+        ]
+    },
     {
         img: "gilroy-hacks.png",
         title: "Gilroy Hacks",
@@ -76,8 +93,6 @@ export const experienceData = [
         description: [
             "Actively planned and discussed 5+ youth community events serving 300+ total youth across Gilroy",
             "Created a work schedule for the commission, provided feedback and suggestions for future events",
-            "Coordinated Gilroy Hacks Hackathon, Royal Red Carpet, Youth Commission Retreat Event, and Community PotLuck",
-            "Attended 5+ community events",
             "Totaled 30+ volunteer hours"
         ],
         link: [
