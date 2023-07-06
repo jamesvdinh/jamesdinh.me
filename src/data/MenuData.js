@@ -155,7 +155,7 @@ export const projectData = [
     {
         title: "ASL Hand Recognition App",
         url: "https://jamesvdinh.github.io/",
-        subtitle: "Sign Lanugage Recognition Utility App",
+        subtitle: "Sign Lanugage Utility App",
         tags: [
             "Jupyter Notebook",
             "MediaPipe",
@@ -196,8 +196,8 @@ export const projectData = [
             "Python"  
         ],
         img: [
-            "pca-2.png",
             "pca-1.png",
+            "pca-2.png",
         ],
         description: "A mathematical concept explanation on Principal Component Analysis (PCA), advised by Professor El Ghaoui (UC Berkeley EECS Dept.). Authored a concise article that explains the concept of PCA and examples of real-world applications. Created a program that calculated and plotted vector projections by using Python and Matplotlib",
         link: [
@@ -210,7 +210,7 @@ export const projectData = [
     {
         title: "Custom Arduino Accelerometer",
         url: "https://nextcloud.andrewkdinh.com/s/3JKxDdw9NeM234r",
-        subtitle: "Custom-programmed accelerometer",
+        subtitle: "Custom-programmed Accelerometer",
         tags: [
             "Arduino",
             "TinyDuino",
@@ -218,7 +218,7 @@ export const projectData = [
         ],
         img: [
             "internship-1.jpg",
-            "internship-2.jpg",
+            "internship-2.png",
         ],
         description: "Physics and Arduino Programming Internship, advised by Dr. Sewan Fan (Gavilan Physics Dept.). Constructed a water-powered rocket that saves custom Arduino accelerometer circuit data in order to analyze changes in temperature, height, and pressure",
         link: [
@@ -231,7 +231,7 @@ export const projectData = [
     {
         title: "Gilroy Hacks Website",
         url: "https://gilroyhacks.com/",
-        subtitle: "2022",
+        subtitle: "501(c)(3) Local Hackathon Organization",
         tags: [
             "HTML",
             "CSS",
@@ -253,9 +253,29 @@ export const projectData = [
         ]
     },
     {
+        title: "Kronos",
+        url: "https://github.com/jamesvdinh/Kronos",
+        subtitle: "Student-focused Time Manager",
+        tags: [
+            "C#",
+            ".NET"
+        ],
+        img: [
+            "kronos-1.png",
+            "kronos-2.png"
+        ],
+        description: "A time manager built to effectively reduce stress in students and make their schedules more efficient. Includes customizable break intervals and lengths, multiple assignment functionality, and a built-in music player.",
+        link: [
+            {
+                name: "GitHub",
+                url: "https://github.com/jamesvdinh/Kronos",
+            }
+        ]
+    },
+    {
         title: "2020 Vision",
         url: "https://github.com/jamesvdinh/2020-Vision",
-        subtitle: "2020",
+        subtitle: "COVID-19 Data Visualizer",
         tags: [
             "C++"
         ],
@@ -271,9 +291,29 @@ export const projectData = [
         ]
     },
     {
+        title: "Artist Website - Nancy Pannikkat",
+        url: "https://nancypannikkat.com/",
+        subtitle: "Art Portfolio",
+        tags: [
+            "HTML",
+            "CSS",
+            "JavaScript"
+        ],
+        img: [
+            "nkp.png"
+        ],
+        description: "Artist portfolio website for photographer and artist Nancy Pannikkat. Built on commission as a freelance web developer.",
+        link: [
+            {
+                name: "Website",
+                url: "https://nancypannikkat.com/",
+            }
+        ]
+    },
+    {
         title: "Glutamate",
         url: "https://github.com/jamesvdinh/Glutamate",
-        subtitle: "2021",
+        subtitle: "Student-focused Flashcard Maker",
         tags: [
             "C#",
             ".NET"

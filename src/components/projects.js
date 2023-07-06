@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import styled from "styled-components";
 import * as palette from './styles/GlobalStyles';
 import { projectData } from "../data/MenuData";
@@ -10,6 +10,7 @@ import { graphql, useStaticQuery } from "gatsby";
 import LinkIcon from "./linkicon";
 
 const Projects = () => {
+    const [isOpen, setIsOpen] = useState(false);
     const data = useStaticQuery(graphql`
         query {
             allFile(filter: {sourceInstanceName: {eq: "images"}}, sort: {name: ASC}) {
@@ -25,13 +26,18 @@ const Projects = () => {
             }
         }
     `)
+
+    const showMenu = () => {
+        if (isOpen) { setIsOpen(false) }
+        else { setIsOpen(true); }
+    }
     
     return (
         <>
             <Heading id="projects">Projects</Heading>
             <ProjectContainer>
                 {projectData.map((item, index) => 
-                    <ProjectEntry key={index}>
+                    <ProjectEntry key={index} className={[(index > 5) && 'excess', isOpen && 'open'].filter(e => !!e).join(' ')}>
                         <Title><TitleAnchor href={item.url} target="_blank">{item.title}</TitleAnchor></Title>
                         <Date>{item.subtitle}</Date>
                         <TagContainer>{item.tags.map((item, index) => 
@@ -42,6 +48,7 @@ const Projects = () => {
                                 rewind: true,
                                 height: 200,
                                 lazyLoad: true,
+                                arrows: false,
                             }}
                         >
                             {data.allFile.edges.map(({node}) => {
@@ -63,6 +70,7 @@ const Projects = () => {
                     </ProjectEntry>
                 )}
             </ProjectContainer>
+            <MoreButton onClick={showMenu}>Show {isOpen ? "Less" : "More"}</MoreButton>
         </>
     )
 }
@@ -90,6 +98,14 @@ const ProjectEntry = styled.div`
     max-width: 380px;
     border-radius: 3px;
     margin: 10px;
+
+    &.excess {
+        display: none;
+    }
+
+    &.open {
+        display: block;
+    }
 `
 
 const TitleAnchor = styled.a`
@@ -169,5 +185,41 @@ const IconAnchor = styled.a`
 
     &:hover {
         filter: brightness(1.2);
+    }
+`
+
+const MoreButton = styled.button`
+    border: none;
+    background-color: unset;
+    text-align: right;
+    color: inherit;
+    font-size: inherit;
+    font-family: inherit;
+    align-self: start;
+    border-radius: 5px;
+    transition: all 0.3s ease-out;
+    padding: 5px 7px;
+    background-color: #ae9ee908;
+    cursor: pointer;
+
+    @keyframes easeHighlight {
+        0% {
+            filter: brightness(1.3);
+        }
+        100% {
+            filter: brightness(1);
+        }
+    }
+
+    &:hover {
+        background-color: #786ca520;
+    }
+
+    &.active {
+        background-color: #786ca540;
+    }
+
+    &.active:hover {
+        filter: brightness(1.3);
     }
 `
