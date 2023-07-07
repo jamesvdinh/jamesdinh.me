@@ -223,6 +223,10 @@ export const projectData = [
         description: "Physics and Arduino Programming Internship, advised by Dr. Sewan Fan (Gavilan Physics Dept.). Constructed a water-powered rocket that saves custom Arduino accelerometer circuit data in order to analyze changes in temperature, height, and pressure.",
         link: [
             {
+                name: "GitHub",
+                url: "https://github.com/jamesvdinh/custom-accelerometer",
+            },
+            {
                 name: "Poster Summary",
                 url: "https://nextcloud.andrewkdinh.com/s/3JKxDdw9NeM234r",
             }
