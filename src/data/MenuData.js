@@ -47,7 +47,7 @@ export const experienceData = [
         subtitle: "Backend Web Developer",
         date: "Jun 2023 - present",
         description: [
-            "Built an interactive map that displays nearby development projects in the Bay Area, helping to connect the public to property developers",
+            "Improved an interactive map that displays nearby development projects in the Bay Area by condensing information and buttons, helping to connect the public to property developers",
             "Developed a sort-through filter menu to easily locate projects around a specified address which improved user experience",
             "Participated in weekly meetings to provide input and expertise which facilitated team productivity"
         ],
