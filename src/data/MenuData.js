@@ -299,6 +299,30 @@ export const projectData = [
         ]
     },
     {
+        title: "v1.jamesdinh.me",
+        url: "http://v1.jamesdinh.me/",
+        subtitle: "v1 of my personal website",
+        tags: [
+            "HTML",
+            "CSS",
+            "JavaScript"
+        ],
+        img: [
+            "v1.png"
+        ],
+        description: "The very first rendition of my personal website/portfolio.",
+        link: [
+            {
+                name: "Website",
+                url: "http://v1.jamesdinh.me/",
+            },
+            {
+                name: "GitHub",
+                url: "https://github.com/jamesvdinh/v1.jamesdinh.me",
+            }
+        ]
+    },
+    {
         title: "Artist Website - Nancy Pannikkat",
         url: "https://nancypannikkat.com/",
         subtitle: "Art Portfolio",

@@ -1,9 +1,10 @@
-import React, {useEffect, useState} from "react";
+import React from "react";
 import styled from 'styled-components';
 import Typewriter from "typewriter-effect";
 
 const Header = () => {
-    const [greeting, setGreeting] = useState("Hi, my name is");
+    // const [greeting, setGreeting] = useState("Hi, my name is");
+    const greeting = "Hi, my name is";
     // const greetingList = ["Hi, my name is", "Chào, tôi tên là", "Konichiwa, watashi no namae wa"];
 
     // useEffect(() => {
