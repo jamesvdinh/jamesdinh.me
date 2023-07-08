@@ -16,7 +16,7 @@ module.exports = {
     title: `James Dinh`,
     description: `James Dinh's personal website, built with React and Gatsby`,
     author: `James Dinh`,
-    siteUrl: `https://jamesdinh.me/`,
+    siteUrl: `https://www.jamesdinh.me/`,
   },
   plugins: [
     `gatsby-plugin-styled-components`,

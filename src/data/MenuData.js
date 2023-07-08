@@ -1,9 +1,9 @@
 export const menuData = [
-    {title: "Education", link: "/#education"},
-    {title: "Experience", link: "/#experience"},
-    {title: "Projects", link: "/#projects"},
-    {title: "Distinctions", link: "/#distinctions"},
-    {title: "Skills", link: "/#skills"},
+    {title: "Education", link: "#education"},
+    {title: "Experience", link: "#experience"},
+    {title: "Projects", link: "#projects"},
+    {title: "Distinctions", link: "#distinctions"},
+    {title: "Skills", link: "#skills"},
 ]
 
 export const educationData = [
