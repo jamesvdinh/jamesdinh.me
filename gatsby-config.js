@@ -8,7 +8,6 @@
  * @type {import('gatsby').GatsbyConfig}
  */
 module.exports = {
-  pathPrefix: "/jamesdinh.me",
   flags: {
     DEV_SSR: true
   },
