@@ -29,7 +29,7 @@ const Education = () => {
             <EducationContainer>
                 <ButtonContainer>
                     {educationData.map((item, index) => 
-                        <ButtonFlex key={index}><Button key={index} onClick={() => setIsActive(index)} className={isActive === index ? "active" : ""}>{item.title}</Button></ButtonFlex>
+                        <ButtonFlex key={index}><Button onClick={() => setIsActive(index)} className={isActive === index ? "active" : ""}>{item.title}</Button></ButtonFlex>
                     )}
                 </ButtonContainer>
                 <ContentContainer>

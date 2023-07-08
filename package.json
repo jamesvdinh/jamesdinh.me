@@ -22,7 +22,8 @@
     "react-dom": "^18.2.0",
     "react-icons": "^4.9.0",
     "sass": "^1.63.6",
-    "styled-components": "^5.3.11"
+    "styled-components": "^5.3.11",
+    "typewriter-effect": "^2.20.1"
   },
   "devDependencies": {
     "gh-pages": "^5.0.0",
