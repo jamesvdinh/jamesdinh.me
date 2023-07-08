@@ -93,7 +93,6 @@ const Nav = styled.nav`
   background-color: ${palette.bgColor};
   top: 0;
   align-items: center;
-  font-weight: 800;
   transition: all 0.3s ease-out;
 
   &.top {

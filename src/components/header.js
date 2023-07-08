@@ -63,7 +63,7 @@ const ParentContainer = styled.header`
     max-width: 1200px;
 `
 
-const Greeting = styled.h3`
+const Greeting = styled.p`
     font-size: 22px;
     color: #9375ff;
 `
@@ -85,6 +85,7 @@ const Title = styled.h2`
     font-family: Calibre, Inter, "San Francisco", "SF Pro Text", -apple-system, system-ui, sans-serif;
     font-size: 50px;
     font-weight: bold;
+    min-height: 60.8px;
     
     @media (max-width: 495px) {
         font-size: 30px;

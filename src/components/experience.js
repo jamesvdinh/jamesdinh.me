@@ -73,6 +73,7 @@ const ExperienceContainer = styled.section`
 const Heading = styled.h1`
     color: ${palette.headingColor};
     padding-top: 70px;
+    font-weight: normal;
 `
 
 const ButtonContainer = styled.div`
@@ -166,18 +167,21 @@ const TitleContainer = styled.div`
 const Title = styled.h2`
     line-height: 30px;
     color: ${palette.titleColor};
+    font-weight: normal;
 `
 
 const Subtitle = styled.h3`
     line-height: 20px;
     font-size: 16px;
     color: lightgray;
+    font-weight: normal;
 `
 
 const Date = styled.h4`
     line-height: 25px;
     font-size: 16px;
     color: gray;
+    font-weight: normal;
 `
 
 const Description = styled.ul`

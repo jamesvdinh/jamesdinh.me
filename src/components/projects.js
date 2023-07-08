@@ -39,7 +39,7 @@ const Projects = () => {
                 {projectData.map((item, index) => 
                     <ProjectEntry key={index} className={[(index > 5) && 'excess', (index > 5 && isOpen) && 'open'].filter(e => !!e).join(' ')}>
                         <Title><TitleAnchor href={item.url} target="_blank">{item.title}</TitleAnchor></Title>
-                        <Date>{item.subtitle}</Date>
+                        <Subtitle>{item.subtitle}</Subtitle>
                         <TagContainer>{item.tags.map((item, index) => 
                             <Tag key={index}>{item}</Tag>
                         )}</TagContainer>
@@ -80,6 +80,7 @@ export default Projects;
 const Heading = styled.h1`
     color: ${palette.headingColor};
     padding-top: 70px;
+    font-weight: normal;
 `
 
 const ProjectContainer = styled.div`
@@ -139,11 +140,13 @@ const Title = styled.h2`
     font-size: 24px;
     line-height: 35px;
     padding: 0 5px;
+    font-weight: normal;
 `
 
-const Date = styled.h3`
+const Subtitle = styled.h3`
     font-size: 16px;
     line-height: 25px;
+    font-weight: normal;
 `
 
 const TagContainer = styled.div`
