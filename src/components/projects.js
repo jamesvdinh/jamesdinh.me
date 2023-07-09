@@ -102,6 +102,15 @@ const ProjectEntry = styled.div`
 
     &.excess {
         display: none;
+
+        /* $var: 5;
+
+        @for $i from 1 through 5 {
+            &:nth-child(#{$i}) {
+            top: -#{$var}px;
+            $var: $var * 0.5s;
+            }
+        } */
     }
 
     &.open {

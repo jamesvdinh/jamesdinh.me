@@ -157,11 +157,11 @@ export const projectData = [
         url: "https://jamesvdinh.github.io/",
         subtitle: "Sign Lanugage Utility App",
         tags: [
-            "Jupyter Notebook",
             "MediaPipe",
+            "TensorFlow",
             "OpenCV",
+            "Jupyter Notebook",
             "Python",
-            "TensorFlow"
         ],
         img: [
             "asl-pic-1.png",
@@ -268,7 +268,7 @@ export const projectData = [
             "kronos-1.png",
             "kronos-2.png"
         ],
-        description: "A time manager built to effectively reduce stress in students and make their schedules more efficient.",
+        description: "A time manager built to effectively reduce stress in students and make their schedules more efficient. 1st place submission for Coding For Covid 2021",
         link: [
             {
                 name: "GitHub",
@@ -286,7 +286,7 @@ export const projectData = [
         img: [
             "2020vision.png"
         ],
-        description: "A program that can provide informative and detailed information on the most recent COVID-19 statistics while providing assessment results on COVID safety.",
+        description: "A program that can provide informative and detailed information on the most recent COVID-19 statistics while providing assessment results on COVID safety. 2nd place submission for IvyMax Hackathon 2020",
         link: [
             {
                 name: "Demo",
