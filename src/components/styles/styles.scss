@@ -20,3 +20,47 @@
     --nextui--tooltipColor: #5c2573b6;
     background: #5c2573b6;
 }
+
+.d-flex-2 {
+	display: flex;
+	align-items: center;
+}
+
+.timeline-text {
+	width: 50%;
+	padding-left: 30px;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+	position: relative;
+	display: flex;
+}
+
+.timeline-text h6 {
+	color: #b399dc;
+	display: block;
+	font-size: 1rem;
+}
+.timeline-text span {
+	color: #f0f1f2;
+	display: block;
+	width: 100%;
+}
+
+.t-square {
+	content: "";
+	position: absolute;
+	width: 12px;
+	height: 12px;
+	left: -6px;
+	background: #b399dc;
+}
+
+
+@media all and (max-width: 768px) {
+	.timeline-blank {
+		display: none;
+	}
+	.timeline-text {
+		width: 100%;
+	}
+}

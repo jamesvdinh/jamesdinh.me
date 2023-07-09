@@ -362,3 +362,41 @@ export const projectData = [
         ]
     }
 ]
+
+export const distinctionData = [
+    {
+        date: "May 2023",
+        title: "Commended Scholar",
+        description: "National Merit Scholarship Distinction for achieving a PSAT/NMSQT score of 1400, and a selection index of 209"
+    },
+    {
+        date: "May 2023",
+        title: "CAASPP Highest Possible Score",
+        description: "Achieved the highest possible score on the 2022 CAASPP in Mathematics & English Language Arts"
+    },
+    {
+        date: "May 2023",
+        title: "Chi Am Circle Scholarship Recipient",
+        description: "Recipient of the Chi Am Circle Scholarship for $2,000"
+    },
+    {
+        date: "May 2023",
+        title: "Cougar Scholarship Recipient",
+        description: "Recipient of the Rucker Elementary Cougar Scholarship for $1,000"
+    },
+    {
+        date: "May 2021",
+        title: "Outstanding Student Achievement - Integrated Math II+",
+        description: "Awarded by GECA faculty for demonstrating outstanding performance in Math II"
+    },
+    {
+        date: "May 2020",
+        title: "Outstanding Student Achievement - Integrated Math I+",
+        description: "Awarded by GECA faculty for demonstrating outstanding performance in Math I"
+    },
+    {
+        date: "Jun 2018",
+        title: "Academic Excellence Award - Mathematics",
+        description: "Awarded by the California Department of Education for exemplary performance in the CAASPP 2018"
+    }
+]

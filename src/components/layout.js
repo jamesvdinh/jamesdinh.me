@@ -16,6 +16,7 @@ import styled from "styled-components"
 import Experience from "./experience"
 import Projects from "./projects"
 import Footer from "./footer"
+import Distinctions from "./distinctions"
 
 const Layout = ({ children }) => {
   const data = useStaticQuery(graphql`
@@ -37,6 +38,7 @@ const Layout = ({ children }) => {
           <Education />
           <Experience />
           <Projects />
+          <Distinctions />
         </MainContainer>
         <Footer />
     </>
