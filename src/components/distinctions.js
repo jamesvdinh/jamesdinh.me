@@ -56,7 +56,7 @@ const TimelineContainer = styled.div`
         margin: auto;
         height: 100%;
         width: 2px;
-        background: #b399dc;
+        background: ${palette.titleColor};
         top: 20px;
     }
 

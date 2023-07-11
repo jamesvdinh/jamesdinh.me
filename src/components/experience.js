@@ -212,19 +212,24 @@ const LinkContainer = styled.div`
 `
 
 const LinkButton = styled.a`
-    background-color: #7553ac45;
-    display: flex;
+    border: none;
+    background-color: unset;
     text-decoration: none;
+    text-align: right;
     color: inherit;
+    font-size: inherit;
+    font-family: inherit;
     border-radius: 5px;
     transition: all 0.3s ease-out;
-    padding: 5px 7px;
-    margin: 3px 5px;
-    text-align: center;
-    align-items: center;
+    padding: 7px 10px;
+    background-color: #ae9ee908;
+    color: ${palette.titleColor};
+    border: 1px solid ${palette.titleColor};
     cursor: pointer;
 
     &:hover {
-        background-color: #7553ac23;
+        border: 1px dashed #cbbff5;
+        color: #cbbff5;
+        background-color: #ae9ee91a;
     }
 `

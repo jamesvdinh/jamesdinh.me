@@ -219,31 +219,17 @@ const MoreButton = styled.button`
     color: inherit;
     font-size: inherit;
     font-family: inherit;
-    align-self: start;
     border-radius: 5px;
     transition: all 0.3s ease-out;
-    padding: 5px 7px;
+    padding: 10px 14px;
     background-color: #ae9ee908;
+    color: ${palette.titleColor};
+    border: 1px solid ${palette.titleColor};
     cursor: pointer;
 
-    @keyframes easeHighlight {
-        0% {
-            filter: brightness(1.3);
-        }
-        100% {
-            filter: brightness(1);
-        }
-    }
-
     &:hover {
-        background-color: #786ca520;
-    }
-
-    &.active {
-        background-color: #786ca540;
-    }
-
-    &.active:hover {
-        filter: brightness(1.3);
+        border: 1px dashed #cbbff5;
+        color: #cbbff5;
+        background-color: #ae9ee91a;
     }
 `

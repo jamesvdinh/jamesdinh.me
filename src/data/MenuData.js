@@ -3,7 +3,7 @@ export const menuData = [
     {title: "Experience", link: "#experience"},
     {title: "Projects", link: "#projects"},
     {title: "Distinctions", link: "#distinctions"},
-    {title: "Skills", link: "#skills"},
+    // {title: "Skills", link: "#skills"},
 ]
 
 export const educationData = [
