@@ -113,6 +113,7 @@ const TimelineEntry = styled.div`
             padding-left: 30px;
             padding-right: 0;
             text-align: left;
+            justify-content: left;
         }
 
         &:nth-child(2n) .t-square {
