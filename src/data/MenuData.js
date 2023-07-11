@@ -365,9 +365,14 @@ export const projectData = [
 
 export const distinctionData = [
     {
+        date: "Jul 2023",
+        title: "President's Volunteer Service Award - Silver",
+        description: "Received the PVSA (Silver Award) for fulfilling 174+ hours of community service in 2022-2023"
+    },
+    {
         date: "May 2023",
         title: "Commended Scholar",
-        description: "National Merit Scholarship Distinction for achieving a PSAT/NMSQT score of 1400, and a selection index of 209"
+        description: "National Merit Scholarship Distinction for achieving a PSAT/NMSQT score of 1400 and selection index of 209"
     },
     {
         date: "May 2023",
@@ -386,17 +391,12 @@ export const distinctionData = [
     },
     {
         date: "May 2021",
-        title: "Outstanding Student Achievement - Integrated Math II+",
+        title: "Outstanding Student Achievement - Math II+",
         description: "Awarded by GECA faculty for demonstrating outstanding performance in Math II"
     },
     {
         date: "May 2020",
-        title: "Outstanding Student Achievement - Integrated Math I+",
+        title: "Outstanding Student Achievement - Math I+",
         description: "Awarded by GECA faculty for demonstrating outstanding performance in Math I"
-    },
-    {
-        date: "Jun 2018",
-        title: "Academic Excellence Award - Mathematics",
-        description: "Awarded by the California Department of Education for exemplary performance in the CAASPP 2018"
     }
 ]
