@@ -92,10 +92,12 @@ const TimelineEntry = styled.div`
         padding-left: 0;
         padding-right: 30px;
         text-align: right;
+        justify-content: right;
     }
 
     &:nth-child(odd) .timeline-text .timeline-date {
         text-align: left;
+        justify-content: left;
     }
 
     &:nth-child(even) .timeline-text .timeline-date {
