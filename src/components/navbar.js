@@ -4,7 +4,6 @@ import { Link } from "gatsby"
 import styled from 'styled-components'
 import {menuData} from '../data/MenuData'
 import { StaticImage } from 'gatsby-plugin-image'
-import {FaBars} from 'react-icons/fa'
 import * as palette from './styles/GlobalStyles'
 
 const isBrowser = typeof window !== "undefined"
@@ -27,29 +26,30 @@ const NavBar = () => {
   const [openMenu, setOpenMenu] = useState(false);
 
   var openNavClick = false;
-  var nav_is_open = false;
+  var nav_is_open = false; // boolean if click on nav menu is initial click to open
 
   const handleChange = (event) => {
-    setOpenMenu(true);
-    
-    nav_is_open = true;
-    openNavClick = true;
-    // Check if user clicks outside of navbar menu
-    if (isBrowser) {
-      document.addEventListener(
-      "click",
-      function (event) {
-        // If user either clicks X button OR clicks outside the modal window, then close modal
-        if (!openNavClick && nav_is_open) {
-          if (event.target.matches(".menu-btn") || !event.target.closest(".nav-container") || event.target.matches(".navlink")) {
-            setOpenMenu(false);
-            nav_is_open = false;
-          }
-        }
-        openNavClick = false;
-      },
-      false
-    );}
+    if (!openMenu) {
+      setOpenMenu(true);
+      nav_is_open = true;
+      openNavClick = true;
+
+      // Check if user clicks outside of navbar menu
+      if (isBrowser) {
+        document.addEventListener("click", function (event) {
+            // If user either clicks X button OR clicks outside the modal window, then close modal
+            if (!openNavClick && nav_is_open) {
+              if (event.target.matches(".menu-btn") || !event.target.closest(".nav-container") || event.target.matches(".navlink")) {
+                setOpenMenu(false);
+                nav_is_open = false;
+              }
+            }
+            openNavClick = false;
+          },
+          false
+        );
+      }
+    }
   }
 
   return (
@@ -62,8 +62,8 @@ const NavBar = () => {
           type="checkbox"
           id="menu-btn"
           className="menu-btn"
-          value={openMenu}
-          onClick={handleChange}/>
+          checked={openMenu}
+          onChange={handleChange}/>
         <MenuIcon htmlFor="menu-btn">
           <Bars />
         </MenuIcon>
@@ -86,7 +86,6 @@ const Nav = styled.nav`
   display: flex;
   width: 100%;
   justify-content: space-between;
-  /* padding: 0.5rem calc((100vw - 1300px) / 2); */
   padding: 0.5rem 0;
   z-index: 100;
   position: fixed;
@@ -113,9 +112,43 @@ const CheckBox = styled.input`
   display: none;
 `
 
-const Bars = styled(FaBars)`
+const Bars = styled.div`
   display: none;
-  color: white;
+  background: rgb(123, 123, 123);
+  height: 2px;
+  position: relative;
+  transition: background .2s ease-out;
+  width: 18px;
+
+  &:before, &:after {
+    background: rgb(123, 123, 123);
+    content: '';
+    display: block;
+    height: 100%;
+    position: absolute;
+    transition: all .2s ease-out;
+    width: 100%;
+  }
+
+  &:before {
+    top: 5px;
+  }
+
+  &:after {
+    top: -5px;
+  }
+
+  ${CheckBox}:checked + & {
+    background: transparent;
+  }
+
+  ${CheckBox}:checked + &:before {
+    transform: rotate(-45deg);
+  }
+
+  ${CheckBox}:checked + &:after {
+    transform: rotate(45deg);
+  }
 
   @media (max-width: 768px) {
     display: block;
