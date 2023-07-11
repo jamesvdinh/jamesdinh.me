@@ -212,8 +212,6 @@ const LinkContainer = styled.div`
 `
 
 const LinkButton = styled.a`
-    border: none;
-    background-color: unset;
     text-decoration: none;
     text-align: right;
     color: inherit;

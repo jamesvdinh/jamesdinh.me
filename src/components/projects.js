@@ -208,13 +208,11 @@ const IconAnchor = styled.a`
     transition: all 0.3s;
 
     &:hover {
-        filter: brightness(1.2);
+        filter: brightness(1.3);
     }
 `
 
 const MoreButton = styled.button`
-    border: none;
-    background-color: unset;
     text-align: right;
     color: inherit;
     font-size: inherit;

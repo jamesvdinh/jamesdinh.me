@@ -6,6 +6,17 @@ export const menuData = [
     // {title: "Skills", link: "#skills"},
 ]
 
+export const headerLinks = [
+    {
+        name: "LinkedIn",
+        url: "https://www.linkedin.com/in/jamesdinh-me/"
+    },
+    {
+        name: "GitHub",
+        url: "https://github.com/jamesvdinh"
+    }
+]
+
 export const educationData = [
     {
         img: "gavilan.png",

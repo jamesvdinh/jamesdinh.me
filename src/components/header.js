@@ -1,23 +1,13 @@
 import React from "react";
 import styled from 'styled-components';
 import Typewriter from "typewriter-effect";
+import * as palette from './styles/GlobalStyles';
+import LinkIcon from "./linkicon";
+import { headerLinks } from "../data/MenuData";
+import Resume from "../data/Resume.pdf";
 
 const Header = () => {
-    // const [greeting, setGreeting] = useState("Hi, my name is");
     const greeting = "Hi, my name is";
-    // const greetingList = ["Hi, my name is", "Chào, tôi tên là", "Konichiwa, watashi no namae wa"];
-
-    // useEffect(() => {
-    //     for (let i = 0; i < greetingList.length; i++) {
-    //         setDelay(i);
-    //     }
-    //     function setDelay(i) {
-    //         setTimeout(() => {
-    //             setGreeting(greetingList[i]);
-    //         }, 500); // animation timing offset
-    //         // if (i === greetingList.length) { i = 0; }
-    //     }
-    // })
 
     return (
         <>
@@ -45,6 +35,14 @@ const Header = () => {
                         .start();
                 }}></Typewriter></Title>
                 <Description>When I'm not focused on schoolwork, you can find me building websites, practicing piano, or playing chess!</Description>
+                <HeaderLinks>
+                    <LinkButton href={Resume} target="_blank">Résumé</LinkButton>
+                    {headerLinks.map ((item, index) => 
+                        <IconAnchor href={item.url} target="_blank" key={index}>
+                            <LinkIcon item={item.name}></LinkIcon>
+                        </IconAnchor>
+                    )}
+                </HeaderLinks>
             </ParentContainer>
         </>
     )
@@ -96,4 +94,44 @@ const Description = styled.p`
     font-size: 20px;
     max-width: 500px;
     line-height: 1.3;
+`
+
+const HeaderLinks = styled.div`
+    display: flex;
+    flex-flow: row wrap;
+    margin: 10px 0;
+    align-items: center;
+`
+
+const LinkButton = styled.a`
+    text-decoration: none;
+    color: inherit;
+    font-size: inherit;
+    font-family: inherit;
+    border-radius: 20px;
+    transition: all 0.3s ease-out;
+    padding: 7px 10px;
+    margin-right: 10px;
+    background-color: #ae9ee908;
+    color: ${palette.titleColor};
+    border: 1px solid ${palette.titleColor};
+    cursor: pointer;
+
+    &:hover {
+        border: 1px dashed #cbbff5;
+        color: #cbbff5;
+        background-color: #ae9ee91a;
+    }
+`
+
+const IconAnchor = styled.a`
+    margin: 3px 10px;
+    color: ${palette.titleColor};
+    transition: all 0.3s;
+    display: flex;
+    align-items: center;
+
+    &:hover {
+        filter: brightness(1.3);
+    }
 `
