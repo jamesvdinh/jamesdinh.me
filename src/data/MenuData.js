@@ -9,11 +9,13 @@ export const menuData = [
 export const headerLinks = [
     {
         name: "LinkedIn",
-        url: "https://www.linkedin.com/in/jamesdinh-me/"
+        url: "https://www.linkedin.com/in/jamesdinh-me/",
+        size: 30
     },
     {
         name: "GitHub",
-        url: "https://github.com/jamesvdinh"
+        url: "https://github.com/jamesvdinh",
+        size: 27
     }
 ]
 
@@ -183,18 +185,22 @@ export const projectData = [
             {
                 name: "Demo",
                 url: "https://jamesvdinh.github.io/",
+                size: 22
             },
             {
                 name: "GitHub",
                 url: "https://github.com/jamesvdinh/jamesvdinh.github.io",
+                size: 22
             },
             {
                 name: "Research Paper",
                 url: "https://docs.google.com/document/d/1g73K_jQwfBhyOlLoQQG9i2JNmKlebSzt9dzH-WRfLMQ/edit?usp=sharing",
+                size: 22
             },
             {
                 name: "Slides Presentation",
                 url: "https://docs.google.com/presentation/d/1s4tyiZyS0UuMa0Vl-X4qmB4Aot7Keay6WYfPSoVRJEA/edit?usp=sharing",
+                size: 22
             }
         ]
     },
@@ -215,6 +221,7 @@ export const projectData = [
             {
                 name: "GitHub",
                 url: "https://github.com/jamesvdinh/PCA",
+                size: 22
             }
         ]
     },
@@ -236,10 +243,12 @@ export const projectData = [
             {
                 name: "GitHub",
                 url: "https://github.com/jamesvdinh/custom-accelerometer",
+                size: 22
             },
             {
                 name: "Poster Summary",
                 url: "https://nextcloud.andrewkdinh.com/s/3JKxDdw9NeM234r",
+                size: 22
             }
         ]
     },
@@ -260,10 +269,12 @@ export const projectData = [
             {
                 name: "Website",
                 url: "https://gilroyhacks.com/",
+                size: 22
             },
             {
                 name: "GitHub",
                 url: "https://github.com/jamesvdinh/gilroy-hacks",
+                size: 22
             }
         ]
     },
@@ -284,6 +295,7 @@ export const projectData = [
             {
                 name: "GitHub",
                 url: "https://github.com/jamesvdinh/Kronos",
+                size: 22
             }
         ]
     },
@@ -302,10 +314,12 @@ export const projectData = [
             {
                 name: "Demo",
                 url: "https://replit.com/@wellfedbison/2020-Vision",
+                size: 22
             },
             {
                 name: "GitHub",
                 url: "https://github.com/jamesvdinh/2020-Vision",
+                size: 22
             }
         ]
     },
@@ -326,10 +340,12 @@ export const projectData = [
             {
                 name: "Website",
                 url: "http://v1.jamesdinh.me/",
+                size: 22
             },
             {
                 name: "GitHub",
                 url: "https://github.com/jamesvdinh/v1.jamesdinh.me",
+                size: 22
             }
         ]
     },
@@ -350,6 +366,7 @@ export const projectData = [
             {
                 name: "Website",
                 url: "https://nancypannikkat.com/",
+                size: 22
             }
         ]
     },
@@ -369,6 +386,7 @@ export const projectData = [
             {
                 name: "GitHub",
                 url: "https://github.com/jamesvdinh/Glutamate",
+                size: 22
             }
         ]
     }

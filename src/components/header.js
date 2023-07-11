@@ -39,7 +39,7 @@ const Header = () => {
                     <LinkButton href={Resume} target="_blank">Résumé</LinkButton>
                     {headerLinks.map ((item, index) => 
                         <IconAnchor href={item.url} target="_blank" key={index}>
-                            <LinkIcon item={item.name}></LinkIcon>
+                            <LinkIcon item={item.name} size={item.size}></LinkIcon>
                         </IconAnchor>
                     )}
                 </HeaderLinks>

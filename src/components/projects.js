@@ -63,7 +63,7 @@ const Projects = () => {
                         <Description>{item.description}</Description>
                         <LinkList>{item.link.map((item, index) =>
                             <IconAnchor href={item.url} target="_blank" key={index}>
-                                <LinkIcon item={item.name}></LinkIcon>
+                                <LinkIcon item={item.name} size={item.size}></LinkIcon>
                             </IconAnchor>
                         )}
                         </LinkList>
