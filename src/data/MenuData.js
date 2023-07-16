@@ -77,9 +77,9 @@ export const experienceData = [
         subtitle: "Co-Founder, Event Director",
         date: "Jan 2022 - Jun 2023",
         description: [
-            "Managed event logistics and coordinated outreach for 2 community hackathons that served 50+ local students",
+            "Managed event logistics and coordinated outreach for 2 hackathons that served 50+ local students",
+            "Registered organization as a 501(c)(3) nonprofit under Hack Club in order to collect tax-deductible donations and facilitate purchases",
             "Led 25+ meetings and raised over $2,000 in funding to buy prizes, food, and swag",
-            "Secured venue; facilitated tech resources, outreach, and marketing",
             "Designed website from scratch using HTML, CSS, and JS",
             "Totaled 150+ volunteer hours"
         ],
@@ -123,8 +123,7 @@ export const experienceData = [
         description: [
             "Mentored 5+ tutees in all areas and subjects of school, including Math, English, Chemistry, Biology",
             "Planned 4-year college plans by providing insight on classes and degree programs",
-            "Connected students to extracurricular activities for internships and community service",
-            "Totaled 20+ volunteer hours"
+            "Connected students to extracurricular activities for internships and community service"
         ],
         link: []
     },

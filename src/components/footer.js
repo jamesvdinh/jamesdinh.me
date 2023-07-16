@@ -1,12 +1,13 @@
 import React from "react";
 import styled from "styled-components";
+import Resume from "../data/Resume.pdf";
 
 const Footer = () => {
     return (
         <>
             <FooterContainer>
-                <FooterText>Built from scratch by James Dinh</FooterText>
-                <FooterText>Tools used: React, Gatsby</FooterText>
+                <FooterText>Built from scratch by <a className="proper" href={Resume} target="_blank" rel="noreferrer">James Dinh</a></FooterText>
+                <FooterText>Tools used: React, Gatsby.js</FooterText>
             </FooterContainer>
         </>
     )
