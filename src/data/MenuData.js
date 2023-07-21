@@ -57,7 +57,7 @@ export const experienceData = [
     {
         img: "catalyzesv.jpg",
         title: "Catalyze SV",
-        subtitle: "Backend Web Developer",
+        subtitle: "Frontend Web Developer",
         date: "Jun 2023 - present",
         description: [
             "Improved an interactive map that displays nearby development projects in the Bay Area by condensing information and buttons, helping to connect the public to property developers",
