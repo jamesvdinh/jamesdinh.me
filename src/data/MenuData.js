@@ -29,7 +29,9 @@ export const educationData = [
         date: "Sep 2023 - present",
         description: [
             "GPA - 3.95",
+            "Studying to transfer to the University of California for Data Science B.S.",
             "Coursework - Calculus, Statistics, Microeconomics, Data Abstraction & Structures, Discrete Mathematics, R Programming, Python Programming, Differential Equations, Linear Algebra",
+            "Organizations: Open Source San Jose"
         ]
     },
     {
