@@ -21,6 +21,18 @@ export const headerLinks = [
 
 export const educationData = [
     {
+        img: "deanza.png",
+        title: "De Anza College",
+        subtitle: [
+            "Computer Science Major for Transfer"
+        ],
+        date: "Sep 2023 - present",
+        description: [
+            "GPA - 3.95",
+            "Coursework - Calculus, Statistics, Microeconomics, Data Abstraction & Structures, Discrete Mathematics, R Programming, Python Programming, Differential Equations, Linear Algebra",
+        ]
+    },
+    {
         img: "gavilan.png",
         title: "Gavilan College",
         subtitle: [
@@ -131,7 +143,7 @@ export const experienceData = [
         img: "gavilan-summer-internship.png",
         title: "Gavilan College Summer Internship",
         subtitle: "Research Intern",
-        date: "June - Aug 2022",
+        date: "Jun - Aug 2022",
         description: [
             "Physical analysis of water-powered rockets, advised by Dr. Sewan Fan (Gavilan Physics Dept.)",
             "Constructed a water-powered rocket that saves custom Arduino accelerometer circuit data in order to analyze changes in temperature, height, and pressure",
