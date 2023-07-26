@@ -180,7 +180,7 @@ export const experienceData = [
 export const projectData = [
     {
         title: "ASL Hand Recognition App",
-        url: "https://jamesvdinh.github.io/",
+        url: "https://jamesvdinh.github.io/asl-app/",
         subtitle: "Sign Lanugage Utility App",
         tags: [
             "MediaPipe",
