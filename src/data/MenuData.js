@@ -24,7 +24,7 @@ export const educationData = [
         img: "deanza.png",
         title: "De Anza College",
         subtitle: [
-            "Computer Science Major for Transfer"
+            "Computer Science Transfer"
         ],
         date: "Sep 2023 - present",
         description: [
@@ -135,7 +135,7 @@ export const experienceData = [
         subtitle: "Commissioned Weekly Tutoring",
         date: "Sep - Dec 2022",
         description: [
-            "Mentored 5+ tutees in all areas and subjects of school, including Math, English, Chemistry, Biology",
+            "Mentored 5 tutees in all areas and subjects of school, including Math, English, Chemistry, Biology",
             "Planned 4-year college plans by providing insight on classes and degree programs",
             "Connected students to extracurricular activities for internships and community service"
         ],
@@ -197,7 +197,7 @@ export const projectData = [
         link: [
             {
                 name: "Demo",
-                url: "https://jamesvdinh.github.io/",
+                url: "https://jamesvdinh.github.io/asl-app/",
                 size: 22
             },
             {
