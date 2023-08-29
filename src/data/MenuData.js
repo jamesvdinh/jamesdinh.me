@@ -69,6 +69,23 @@ export const educationData = [
 
 export const experienceData = [
     {
+        img: "digitalnest.jpeg",
+        title: "Digital NEST",
+        subtitle: "Web Development Intern",
+        date: "Aug 2023 - present",
+        description: [
+            "Worked directly with clients to produce, develop, and maintain websites",
+            "Positioned as an intern developer under the bizzNEST department",
+            "Actively improved web development skills and soft skills such as project development and team leadership",
+        ],
+        link: [
+            {
+                name: "Website",
+                url: "https://digitalnest.org/"
+            }
+        ]
+    },
+    {
         img: "catalyzesv.jpg",
         title: "Catalyze SV",
         subtitle: "Frontend Web Developer",
@@ -128,18 +145,6 @@ export const experienceData = [
                 url: "https://www.cityofgilroy.org/310/Youth-Commission"
             },
         ]
-    },
-    {
-        img: "tutor.png",
-        title: "Private Tutoring",
-        subtitle: "Commissioned Weekly Tutoring",
-        date: "Sep - Dec 2022",
-        description: [
-            "Mentored 5 tutees in all areas and subjects of school, including Math, English, Chemistry, Biology",
-            "Planned 4-year college plans by providing insight on classes and degree programs",
-            "Connected students to extracurricular activities for internships and community service"
-        ],
-        link: []
     },
     {
         img: "gavilan-summer-internship.png",
@@ -218,6 +223,33 @@ export const projectData = [
         ]
     },
     {
+        title: "Project Development Search Tool",
+        url: "https://github.com/jamesvdinh/PCA",
+        subtitle: "User-specified Filters to Search Projects in the Shape SV Database",
+        tags: [
+            "Wix",
+            "HTML",
+            "CSS",
+            "Javascript"
+        ],
+        img: [
+            "catalyzesv-1.png",
+        ],
+        description: "A search tool designed for users to specify filters and display a list of queried projects. Utilized Javascript + Wix for frontend and HTTP GET requests for backend.",
+        link: [
+            {
+                name: "Website",
+                url: "https://alexshoor.wixsite.com/shapesvalpha/developments",
+                size: 22
+            },
+            {
+                name: "GitHub",
+                url: "https://github.com/jamesvdinh/catalyze-sv",
+                size: 22
+            }
+        ]
+    },
+    {
         title: "Principal Component Analysis Research Project",
         url: "https://github.com/jamesvdinh/PCA",
         subtitle: "Mathematical Concept Explanation",
@@ -241,7 +273,7 @@ export const projectData = [
     {
         title: "Custom Arduino Accelerometer",
         url: "https://nextcloud.andrewkdinh.com/s/3JKxDdw9NeM234r",
-        subtitle: "Custom-programmed Accelerometer",
+        subtitle: "Accelerometer Mount on Water-Powered Rocket",
         tags: [
             "Arduino",
             "TinyDuino",
@@ -251,7 +283,7 @@ export const projectData = [
             "internship-1.jpg",
             "internship-2.png",
         ],
-        description: "Physics and Arduino Programming Internship, advised by Dr. Sewan Fan (Gavilan Physics Dept.). Constructed a water-powered rocket that saves custom Arduino accelerometer circuit data in order to analyze changes in temperature, height, and pressure.",
+        description: "Constructed a water-powered rocket that saves accelerometer circuit data to an onboard SSD in order to analyze changes in temperature, height, and pressure. Physics and Arduino Programming Internship, advised by Dr. Sewan Fan (Gavilan Physics Dept.).",
         link: [
             {
                 name: "GitHub",
@@ -272,7 +304,7 @@ export const projectData = [
         tags: [
             "HTML",
             "CSS",
-            "JavaScript"
+            "Javascript"
         ],
         img: [
             "gilroyhacks.png"
@@ -343,7 +375,7 @@ export const projectData = [
         tags: [
             "HTML",
             "CSS",
-            "JavaScript"
+            "Javascript"
         ],
         img: [
             "v1.png"
@@ -369,7 +401,7 @@ export const projectData = [
         tags: [
             "HTML",
             "CSS",
-            "JavaScript"
+            "Javascript"
         ],
         img: [
             "nkp.png"
