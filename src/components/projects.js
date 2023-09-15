@@ -133,16 +133,16 @@ const ProjectEntry = styled.div`
 const TitleAnchor = styled.a`
     text-decoration: none;
     cursor: pointer;
-    background: linear-gradient(to right, rgba(144, 83, 162, 1), rgba(144, 83, 162, 1)), linear-gradient(to right, rgba(255, 95, 250, 1), rgba(255, 95, 250, 1));
+    /* background: linear-gradient(to right, rgba(144, 83, 162, 1), rgba(144, 83, 162, 1)), linear-gradient(to right, rgba(255, 95, 250, 1), rgba(255, 95, 250, 1));
     background-size: 100% 0.1em, 0 0.1em;
-    background-position: 100% 100%, 0 100%;
+    background-position: 100% 100%, 0 100%; */
     background-repeat: no-repeat;
     transition: background-size 400ms;
     color: ${palette.titleColor};
 
-    &:hover {
+    /* &:hover {
         background-size: 0 0.1em, 100% 0.1em;
-    }
+    } */
 `
 
 const Title = styled.h2`

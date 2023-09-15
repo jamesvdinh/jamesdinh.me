@@ -69,13 +69,13 @@ export const educationData = [
 
 export const experienceData = [
     {
-        img: "digitalnest.jpeg",
+        img: "digitalnest.png",
         title: "Digital NEST",
         subtitle: "Web Development Intern",
         date: "Aug 2023 - present",
         description: [
             "Worked directly with clients to produce, develop, and maintain websites",
-            "Positioned as an intern developer under the bizzNEST department",
+            "Positioned as an intern developer under the bizzNEST department, trained using WordPress and HTML",
             "Actively improved web development skills and soft skills such as project development and team leadership",
         ],
         link: [
@@ -224,7 +224,7 @@ export const projectData = [
     },
     {
         title: "Project Development Search Tool",
-        url: "https://github.com/jamesvdinh/PCA",
+        url: "https://alexshoor.wixsite.com/shapesvalpha/developments",
         subtitle: "User-specified Filters to Search Projects in the Shape SV Database",
         tags: [
             "Wix",
@@ -245,27 +245,6 @@ export const projectData = [
             {
                 name: "GitHub",
                 url: "https://github.com/jamesvdinh/catalyze-sv",
-                size: 22
-            }
-        ]
-    },
-    {
-        title: "Principal Component Analysis Research Project",
-        url: "https://github.com/jamesvdinh/PCA",
-        subtitle: "Mathematical Concept Explanation",
-        tags: [
-            "MatPlotLib",
-            "Python"  
-        ],
-        img: [
-            "pca-1.png",
-            "pca-2.png",
-        ],
-        description: "A mathematical concept explanation on Principal Component Analysis (PCA), advised by Professor El Ghaoui (UC Berkeley EECS Dept.). Authored a concise article that explains the concept of PCA and examples of real-world applications.",
-        link: [
-            {
-                name: "GitHub",
-                url: "https://github.com/jamesvdinh/PCA",
                 size: 22
             }
         ]
@@ -293,6 +272,27 @@ export const projectData = [
             {
                 name: "Poster Summary",
                 url: "https://nextcloud.andrewkdinh.com/s/3JKxDdw9NeM234r",
+                size: 22
+            }
+        ]
+    },
+    {
+        title: "Principal Component Analysis Research Project",
+        url: "https://github.com/jamesvdinh/PCA",
+        subtitle: "Mathematical Concept Explanation",
+        tags: [
+            "MatPlotLib",
+            "Python"  
+        ],
+        img: [
+            "pca-1.png",
+            "pca-2.png",
+        ],
+        description: "A mathematical concept explanation on Principal Component Analysis (PCA), advised by Professor El Ghaoui (UC Berkeley EECS Dept.). Authored a concise article that explains the concept of PCA and examples of real-world applications.",
+        link: [
+            {
+                name: "GitHub",
+                url: "https://github.com/jamesvdinh/PCA",
                 size: 22
             }
         ]
