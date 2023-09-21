@@ -12,6 +12,11 @@ const IndexPage = () => (
  *
  * See: https://www.gatsbyjs.com/docs/reference/built-in-components/gatsby-head/
  */
-export const Head = () => <Seo title="Computer Science Student" />
+export const Head = () => (
+  <>
+    <Seo title="Computer Science Student" />
+    <script defer="" data-domain="jamesdinh.me" src="https://plausible.jamesdinh.me/js/script.outbound-links.js"></script>
+  </>
+)
 
 export default IndexPage
