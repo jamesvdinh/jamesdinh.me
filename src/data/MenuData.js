@@ -149,7 +149,7 @@ export const experienceData = [
     {
         img: "gavilan-summer-internship.png",
         title: "Gavilan College Summer Internship",
-        subtitle: "Research Intern",
+        subtitle: "Summer Research Intern",
         date: "Jun - Aug 2022",
         description: [
             "Physical analysis of water-powered rockets, advised by Dr. Sewan Fan (Gavilan Physics Dept.)",
