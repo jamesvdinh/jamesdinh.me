@@ -224,10 +224,11 @@ export const projectData = [
     },
     {
         title: "Project Development Search Tool",
-        url: "https://alexshoor.wixsite.com/shapesvalpha/developments",
+        url: "https://www.shapesv.org/projects",
         subtitle: "User-specified Filters to Search Projects in the Shape SV Database",
         tags: [
             "Wix",
+            "Velo",
             "HTML",
             "CSS",
             "Javascript"
@@ -239,7 +240,7 @@ export const projectData = [
         link: [
             {
                 name: "Website",
-                url: "https://alexshoor.wixsite.com/shapesvalpha/developments",
+                url: "https://www.shapesv.org/projects",
                 size: 22
             },
             {
