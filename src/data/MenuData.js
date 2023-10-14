@@ -186,13 +186,14 @@ export const projectData = [
     {
         title: "ASL Hand Recognition App",
         url: "https://jamesvdinh.github.io/asl-app/",
-        subtitle: "Sign Lanugage Utility App",
+        subtitle: "Computer Vision Sign Lanugage Translator",
         tags: [
             "MediaPipe",
             "TensorFlow",
             "OpenCV",
             "Jupyter Notebook",
             "Python",
+            "JavaScript"
         ],
         img: [
             "asl-pic-1.png",
@@ -225,13 +226,12 @@ export const projectData = [
     {
         title: "Project Development Search Tool",
         url: "https://www.shapesv.org/projects",
-        subtitle: "User-specified Filters to Search Projects in the Shape SV Database",
+        subtitle: "Dynamic Search Menu using Fetch API and JavaScript",
         tags: [
             "Wix",
             "Velo",
-            "HTML",
-            "CSS",
-            "Javascript"
+            "HTML/CSS",
+            "JavaScript"
         ],
         img: [
             "catalyzesv-1.png",
@@ -283,6 +283,7 @@ export const projectData = [
         subtitle: "Mathematical Concept Explanation",
         tags: [
             "MatPlotLib",
+            "Jupyter Notebook",
             "Python"  
         ],
         img: [
@@ -303,9 +304,8 @@ export const projectData = [
         url: "https://gilroyhacks.com/",
         subtitle: "501(c)(3) Local Hackathon Organization",
         tags: [
-            "HTML",
-            "CSS",
-            "Javascript"
+            "HTML/CSS",
+            "JavaScript"
         ],
         img: [
             "gilroyhacks.png"
@@ -374,9 +374,8 @@ export const projectData = [
         url: "http://v1.jamesdinh.me/",
         subtitle: "v1 of my personal website",
         tags: [
-            "HTML",
-            "CSS",
-            "Javascript"
+            "HTML/CSS",
+            "JavaScript"
         ],
         img: [
             "v1.png"
@@ -400,9 +399,8 @@ export const projectData = [
         url: "https://nancypannikkat.com/",
         subtitle: "Art Portfolio",
         tags: [
-            "HTML",
-            "CSS",
-            "Javascript"
+            "HTML/CSS",
+            "JavaScript"
         ],
         img: [
             "nkp.png"
