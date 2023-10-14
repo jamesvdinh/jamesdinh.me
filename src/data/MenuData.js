@@ -31,7 +31,7 @@ export const educationData = [
             "GPA - 3.95",
             "Studying to transfer to the University of California for Data Science B.S.",
             "Coursework - Calculus, Statistics, Microeconomics, Data Abstraction & Structures, Discrete Mathematics, R Programming, Python Programming, Differential Equations, Linear Algebra",
-            "Organizations: Open Source San Jose"
+            "Clubs - VSA, Badminton Club, Developer's Guild, DA Web Developers"
         ]
     },
     {
@@ -47,7 +47,7 @@ export const educationData = [
             "GPA - 3.95",
             "Dual Enrollment while in High School",
             "Coursework - Art, C#, C++, Calculus, Discrete Structures, General Chemistry, HTML, Human Anatomy & Physiology, Humanities, Java, Photoshop, Physics, Psychology, Public Speaking, Python, Spanish, UNIX/Linux",
-            "Clubs - Computer Science Club, GEAR Club"
+            "Clubs - Computer Science Club (president), GEAR Club"
         ]
     },
     {
@@ -74,8 +74,8 @@ export const experienceData = [
         subtitle: "Web Development Intern",
         date: "Aug 2023 - present",
         description: [
-            "Worked directly with clients to produce, develop, and maintain websites",
-            "Positioned as an intern developer under the bizzNEST department, trained using WordPress and HTML",
+            "Worked directly with clients to produce, develop, and maintain websites using WordPress, HTML/CSS, and JS",
+            "Collaborated with frontend developers and UI designers to accurately construct 6+ websites on WordPress",
             "Actively improved web development skills and soft skills such as project development and team leadership",
         ],
         link: [
@@ -89,10 +89,10 @@ export const experienceData = [
         img: "catalyzesv.jpg",
         title: "Catalyze SV",
         subtitle: "Frontend Web Developer",
-        date: "Jun 2023 - present",
+        date: "Jun - Sep 2023",
         description: [
-            "Improved an interactive map that displays nearby development projects in the Bay Area by condensing information and buttons, helping to connect the public to property developers",
-            "Developed a sort-through filter menu to easily locate projects around a specified address which improved user experience",
+            "Developed an HTML/CSS and JS sort-through filter menu to easily locate nearby projects via Mapbox forward geocoding, which improved user traffic to the site threefold",
+            "Worked closely with backend developers to fetch data from the Shape SV database and resolve security issues",
             "Participated in weekly meetings to provide input and expertise which facilitated team productivity"
         ],
         link: [
@@ -203,7 +203,7 @@ export const projectData = [
         link: [
             {
                 name: "Demo",
-                url: "https://jamesvdinh.github.io/asl-app/",
+                url: "https://jamesvdinh.github.io/",
                 size: 22
             },
             {
@@ -236,7 +236,7 @@ export const projectData = [
         img: [
             "catalyzesv-1.png",
         ],
-        description: "A search tool designed for users to specify filters and display a list of queried projects. Utilized Javascript + Wix for frontend and HTTP GET requests for backend.",
+        description: "A search tool designed for users to specify filters and display a list of queried projects for Shape SV. Utilized JavaScript, HTML/CSS, and Wix for frontend, Fetch GET requests for backend.",
         link: [
             {
                 name: "Website",
