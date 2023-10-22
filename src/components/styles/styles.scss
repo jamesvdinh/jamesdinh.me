@@ -84,6 +84,13 @@
 	}
 }
 
+.drag {
+	cursor: grab;
+
+	&:active {
+		cursor: grabbing;
+	}
+}
 
 @media all and (max-width: 768px) {
 	.timeline-blank {

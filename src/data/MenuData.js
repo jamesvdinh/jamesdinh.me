@@ -199,7 +199,7 @@ export const projectData = [
             "asl-pic-1.png",
             "asl-pic-2.jpg",
         ],
-        description: "A web application that assists Deaf/Hard of Hearing individuals in learning American Sign Language (or ASL). Utilized MediaPipe and TensorFlow to train a model using a dataset of 87,000 images from the NIDCD. Implemented a TensorFlow model to recognize ASL letters from a computer webcam.",
+        description: "A web application that assists Deaf/Hard of Hearing individuals in learning American Sign Language (ASL). Utilized MediaPipe and TensorFlow to train a model using a dataset of 87,000 images from the NIDCD. Implemented model in a JavaScript environment to recognize ASL letters from a computer webcam. Frontend- JavaScript, HTML/CSS. Backend- TensorFlow, MediaPipe, Python.",
         link: [
             {
                 name: "Demo",
@@ -226,7 +226,7 @@ export const projectData = [
     {
         title: "Project Development Search Tool",
         url: "https://www.shapesv.org/projects",
-        subtitle: "Dynamic Search Menu using Fetch API and JavaScript",
+        subtitle: "Dynamic Search Menu using Fetch API and JS",
         tags: [
             "Wix",
             "Velo",
@@ -236,16 +236,43 @@ export const projectData = [
         img: [
             "catalyzesv-1.png",
         ],
-        description: "A search tool designed for users to specify filters and display a list of queried projects for Shape SV. Utilized JavaScript, HTML/CSS, and Wix for frontend, Fetch GET requests for backend.",
+        description: "A search tool designed for users to specify filters and display a list of queried projects for Shape SV. Used GET fetch to retrieve data from Google Sheets database to display list of dynamic projects using <iframe>. Frontend- JavaScript, HTML/CSS, Wix, Full Stack- Fetch API.",
         link: [
             {
-                name: "Website",
+                name: "Demo",
                 url: "https://www.shapesv.org/projects",
                 size: 22
             },
             {
                 name: "GitHub",
                 url: "https://github.com/jamesvdinh/catalyze-sv",
+                size: 22
+            }
+        ]
+    },
+    {
+        title: "College Roommate Finder App",
+        url: "https://jamesvdinh.github.io/roomie-finder/",
+        subtitle: "Criteria-based Attribute Sort using Flask API and React",
+        tags: [
+            "Flask API",
+            "Python",
+            "React",
+            "JavaScript"
+        ],
+        img: [
+            "roomie-finder.png",
+        ],
+        description: "An app that takes user-input criteria and outputs potential roomates that closely matches that criteria using a scoring-based algorithm. Team submission for DA Hacks 2023. Frontend- React, Javascript. Backend- Flask API, Python. Full Stack- Fetch API.",
+        link: [
+            {
+                name: "Demo",
+                url: "https://jamesvdinh.github.io/roomie-finder/",
+                size: 22
+            },
+            {
+                name: "GitHub",
+                url: "https://github.com/jamesvdinh/roomie-finder",
                 size: 22
             }
         ]

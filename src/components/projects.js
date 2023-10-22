@@ -43,12 +43,14 @@ const Projects = () => {
                         <TagContainer>{item.tags.map((item, index) => 
                             <Tag key={index}>{item}</Tag>
                         )}</TagContainer>
+                        <HLine />
                         <SlideShow aria-label="Slideshow Images"
                             options={{
                                 rewind: true,
                                 height: 200,
                                 lazyLoad: true,
                                 arrows: false,
+                                drag: (item.img.length > 1) ? true : false
                             }}
                         >
                             {data.allFile.edges.map(({node}) => {
@@ -60,6 +62,7 @@ const Projects = () => {
                                 return null; // failsafe for null values
                             })}
                         </SlideShow>
+                        <HLine />
                         <Description>{item.description}</Description>
                         <LinkList>{item.link.map((item, index) =>
                             <IconAnchor href={item.url} target="_blank" key={index}>
@@ -102,15 +105,6 @@ const ProjectEntry = styled.div`
 
     &.excess {
         display: none;
-
-        /* $var: 5;
-
-        @for $i from 1 through 5 {
-            &:nth-child(#{$i}) {
-            top: -#{$var}px;
-            $var: $var * 0.5s;
-            }
-        } */
     }
 
     &.open {
@@ -180,12 +174,18 @@ const Tag = styled.div`
     }
 `
 
+const HLine = styled.hr`
+    width: 100%;
+    border: 1px solid #656565;
+    margin: 3px 0;
+`
+
 const SlideShow = styled(Splide)`
-    cursor: grab;
+    /* cursor: grab;
     
     &:active {
         cursor: grabbing;
-    }
+    } */
 `
 
 const SlideImg = {
