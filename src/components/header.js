@@ -4,7 +4,7 @@ import Typewriter from "typewriter-effect";
 import * as palette from './styles/GlobalStyles';
 import LinkIcon from "./linkicon";
 import { headerLinks } from "../data/MenuData";
-import Resume from "../data/Resume.pdf";
+import Resume from "../../static/Resume.pdf";
 
 const Header = () => {
     const greeting = "Hi, my name is";
@@ -36,7 +36,7 @@ const Header = () => {
                 }}></Typewriter></Title>
                 <Description>When I'm not focused on schoolwork, you can find me building websites, practicing piano, or playing chess!</Description>
                 <HeaderLinks>
-                    <LinkButton href={Resume} target="_blank" rel="noreferrer">Résumé</LinkButton>
+                    <LinkButton href={Resume} target="_blank" rel="noopener noreferrer">Résumé</LinkButton>
                     {headerLinks.map ((item, index) => 
                         <IconAnchor href={item.url} target="_blank" key={index}>
                             <LinkIcon item={item.name} size={item.size}></LinkIcon>
