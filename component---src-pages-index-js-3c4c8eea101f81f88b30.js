@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkgatsby_starter_default=self.webpackChunkgatsby_starter_default||[]).push([[678],{6558:function(e,t,a){a.r(t),a.d(t,{Head:function(){return l}});var n=a(7294),s=a(4832),r=a(9357);const l=()=>n.createElement(n.Fragment,null,n.createElement(r.Z,{title:"Computer Science Student"}),n.createElement("script",{defer:"","data-domain":"jamesdinh.me",src:"https://plausible.jamesdinh.me/js/script.outbound-links.js"}));t.default=()=>n.createElement(s.Z,null)}}]);
+//# sourceMappingURL=component---src-pages-index-js-3c4c8eea101f81f88b30.js.map
