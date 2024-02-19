@@ -1,8 +1,26 @@
-import React from "react";
+import React, {useEffect} from "react";
 import styled from "styled-components";
 import Resume from "../../static/Resume.pdf";
 
 const Footer = () => {
+    useEffect(() => {
+        fetch("https://plausible.io/api/v1/stats/realtime/visitors?site_id=jamesdinh.me", {
+            method: "GET",
+            headers: {
+                "mode": "cors"
+            }
+        })
+        .then((res) => {
+            res.json();
+        })
+        .then((data) => {
+            console.log(data);
+        })
+        .catch((e) => {
+            console.log(e);
+        });
+    });
+
     return (
         <>
             <FooterContainer>

@@ -174,7 +174,7 @@ const NavLink = styled(Link)`
   text-decoration: none;
   padding: 0 1rem;
   height: 100%;
-  color: rgb(204, 214, 246);
+  color: rgb(182, 149, 236);
   cursor: pointer;
   transition: all 0.3s ease-out;
 
@@ -184,25 +184,30 @@ const NavLink = styled(Link)`
 
   @media (max-width: 768px) {
     line-height: 40px;
+    width: 100%;
+    text-align: center;
+    justify-content: center;
   }
 `
 
 const NavMenu = styled.div`
   display: flex;
   align-items: center;
+  column-gap: 5px;
 
   @media (max-width: 768px) {
+    transition: all 0.5s;
     text-align: center;
-    width: 100%;
     max-height: 0;
     flex-flow: column;
     overflow: hidden;
     transition: max-height .2s ease-out;
-
+    background-color: #362441;
+    margin: 10px 10px 0;
+    border-radius: 10px;
     &.shown {
       position: relative;
       max-height: 300px;
-      transition: 0.5s;
     }
   }
 `
