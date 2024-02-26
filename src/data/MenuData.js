@@ -28,7 +28,7 @@ export const educationData = [
         ],
         date: "Sep 2023 - present",
         description: [
-            "GPA - 3.95",
+            "GPA - 4.0",
             "Studying to transfer to the University of California for Data Science B.S.",
             "Coursework - Calculus, Statistics, Microeconomics, Data Abstraction & Structures, Discrete Mathematics, R Programming, Python Programming, Differential Equations, Linear Algebra",
             "Clubs - VSA, Badminton Club, Developer's Guild, DA Web Developers"
@@ -74,9 +74,9 @@ export const experienceData = [
         subtitle: "Web Development Intern",
         date: "Aug 2023 - present",
         description: [
-            "Worked directly with clients to produce, develop, and maintain websites using WordPress, HTML/CSS, and JS",
-            "Collaborated with frontend developers and UI designers to accurately construct 6+ websites on WordPress",
-            "Actively improved web development skills and soft skills such as project development and team leadership",
+            "Worked directly with clients to produce, develop, and maintain websites using WordPress, JavaScript, and PHP",
+            "Collaborated with frontend developers and UI designers to coordinate web design mockups in Figma and implement Github CI/CD pipelines",
+            "Re-designed TedxSantaCruz website to dynamically display speakers and volunteers using WordPress ACF",
         ],
         link: [
             {
