@@ -3,24 +3,35 @@ import { useState, useEffect } from "react"
 import { Link } from "gatsby"
 import styled from "styled-components"
 import { menuData } from "../data/MenuData"
+import * as palette from "./styles/GlobalStyles"
 import { StaticImage } from "gatsby-plugin-image"
+import Resume from "../../static/Resume.pdf"
 
 const isBrowser = typeof window !== "undefined"
 
 const NavBar = () => {
-  const [colorChange, setColorchange] = useState(false)
+  const [scrolled, setScrolled] = useState(false)
+  const [addAnimation, setAddAnimation] = useState(false)
   const [openMenu, setOpenMenu] = useState(false) // menu btn
 
   const changeNavbarColor = () => {
     if (window.scrollY >= 20) {
-      setColorchange(true)
+      setAddAnimation(true)
+      setScrolled(true)
     } else {
-      setColorchange(false)
+      setScrolled(false)
     }
   }
+  const checkIfAnchored = () => {
+    if (window.scrollY >= 20) {
+      setAddAnimation(true)
+      setScrolled(true)
+    }
+  }
+
   useEffect(() => {
     if (isBrowser) {
-      changeNavbarColor() // Call the function once when the component mounts
+      checkIfAnchored() // Call the function once when the component mounts
       window.addEventListener("scroll", changeNavbarColor)
     }
 
@@ -34,7 +45,7 @@ const NavBar = () => {
   var openNavClick = false
   var nav_is_open = false // boolean if click on nav menu is initial click to open
 
-  const handleChange = event => {
+  const handleChange = () => {
     if (!openMenu) {
       setOpenMenu(true)
       nav_is_open = true
@@ -66,7 +77,11 @@ const NavBar = () => {
 
   return (
     <>
-      <Nav className={`nav-container ${colorChange ? "scrolled" : "top"}`}>
+      <Nav
+        className={`nav-container ${scrolled ? "scrolled" : "top"} ${
+          addAnimation ? "animated" : ""
+        }`}
+      >
         <NavLogoA href="/">
           <StaticImage style={Logo} src="../images/jd.png" alt="logo" />
         </NavLogoA>
@@ -86,6 +101,9 @@ const NavBar = () => {
               {item.title}
             </NavLink>
           ))}
+          <LinkButton href={Resume} target="_blank" rel="noopener noreferrer">
+            Résumé
+          </LinkButton>
         </NavMenu>
       </Nav>
     </>
@@ -107,10 +125,11 @@ const Nav = styled.nav`
   top: 0;
   left: 0;
   align-items: center;
-  animation: fadeout-from-top 0.3s ease;
-
   &.top {
-    box-shadow: none;
+    animation: fade-only-top 0.3s ease;
+  }
+  &.top.animated {
+    animation: fadeout-from-top 0.3s ease;
   }
   &.scrolled {
     background-color: #291e2f;
@@ -119,16 +138,20 @@ const Nav = styled.nav`
     border-radius: 10px;
     column-gap: 10px;
     width: fit-content;
-    animation: fadein-from-top 0.3s ease;
     justify-content: center;
     left: 50%;
     top: 10px;
     transform: translate(-50%, 0);
   }
+  &.scrolled.animated {
+    animation: fadein-from-top 0.3s ease;
+  }
 
   @media only screen and (max-width: 768px) {
     & {
       display: block;
+    }
+    &.top.animated {
       animation: unset;
     }
     &.scrolled {
@@ -141,6 +164,17 @@ const Nav = styled.nav`
       width: 100%;
       transform: unset;
     }
+    &.scrolled.animated {
+      animation: unset;
+    }
+  }
+  @keyframes fade-only-top {
+    0% {
+      transform: translate(0, -60px);
+    }
+    100% {
+      transform: translate(0, 0);
+    }
   }
 
   @keyframes fadein-from-top {
@@ -151,6 +185,7 @@ const Nav = styled.nav`
       box-shadow: unset;
       width: 100%;
       transform: translate(-50%, 0);
+      top: 0;
     }
     30% {
       transform: translate(-50%, -60px);
@@ -279,17 +314,44 @@ const NavMenu = styled.div`
     flex-flow: column;
     overflow: hidden;
     transition: max-height 0.2s ease-out;
-    margin: 10px 0 0;
     background-color: #362441;
     border-radius: 10px;
     &.shown {
       position: relative;
       max-height: 300px;
+      padding: 0 0 10px;
     }
   }
 `
 
+const LinkButton = styled.a`
+  text-decoration: none;
+  color: inherit;
+  font-size: inherit;
+  font-family: inherit;
+  border-radius: 5px;
+  transition: all 0.3s ease-out;
+  padding: 7px 10px;
+  margin-right: 10px;
+  background-color: #ae9ee908;
+  color: ${palette.titleColor};
+  border: 1px solid ${palette.titleColor};
+  cursor: pointer;
+
+  &:hover {
+    border: 1px dashed #cbbff5;
+    color: #cbbff5;
+    background-color: #ae9ee91a;
+  }
+
+  @media only screen and (max-width: 768px) {
+    margin-right: 0;
+  }
+`
+
 const Logo = {
+  minWidth: "50px",
+  minHeight: "50px",
   maxWidth: "50px",
   maxHeight: "50px",
 }

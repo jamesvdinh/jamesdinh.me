@@ -119,7 +119,7 @@ const LinkButton = styled.a`
   color: inherit;
   font-size: inherit;
   font-family: inherit;
-  border-radius: 20px;
+  border-radius: 5px;
   transition: all 0.3s ease-out;
   padding: 7px 10px;
   margin-right: 10px;
