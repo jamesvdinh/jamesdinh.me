@@ -284,14 +284,19 @@ const NavLink = styled(Link)`
   display: inline-flex;
   align-items: center;
   text-decoration: none;
-  padding: 0 1rem;
+  padding: 0.1rem 0.3rem;
+  margin: 0 0.7rem;
   height: 100%;
   color: rgb(182, 149, 236);
   cursor: pointer;
-  transition: all 0.3s ease-out;
-
+  background: linear-gradient(#9375ff 0 0) no-repeat calc(200% - var(--p, 0%))
+    100% / 200% var(--p, 0.08em);
+  transition: 0.2s var(--t, 0s),
+    background-position 0.1s calc(0.3s - var(--t, 0s));
   &:hover {
-    color: #9375ff;
+    --p: 100%;
+    --t: 0.2s;
+    color: #fff;
   }
 
   @media (max-width: 768px) {

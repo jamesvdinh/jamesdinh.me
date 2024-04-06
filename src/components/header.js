@@ -39,8 +39,8 @@ const Header = () => {
           ></Typewriter>
         </Title>
         <Description>
-          When I'm not focused on schoolwork, you can find me building websites,
-          practicing piano, or playing chess!
+          Current intern at the Digital NEST and student at De Anza College. DM
+          me if you love music!
         </Description>
         <HeaderLinks>
           <LinkButton href={Resume} target="_blank" rel="noopener noreferrer">
