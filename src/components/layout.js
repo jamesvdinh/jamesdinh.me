@@ -32,15 +32,15 @@ const Layout = ({ children }) => {
   return (
     <>
       <GlobalStyle />
-        <NavBar siteTitle={data.site.siteMetadata?.title || `Title`} />
-        <Header />
-        <MainContainer>
-          <Education />
-          <Experience />
-          <Projects />
-          <Distinctions />
-        </MainContainer>
-        <Footer />
+      <NavBar siteTitle={data.site.siteMetadata?.title || `Title`} />
+      <Header />
+      <MainContainer>
+        <Experience />
+        <Education />
+        <Projects />
+        <Distinctions />
+      </MainContainer>
+      <Footer />
     </>
   )
 }
