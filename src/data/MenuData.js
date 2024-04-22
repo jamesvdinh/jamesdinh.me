@@ -21,13 +21,22 @@ export const headerLinks = [
 
 export const educationData = [
   {
+    img: "ucberkeley.png",
+    title: "UC Berkeley",
+    subtitle: ["B.A. in Data Science"],
+    date: "Aug 2024 - TBD",
+    description: [
+      "Data Science major with an emphasis in Machine Learning and Math Modeling",
+      "En route to complete a Bachelor's in Arts degree by 2026",
+    ],
+  },
+  {
     img: "deanza.png",
     title: "De Anza College",
     subtitle: ["Computer Science Transfer"],
     date: "Sep 2023 - present",
     description: [
       "GPA - 4.0",
-      "Studying to transfer to the University of California for Data Science B.S.",
       "Coursework - Calculus, Statistics, Microeconomics, Data Abstraction & Structures, Discrete Mathematics, R Programming, Python Programming, Differential Equations, Linear Algebra",
       "Clubs - VSA, Badminton Club, Developer's Guild, DA Web Developers",
     ],

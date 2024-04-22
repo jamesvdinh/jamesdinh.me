@@ -32,7 +32,10 @@ const Experience = () => {
       <ExperienceContainer>
         <ButtonContainer>
           {experienceData.map((item, index) => (
-            <ButtonFlex key={index}>
+            <ButtonFlex
+              key={index}
+              className={isActive === index ? "active" : ""}
+            >
               <Button
                 onClick={() => setIsActive(index)}
                 className={isActive === index ? "active" : ""}
@@ -105,8 +108,8 @@ const ButtonContainer = styled.div`
   border-right: 2px solid #5c527f;
   display: flex;
   flex-flow: column wrap;
-  padding-right: 1rem;
   max-width: 200px;
+  min-width: 150px;
 
   @media (max-width: 500px) {
     display: inline-flex;
@@ -117,6 +120,7 @@ const ButtonContainer = styled.div`
     border-right: unset;
     padding-right: unset;
     max-width: unset;
+    min-width: unset;
   }
 `
 
@@ -125,11 +129,25 @@ const ButtonFlex = styled.div`
   justify-content: right;
   display: flex;
   margin: 4px 0;
+  position: relative;
+  padding-right: 1rem;
+  transition: all 0.05s ease;
+  right: -1.5px;
+
+  &.active {
+    border-right: 2px solid ${palette.accColor};
+  }
 
   @media (max-width: 500px) {
     justify-content: center;
     max-width: 200px;
     margin: 3px 5px;
+    padding-right: unset;
+    right: unset;
+
+    &.active {
+      border-right: none;
+    }
   }
 `
 
@@ -145,6 +163,8 @@ const Button = styled.button`
   transition: all 0.3s ease-out;
   padding: 5px 7px;
   cursor: pointer;
+  min-width: fit-content;
+  min-height: 35px;
 
   @keyframes easeHighlight {
     0% {
@@ -170,6 +190,7 @@ const Button = styled.button`
   @media (max-width: 500px) {
     text-align: center;
     background-color: #ae9ee908;
+    min-width: unset;
   }
 `
 

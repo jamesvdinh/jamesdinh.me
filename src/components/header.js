@@ -24,9 +24,9 @@ const Header = () => {
                 .changeDelay(50)
                 .changeDeleteSpeed(25)
                 .typeString("I'm a ")
-                .typeString("Computer Science Student.")
+                .typeString("Data Science Student.")
                 .pauseFor(1000)
-                .deleteChars(25)
+                .deleteChars(21)
                 .pauseFor(500)
                 .typeString("Web Developer.")
                 .pauseFor(1000)
@@ -39,8 +39,9 @@ const Header = () => {
           ></Typewriter>
         </Title>
         <Description>
-          Current intern at the Digital NEST and student at De Anza College. DM
-          me if you love music!
+          Current frontend developer intern at Digital NEST and incoming Data
+          Science student at UC Berkeley. As an open source contributor, I am
+          dedicated to committing and pushing innovative ideas.
         </Description>
         <HeaderLinks>
           <LinkButton href={Resume} target="_blank" rel="noopener noreferrer">
@@ -73,7 +74,7 @@ const ParentContainer = styled.header`
 
 const Greeting = styled.p`
   font-size: 22px;
-  color: #9375ff;
+  color: ${palette.accColor};
 `
 const Name = styled.h1`
   display: flex;
@@ -103,7 +104,7 @@ const Title = styled.h2`
 const Description = styled.p`
   margin: 30px 0 10px;
   font-size: 20px;
-  max-width: 500px;
+  max-width: 610px;
   line-height: 1.3;
 `
 
