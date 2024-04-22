@@ -40,7 +40,7 @@ const Header = () => {
         </Title>
         <Description>
           Current frontend developer intern at Digital NEST and incoming Data
-          Science student at UC Berkeley. As an open source contributor, I am
+          Science student at UC Berkeley. As an open source contributor, I'm
           dedicated to committing and pushing innovative ideas.
         </Description>
         <HeaderLinks>
