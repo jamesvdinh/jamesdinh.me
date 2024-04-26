@@ -189,6 +189,36 @@ export const experienceData = [
 
 export const projectData = [
   {
+    title: "ParkRX Monterey County Search Feature Map",
+    url: "https://parkrxmontereycounty.org/#parks",
+    subtitle: "Custom-coded Map with Search Filters",
+    tags: [
+      "Mapbox",
+      "WordPress",
+      "JavaScript",
+      "jQuery",
+      "PHP",
+      "XML",
+      "AJAX",
+      "HTML/CSS",
+    ],
+    img: ["blueparkrx.png"],
+    description:
+      "A custom map that displays park information and allows Monterey County residents to search parks in a radius, by name, by hours, alphabetically, by park features, and give public transit routes.",
+    link: [
+      {
+        name: "Demo",
+        url: "https://parkrxmontereycounty.org/#parks",
+        size: 22,
+      },
+      {
+        name: "Website",
+        url: "https://parkrxmontereycounty.org/",
+        size: 22,
+      },
+    ],
+  },
+  {
     title: "ASL Hand Recognition App",
     url: "https://jamesvdinh.github.io/asl-app/",
     subtitle: "Computer Vision Sign Lanugage Translator",
@@ -202,7 +232,7 @@ export const projectData = [
     ],
     img: ["asl-pic-1.png", "asl-pic-2.jpg"],
     description:
-      "A web application that assists Deaf/Hard of Hearing individuals in learning American Sign Language (ASL). Utilized MediaPipe and TensorFlow to train a model using a dataset of 87,000 images from the NIDCD. Implemented model in a JavaScript environment to recognize ASL letters from a computer webcam. Frontend- JavaScript, HTML/CSS. Backend- TensorFlow, MediaPipe, Python.",
+      "A web application that assists Deaf/Hard of Hearing individuals in learning American Sign Language (ASL). Utilized MediaPipe and TensorFlow to train a model using a dataset of 87,000 images from the NIDCD. Implemented model in a JavaScript environment to recognize ASL letters from a computer webcam.",
     link: [
       {
         name: "Demo",
@@ -227,43 +257,13 @@ export const projectData = [
     ],
   },
   {
-    title: "BlueParkRX Dynamic Map",
-    url: "https://parkrxmontereycounty.org/#parks",
-    subtitle: "Custom-coded Map with Proximity and Filter Functionality",
-    tags: [
-      "Mapbox",
-      "WordPress",
-      "JavaScript",
-      "jQuery",
-      "PHP",
-      "XML",
-      "AJAX",
-      "HTML/CSS",
-    ],
-    img: ["blueparkrx.png"],
-    description:
-      "A custom map that displays park information and allows Monterey Park residents to search parks in a radius, by name, by hours, alphabetically, by park features, and give public transit routes. Frontend- JavaScript, HTML/CSS, WordPress. Backend- PHP, jQuery, Fetch API",
-    link: [
-      {
-        name: "Demo",
-        url: "https://parkrxmontereycounty.org/#parks",
-        size: 22,
-      },
-      {
-        name: "Website",
-        url: "https://parkrxmontereycounty.org/",
-        size: 22,
-      },
-    ],
-  },
-  {
-    title: "Project Development Search Tool",
+    title: "Catalyze SV Project Filter Search Tool",
     url: "https://www.shapesv.org/projects",
     subtitle: "Dynamic Search Menu using Fetch API and JS",
     tags: ["Wix", "Velo", "HTML/CSS", "JavaScript"],
     img: ["catalyzesv-1.png"],
     description:
-      "A search tool designed for users to specify filters and display a list of queried projects for Shape SV. Used GET fetch to retrieve data from Google Sheets database to display list of dynamic projects using iframe. Frontend- JavaScript, HTML/CSS, Wix. Backend- Fetch API.",
+      "A search tool designed for users to specify filters and display a list of queried projects for Shape SV. Used GET fetch to retrieve data from Google Sheets database to display list of dynamic projects using iframe.",
     link: [
       {
         name: "Demo",
@@ -284,7 +284,7 @@ export const projectData = [
     tags: ["Flask API", "Python", "React", "JavaScript"],
     img: ["roomie-finder.png"],
     description:
-      "An app that takes user-input criteria and outputs potential roomates that closely matches that criteria using a scoring-based algorithm. Team submission for DA Hacks 2023. Frontend- React, Javascript. Backend- Flask API, Python, Fetch API.",
+      "An app that takes user-input criteria and outputs potential roomates that closely matches that criteria using a scoring-based algorithm. Team submission for De Anza Hacks 2023.",
     link: [
       {
         name: "Demo",
