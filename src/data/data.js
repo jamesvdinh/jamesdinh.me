@@ -26,8 +26,9 @@ export const educationData = [
     subtitle: ["B.A. in Data Science"],
     date: "Aug 2024 - TBD",
     description: [
-      "Data Science major with an emphasis in Machine Learning and Math Modeling",
-      "En route to complete a Bachelor's in Arts degree by 2026",
+      "Data Science major with an emphasis in Business and Industrial Analytics",
+      "Relevant Coursework - Probability for Data Science, Intro to AI/ML, Machine Learning and Data Analytics, Intro to Financial Engineering",
+      "En route to complete a Bachelor's in Arts degree in 2026",
     ],
   },
   {
@@ -37,7 +38,7 @@ export const educationData = [
     date: "Sep 2023 - present",
     description: [
       "GPA - 4.0",
-      "Coursework - Calculus, Statistics, Microeconomics, Data Abstraction & Structures, Discrete Mathematics, R Programming, Python Programming, Differential Equations, Linear Algebra",
+      "Relevant Coursework - Calculus, Statistics, Microeconomics, Data Abstraction & Structures, Discrete Mathematics, R Programming, Python Programming, Differential Equations, Linear Algebra",
       "Clubs - VSA, Badminton Club, Developer's Guild, DA Web Developers",
     ],
   },
@@ -53,7 +54,7 @@ export const educationData = [
     description: [
       "GPA - 3.95",
       "Dual Enrollment while in High School",
-      "Coursework - Art, C#, C++, Calculus, Discrete Structures, General Chemistry, HTML, Human Anatomy & Physiology, Humanities, Java, Photoshop, Physics, Psychology, Public Speaking, Python, Spanish, UNIX/Linux",
+      "Relevant Coursework - Art, C#, C++, Calculus, Discrete Structures, General Chemistry, HTML, Human Anatomy & Physiology, Humanities, Java, Photoshop, Physics, Psychology, Public Speaking, Python, Spanish, UNIX/Linux",
       "Clubs - Computer Science Club (president), GEAR Club",
     ],
   },

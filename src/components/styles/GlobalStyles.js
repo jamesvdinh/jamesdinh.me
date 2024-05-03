@@ -22,7 +22,7 @@ export const GlobalStyle = createGlobalStyle`
     }
 `
 
-export const accColor = "#9375ff"
+export const accent = "#9375ff"
 export const bgColor = "#261C2C"
 export const headingColor = "#6E85B2"
 export const titleColor = "#b399dc"

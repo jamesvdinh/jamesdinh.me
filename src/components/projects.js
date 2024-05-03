@@ -1,7 +1,7 @@
 import React, { useState } from "react"
 import styled from "styled-components"
 import * as palette from "./styles/GlobalStyles"
-import { projectData } from "../data/MenuData"
+import { projectData } from "../data/data"
 import { Splide, SplideSlide } from "@splidejs/react-splide"
 import "@splidejs/react-splide/css"
 import { GatsbyImage } from "gatsby-plugin-image"

@@ -1,7 +1,7 @@
 import React, { useState } from "react"
 import styled from "styled-components"
 import * as palette from "./styles/GlobalStyles"
-import { educationData } from "../data/MenuData"
+import { educationData } from "../data/data"
 import { GatsbyImage } from "gatsby-plugin-image"
 import { graphql, useStaticQuery } from "gatsby"
 
@@ -112,9 +112,9 @@ const ButtonContainer = styled.div`
   min-width: 150px;
 
   @media (max-width: 500px) {
-    display: inline-flex;
-    justify-content: center;
-    flex-direction: row;
+    flex-flow: row nowrap;
+    overflow-x: auto;
+    overflow-y: hidden;
     border-bottom: 2px solid #5c527f;
     margin-bottom: 1rem;
     border-right: unset;
@@ -135,18 +135,20 @@ const ButtonFlex = styled.div`
   right: -1.5px;
 
   &.active {
-    border-right: 2px solid ${palette.accColor};
+    border-right: 2px solid ${palette.accent};
   }
 
   @media (max-width: 500px) {
     justify-content: center;
-    max-width: 200px;
+    min-width: fit-content;
     margin: 3px 5px;
     padding-right: unset;
     right: unset;
 
     &.active {
       border-right: none;
+      bottom: -1.5px;
+      border-bottom: 2px solid ${palette.accent};
     }
   }
 `
@@ -233,6 +235,9 @@ const Date = styled.h4`
 const Description = styled.ul`
   margin-top: 10px;
   margin-left: 30px;
+  display: flex;
+  flex-flow: column nowrap;
+  gap: 3px;
 `
 
 const Image = styled.div`

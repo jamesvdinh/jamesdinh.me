@@ -3,7 +3,7 @@ import styled from "styled-components"
 import Typewriter from "typewriter-effect"
 import * as palette from "./styles/GlobalStyles"
 import LinkIcon from "./linkicon"
-import { headerLinks } from "../data/MenuData"
+import { headerLinks } from "../data/data"
 import Resume from "../../static/Resume.pdf"
 
 const Header = () => {
@@ -39,9 +39,9 @@ const Header = () => {
           ></Typewriter>
         </Title>
         <Description>
-          Current frontend developer intern at Digital NEST and incoming Data
-          Science student at UC Berkeley. As an open source contributor, I'm
-          dedicated to committing and pushing innovative ideas.
+          Frontend developer intern at Digital NEST and incoming Data Science
+          student at UC Berkeley. As an open source contributor, I'm committed
+          to pushing innovative ideas.
         </Description>
         <HeaderLinks>
           <LinkButton href={Resume} target="_blank" rel="noopener noreferrer">
@@ -74,7 +74,7 @@ const ParentContainer = styled.header`
 
 const Greeting = styled.p`
   font-size: 22px;
-  color: ${palette.accColor};
+  color: ${palette.accent};
 `
 const Name = styled.h1`
   display: flex;
