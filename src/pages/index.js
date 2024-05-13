@@ -3,9 +3,7 @@ import * as React from "react"
 import Layout from "../components/layout"
 import Seo from "../components/seo"
 
-const IndexPage = () => (
-  <Layout></Layout>
-)
+const IndexPage = () => <Layout></Layout>
 
 /**
  * Head export to define metadata for the page
@@ -14,8 +12,12 @@ const IndexPage = () => (
  */
 export const Head = () => (
   <>
-    <Seo title="Computer Science Student" />
-    <script defer="" data-domain="jamesdinh.me" src="https://plausible.jamesdinh.me/js/script.outbound-links.js"></script>
+    <Seo title="Data Science Student" />
+    <script
+      defer=""
+      data-domain="jamesdinh.me"
+      src="https://plausible.jamesdinh.me/js/script.outbound-links.js"
+    ></script>
   </>
 )
 
