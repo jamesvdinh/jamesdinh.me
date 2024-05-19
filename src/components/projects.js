@@ -84,7 +84,7 @@ const Projects = () => {
                     )
                   }
                 }
-                return null // failsafe for null values
+                return null // failsafe for null valuess
               })}
             </SlideShow>
             <Description>{item.description}</Description>
