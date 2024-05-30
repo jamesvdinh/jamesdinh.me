@@ -26,8 +26,8 @@ export const educationData = [
     subtitle: ["B.A. in Data Science"],
     date: "Aug 2024 - TBD",
     description: [
-      "Data Science major with an emphasis in Business and Industrial Analytics",
-      "Relevant Coursework - Probability for Data Science, Intro to AI/ML, Machine Learning and Data Analytics, Intro to Financial Engineering",
+      "Studying Data Science with a domain emphasis in Applied Mathematics and Modeling",
+      "Relevant Coursework - Data Structures, Probability & Random Processes, AI/ML, Linear Modeling, Natural Language Processing, Deep Neural Networks, Optimization Models",
       "En route to complete a Bachelor's in Arts degree in 2026",
     ],
   },
