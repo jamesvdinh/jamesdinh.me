@@ -28,7 +28,7 @@ export const educationData = [
     description: [
       "Studying Data Science with a domain emphasis in Applied Mathematics and Modeling",
       "Relevant Coursework - Data Structures, Probability & Random Processes, AI/ML, Linear Modeling, Natural Language Processing, Deep Neural Networks, Optimization Models",
-      "En route to complete a Bachelor's in Arts degree in 2026",
+      "Clubs/Orgs: VSA, Cal VSA Lion Dance, Origami Club",
     ],
   },
   {
@@ -78,11 +78,11 @@ export const experienceData = [
     img: "digitalnest.png",
     title: "Digital NEST",
     subtitle: "Web Development Intern",
-    date: "Aug 2023 - present",
+    date: "Aug 2023 - Aug 2024",
     description: [
-      "Worked directly with clients to produce, develop, and maintain websites using WordPress, JavaScript, and PHP",
-      "Collaborated with frontend developers and UI designers to coordinate web design mockups in Figma and implement Github CI/CD pipelines",
-      "Re-designed TedxSantaCruz website to dynamically display speakers and volunteers using WordPress ACF",
+      "Coordinated with clients to produce, develop, and maintain websites using WordPress, JavaScript, and PHP",
+      "Developed a dynamic feature map for ParkRX Monterey County to bolster park-going activity from Monterey County residents",
+      "Delegated development workloads on Asana, GitHub, and Figma ",
     ],
     link: [
       {
@@ -175,8 +175,6 @@ export const experienceData = [
     subtitle: "Foods & Merch Associate",
     date: "Sep - Dec 2021",
     description: [
-      "Worked as a Foods Associate at Castroville Corners (South Side)",
-      "Worked as a Sales Associate at Halls (South Side), Green Barn (North Side), Rose Horse (South Side), Scooter Bug (South Side)",
       "Gained cashier and customer service experience as well as assisted in managing shifts and logistics",
     ],
     link: [
@@ -189,6 +187,22 @@ export const experienceData = [
 ]
 
 export const projectData = [
+  {
+    title: "LLM Stock Trading Benchmarker",
+    url: "https://github.com/vkethana/calhacks-24",
+    subtitle: "Cal Hacks 11.0 Submission",
+    tags: ["Python", "React", "TypeScript", "NodeJS", "Groq", "Sass"],
+    img: ["llm_stock_trading.png"],
+    description:
+      "A benchmarker for testing the profit net loss (PNL) of common Large Language Models (LLMs) such as ChatGPT and Llama when prompted to buy/sell stock trades based on news headlines from 2022. Built using Groq for optimized agent/model inference calls and TS/React for the dashboard.",
+    link: [
+      {
+        name: "GitHub",
+        url: "https://github.com/vkethana/calhacks-24",
+        size: 22,
+      },
+    ],
+  },
   {
     title: "ParkRX Monterey County Search Feature Map",
     url: "https://parkrxmontereycounty.org/#parks",
@@ -282,7 +296,7 @@ export const projectData = [
     title: "College Roommate Finder App",
     url: "https://jamesvdinh.github.io/roomie-finder/",
     subtitle: "Criteria-based Attribute Sort using Flask API and React",
-    tags: ["Flask API", "Python", "React", "JavaScript"],
+    tags: ["Flask API", "Python", "React", "JavaScript", "NodeJS"],
     img: ["roomie-finder.png"],
     description:
       "An app that takes user-input criteria and outputs potential roomates that closely matches that criteria using a scoring-based algorithm. Team submission for De Anza Hacks 2023.",

@@ -39,9 +39,8 @@ const Header = () => {
           ></Typewriter>
         </Title>
         <Description>
-          Frontend developer intern at Digital NEST and incoming Data Science
-          student at UC Berkeley. As an open source contributor, I'm committed
-          to pushing innovative ideas.
+          Full Stack Dev and Data Science student at UC Berkeley. As an open
+          source contributor, I'm committed to pushing innovative ideas.
         </Description>
         <HeaderLinks>
           <LinkButton href={Resume} target="_blank" rel="noopener noreferrer">
