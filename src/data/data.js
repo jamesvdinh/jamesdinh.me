@@ -191,7 +191,7 @@ export const projectData = [
     title: "LLM Stock Trading Benchmarker",
     url: "https://github.com/vkethana/calhacks-24",
     subtitle: "Cal Hacks 11.0 Submission",
-    tags: ["Python", "React", "TypeScript", "NodeJS", "Groq", "Sass"],
+    tags: ["Flask", "Python", "React", "TypeScript", "NodeJS", "Groq", "Sass"],
     img: ["llm_stock_trading.png"],
     description:
       "A benchmarker for testing the profit net loss (PNL) of common Large Language Models (LLMs) such as ChatGPT and Llama when prompted to buy/sell stock trades based on news headlines from 2022. Built using Groq for optimized agent/model inference calls and TS/React for the dashboard.",
