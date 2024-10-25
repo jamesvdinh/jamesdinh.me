@@ -48,7 +48,7 @@ export const educationData = [
     subtitle: [
       "A.S. in Computer Programming",
       "A.A. in Natural Science",
-      "A.A. in Liberal Arts",
+      "A.A. in Liberal Arts: Multiple Subjects",
     ],
     date: "Aug 2019 - May 2023",
     description: [
