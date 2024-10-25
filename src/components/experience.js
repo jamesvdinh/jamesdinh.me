@@ -73,6 +73,18 @@ const Experience = () => {
               <li key={index}>{item}</li>
             ))}
           </Description>
+          {experienceData[isActive].quote && (
+            <QuoteContainer>
+              <QuoteAuthor>{experienceData[isActive].quote.author}</QuoteAuthor>
+              <QuoteTitle>{experienceData[isActive].quote.title}</QuoteTitle>
+              <QuoteText>
+                {experienceData[isActive].quote.text.map((item, index) => (
+                  <QtPara key={index}>{item}</QtPara>
+                ))}
+              </QuoteText>
+              <QuoteAttr>{experienceData[isActive].quote.attr}</QuoteAttr>
+            </QuoteContainer>
+          )}
           <LinkContainer>
             {experienceData[isActive].link.map((item, index) => (
               <LinkButton href={item.url} key={index} target="_blank">
@@ -237,6 +249,41 @@ const Description = styled.ul`
   display: flex;
   flex-flow: column nowrap;
   gap: 3px;
+`
+
+const QuoteContainer = styled.div`
+  margin: 9px;
+  padding-left: 20px;
+  display: flex;
+  flex-flow: column nowrap;
+  border-left: 2px solid gray;
+  border-radius: 2px 0 0 2px;
+`
+
+const QuoteAuthor = styled.h2`
+  font-size: 20px;
+  font-weight: normal;
+`
+
+const QuoteTitle = styled.h3`
+  font-size: 16px;
+  font-weight: normal;
+  margin-bottom: 10px;
+`
+
+const QuoteText = styled.div`
+  display: flex;
+  flex-flow: column nowrap;
+  gap: 10px;
+`
+
+const QtPara = styled.p`
+  font-size: 14px;
+`
+
+const QuoteAttr = styled.p`
+  margin: 10px 0;
+  font-size: 10px;
 `
 
 const Image = styled.div`

@@ -84,6 +84,15 @@ export const experienceData = [
       "Developed a dynamic feature map for ParkRX Monterey County to bolster park-going activity from Monterey County residents",
       "Delegated development workloads on Asana, GitHub, and Figma ",
     ],
+    quote: {
+      author: "Alex Rodriguez",
+      title: "Web Development Manager | DevOps Engineer",
+      text: [
+        "I had the pleasure of working with James Dinh during his internship as his direct supervisor, and I can't emphasize enough how critical he was to our team. James consistently came through in clutch moments, regardless of the project or the tech stack. His ability to dive into unfamiliar technologies and deliver outstanding results is a testament to his adaptability and quick learning skills.",
+        "Beyond his technical prowess, James, along with his cat, brought a fantastic sense of humor and a strong work ethic to our team. He was always the one to lighten the mood while also being one of the most dependable team members. James has a rare combination of skills and personality that makes him an invaluable asset to any team. I have no doubt that he'll continue to excel in his career.",
+      ],
+      attr: "Personal Recommendation (LinkedIn), Aug 2024",
+    },
     link: [
       {
         name: "Website",
