@@ -4,6 +4,8 @@ import * as palette from "./styles/GlobalStyles"
 import { experienceData } from "../data/data"
 import { GatsbyImage } from "gatsby-plugin-image"
 import { graphql, useStaticQuery } from "gatsby"
+import { LiaQuoteLeftSolid, LiaQuoteRightSolid } from "react-icons/lia";
+
 
 const Experience = () => {
   const [isActive, setIsActive] = useState(0)
@@ -75,13 +77,14 @@ const Experience = () => {
           </Description>
           {experienceData[isActive].quote && (
             <QuoteContainer>
-              <QuoteAuthor>{experienceData[isActive].quote.author}</QuoteAuthor>
-              <QuoteTitle>{experienceData[isActive].quote.title}</QuoteTitle>
+              <LiaQuoteLeftSolid size={20} />
               <QuoteText>
                 {experienceData[isActive].quote.text.map((item, index) => (
                   <QtPara key={index}>{item}</QtPara>
                 ))}
               </QuoteText>
+                <LiaQuoteRightSolid style={rightQuote} size={20} />
+              <QuoteAuthor>- {experienceData[isActive].quote.author}, {experienceData[isActive].quote.title}</QuoteAuthor>
               <QuoteAttr>{experienceData[isActive].quote.attr}</QuoteAttr>
             </QuoteContainer>
           )}
@@ -261,28 +264,27 @@ const QuoteContainer = styled.div`
 `
 
 const QuoteAuthor = styled.h2`
-  font-size: 20px;
+  font-size: 14px;
   font-weight: normal;
-`
-
-const QuoteTitle = styled.h3`
-  font-size: 16px;
-  font-weight: normal;
-  margin-bottom: 10px;
 `
 
 const QuoteText = styled.div`
   display: flex;
   flex-flow: column nowrap;
   gap: 10px;
+  color: ${palette.subtitleColor};
 `
 
 const QtPara = styled.p`
   font-size: 14px;
 `
 
+const rightQuote = {
+  marginLeft: "auto",
+}
+
 const QuoteAttr = styled.p`
-  margin: 10px 0;
+  margin: 5px 0;
   font-size: 10px;
 `
 
