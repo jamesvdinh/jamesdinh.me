@@ -5,7 +5,6 @@ import styled from "styled-components"
 import { menuData } from "../data/data"
 import * as palette from "./styles/GlobalStyles"
 import { StaticImage } from "gatsby-plugin-image"
-import Resume from "../../static/Resume.pdf"
 
 const isBrowser = typeof window !== "undefined"
 
@@ -101,7 +100,7 @@ const NavBar = () => {
               {item.title}
             </NavLink>
           ))}
-          <LinkButton href={Resume} target="_blank" rel="noopener noreferrer">
+          <LinkButton href="resume" target="_blank" rel="noopener noreferrer">
             Résumé
           </LinkButton>
         </NavMenu>
