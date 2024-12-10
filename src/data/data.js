@@ -3,7 +3,6 @@ export const menuData = [
   { title: "Education", link: "#education" },
   { title: "Projects", link: "#projects" },
   { title: "Distinctions", link: "#distinctions" },
-  // {title: "Skills", link: "#skills"},
 ]
 
 export const headerLinks = [
@@ -19,65 +18,11 @@ export const headerLinks = [
   },
 ]
 
-export const educationData = [
-  {
-    img: "ucberkeley.png",
-    title: "UC Berkeley",
-    subtitle: ["B.A. in Data Science"],
-    date: "Aug 2024 - TBD",
-    description: [
-      "Studying Data Science with a domain emphasis in Applied Mathematics and Modeling",
-      "Relevant Coursework - Data Structures, Probability & Random Processes, AI/ML, Linear Modeling, Natural Language Processing, Deep Neural Networks, Optimization Models",
-      "Clubs/Orgs: VSA, Cal VSA Lion Dance, Origami Club",
-    ],
-  },
-  {
-    img: "deanza.png",
-    title: "De Anza College",
-    subtitle: ["Computer Science Transfer"],
-    date: "Sep 2023 - present",
-    description: [
-      "GPA - 4.0",
-      "Relevant Coursework - Calculus, Statistics, Microeconomics, Data Abstraction & Structures, Discrete Mathematics, R Programming, Python Programming, Differential Equations, Linear Algebra",
-      "Clubs - VSA, Badminton Club, Developer's Guild, DA Web Developers",
-    ],
-  },
-  {
-    img: "gavilan.png",
-    title: "Gavilan College",
-    subtitle: [
-      "A.S. in Computer Programming",
-      "A.A. in Natural Science",
-      "A.A. in Liberal Arts: Multiple Subjects",
-    ],
-    date: "Aug 2019 - May 2023",
-    description: [
-      "GPA - 3.95",
-      "Dual Enrollment while in High School",
-      "Relevant Coursework - Art, C#, C++, Calculus, Discrete Structures, General Chemistry, HTML, Human Anatomy & Physiology, Humanities, Java, Photoshop, Physics, Psychology, Public Speaking, Python, Spanish, UNIX/Linux",
-      "Clubs - Computer Science Club (president), GEAR Club",
-    ],
-  },
-  {
-    img: "geca.jpg",
-    title: "Dr. TJ Owens Gilroy Early College Academy",
-    subtitle: ["High School Diploma"],
-    date: "Aug 2019 - May 2023",
-    description: [
-      "GPA - 3.95 (Unweighted), 4.72 (Weighted)",
-      "5 AP-level courses, 7 Honors-level courses, 27 College-level courses",
-      "National Blue Ribbon School (2022)",
-      "Outstanding Student Achievement - Integrated Math 1+, Integrated Math 2+",
-      "Clubs - STEM Club, Debate Club, Finance Club, Math Club",
-    ],
-  },
-]
-
 export const experienceData = [
   {
     img: "digitalnest.png",
     title: "Digital NEST",
-    subtitle: "Web Development Intern",
+    subtitle: "Frontend Web Developer Intern",
     date: "Aug 2023 - Aug 2024",
     description: [
       "Coordinated with clients to produce, develop, and maintain websites using WordPress, JavaScript, and PHP",
@@ -191,6 +136,60 @@ export const experienceData = [
         name: "Website",
         url: "https://www.gilroygardens.org/",
       },
+    ],
+  },
+]
+
+export const educationData = [
+  {
+    img: "ucberkeley.png",
+    title: "UC Berkeley",
+    subtitle: ["B.A. in Data Science"],
+    date: "Aug 2024 - present",
+    description: [
+      "Studying Data Science with a domain emphasis in Applied Mathematics and Modeling",
+      "Relevant Coursework - Data Structures, Probability & Random Processes, AI/ML, Linear Modeling, Natural Language Processing, Deep Neural Networks, Optimization Models",
+      "Clubs/Orgs: VSA, Cal VSA Lion Dance, Origami Club, Cal Climbing",
+    ],
+  },
+  {
+    img: "deanza.png",
+    title: "De Anza College",
+    subtitle: ["Computer Science Transfer"],
+    date: "Sep 2023 - Jun 2024",
+    description: [
+      "GPA - 3.9",
+      "Relevant Coursework - Calculus, Statistics, Microeconomics, Data Abstraction & Structures, Discrete Mathematics, R Programming, Python Programming, Differential Equations, Linear Algebra",
+      "Clubs - VSA, Badminton Club, Developer's Guild, DA Web Developers",
+    ],
+  },
+  {
+    img: "gavilan.png",
+    title: "Gavilan College",
+    subtitle: [
+      "A.S. in Computer Programming",
+      "A.A. in Natural Science",
+      "A.A. in Liberal Arts: Multiple Subjects",
+    ],
+    date: "Aug 2019 - May 2023",
+    description: [
+      "GPA - 3.95",
+      "Dual Enrollment while in High School",
+      "Relevant Coursework - Art, C#, C++, Calculus, Discrete Structures, General Chemistry, HTML, Human Anatomy & Physiology, Humanities, Java, Photoshop, Physics, Psychology, Public Speaking, Python, Spanish, UNIX/Linux",
+      "Clubs - Computer Science Club (president), GEAR Club",
+    ],
+  },
+  {
+    img: "geca.jpg",
+    title: "Dr. TJ Owens Gilroy Early College Academy",
+    subtitle: ["High School Diploma"],
+    date: "Aug 2019 - May 2023",
+    description: [
+      "GPA - 3.95 (Unweighted), 4.72 (Weighted)",
+      "5 AP-level courses, 7 Honors-level courses, 27 College-level courses",
+      "National Blue Ribbon School (2022)",
+      "Outstanding Student Achievement - Integrated Math 1+, Integrated Math 2+",
+      "Clubs - STEM Club, Debate Club, Finance Club, Math Club",
     ],
   },
 ]
