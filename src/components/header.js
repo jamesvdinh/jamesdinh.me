@@ -4,7 +4,6 @@ import Typewriter from "typewriter-effect"
 import * as palette from "./styles/GlobalStyles"
 import LinkIcon from "./linkicon"
 import { headerLinks } from "../data/data"
-import Resume from "../../static/Resume.pdf"
 
 const Header = () => {
   const greeting = "Hi, my name is"
@@ -43,7 +42,7 @@ const Header = () => {
           source contributor, I'm committed to pushing innovative ideas.
         </Description>
         <HeaderLinks>
-          <LinkButton href={Resume} target="_blank" rel="noopener noreferrer">
+          <LinkButton href="/resume" target="_blank" rel="noopener noreferrer">
             Résumé
           </LinkButton>
           {headerLinks.map((item, index) => (
