@@ -23,11 +23,11 @@ const Header = () => {
                 .changeDelay(50)
                 .changeDeleteSpeed(25)
                 .typeString("I'm a")
-                .typeString(" Data Science Student.")
+                .typeString(" Full Stack Data Engineer.")
                 .pauseFor(1000)
-                .deleteChars(21)
+                .deleteChars(25)
                 .pauseFor(500)
-                .typeString(" Full Stack Developer.")
+                .typeString(" Data Science Student.")
                 .pauseFor(1000)
                 .deleteChars(24)
                 .pauseFor(500)
@@ -38,7 +38,7 @@ const Header = () => {
           ></Typewriter>
         </Title>
         <Description>
-          Full Stack Dev and Data Science student at UC Berkeley. As an open
+          Full Stack Data Engineer and Data Science student at UC Berkeley. As an open
           source contributor, I'm committed to pushing innovative ideas.
         </Description>
         <HeaderLinks>

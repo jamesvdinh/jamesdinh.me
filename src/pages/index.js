@@ -12,7 +12,7 @@ const IndexPage = () => <Layout></Layout>
  */
 export const Head = () => (
   <>
-    <Seo title="Data Science Student" />
+    <Seo title="Full Stack Data Engineer" />
     <script
       defer=""
       data-domain="jamesdinh.me"
