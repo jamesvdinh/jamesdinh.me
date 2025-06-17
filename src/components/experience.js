@@ -9,6 +9,7 @@ import { LiaQuoteLeftSolid, LiaQuoteRightSolid } from "react-icons/lia";
 
 const Experience = () => {
   const [isActive, setIsActive] = useState(0)
+  const [showQuote, setShowQuote] = useState(false)
   const data = useStaticQuery(graphql`
     query {
       allFile(
@@ -78,12 +79,17 @@ const Experience = () => {
           {experienceData[isActive].quote && (
             <QuoteContainer>
               <LiaQuoteLeftSolid size={20} />
-              <QuoteText>
+              <QuoteText className={showQuote ? 'shown': ''}>
                 {experienceData[isActive].quote.text.map((item, index) => (
                   <QtPara key={index}>{item}</QtPara>
                 ))}
               </QuoteText>
-                <LiaQuoteRightSolid style={rightQuote} size={20} />
+              <QuoteTextBtn
+                onClick={() => setShowQuote(!showQuote)}
+              >
+                {showQuote ? 'Show Less' : 'Show more'}
+              </QuoteTextBtn>
+              <LiaQuoteRightSolid style={rightQuote} size={20} />
               <QuoteAuthor>- {experienceData[isActive].quote.author}, {experienceData[isActive].quote.title}</QuoteAuthor>
               <QuoteAttr>{experienceData[isActive].quote.attr}</QuoteAttr>
             </QuoteContainer>
@@ -256,11 +262,12 @@ const Description = styled.ul`
 
 const QuoteContainer = styled.div`
   margin: 9px;
-  padding-left: 20px;
+  padding: 5px 20px;
   display: flex;
   flex-flow: column nowrap;
   border-left: 2px solid gray;
-  border-radius: 2px 0 0 2px;
+  border-radius: 4px;
+  background-color:rgba(93, 83, 130, 0.13);
 `
 
 const QuoteAuthor = styled.h2`
@@ -269,14 +276,42 @@ const QuoteAuthor = styled.h2`
 `
 
 const QuoteText = styled.div`
-  display: flex;
   flex-flow: column nowrap;
   gap: 10px;
   color: ${palette.subtitleColor};
+  max-height: 60px;
+  overflow-y: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+
+  &.shown {
+    max-height: unset;
+    overflow-y: auto;
+    -webkit-line-clamp: unset;
+  }
 `
 
 const QtPara = styled.p`
   font-size: 14px;
+`
+
+const QuoteTextBtn = styled.button`
+  padding: 5px 10px;
+  margin: auto;
+  width: fit-content;
+  border-radius: 5px;
+  border: unset;
+  background-color: transparent;
+  color: ${palette.titleColor};
+  cursor: pointer;
+  transition: all 0.3s ease-out;
+
+  &:hover {
+    color: #cbbff5;
+  }
 `
 
 const rightQuote = {
