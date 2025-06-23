@@ -38,8 +38,8 @@ const Header = () => {
           ></Typewriter>
         </Title>
         <Description>
-          Full Stack Data Engineer and Data Science student at UC Berkeley. As an open
-          source contributor, I'm committed to pushing innovative ideas.
+          Full Stack Data Engineer and Data Science student at UC Berkeley. As
+          an open source contributor, I'm committed to pushing innovative ideas.
         </Description>
         <HeaderLinks>
           <LinkButton href="/resume" target="_blank" rel="noopener noreferrer">
@@ -81,6 +81,7 @@ const Name = styled.h1`
   font-family: Calibre, Inter, "San Francisco", "SF Pro Text", -apple-system,
     system-ui, sans-serif;
   line-height: 1.5;
+  font-weight: 600;
 
   @media (max-width: 495px) {
     font-size: 50px;
@@ -93,6 +94,7 @@ const Title = styled.h2`
     system-ui, sans-serif;
   font-size: 50px;
   min-height: 60.8px;
+  font-weight: 600;
 
   @media (max-width: 495px) {
     font-size: 30px;
