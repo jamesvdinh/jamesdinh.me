@@ -20,6 +20,27 @@ export const headerLinks = [
 
 export const experienceData = [
   {
+    img: "darenasolutions_logo.jpg",
+    title: "Darena Solutions",
+    subtitle: "AI & Data Science Intern - Healthcare Analytics",
+    date: "Jun 2025 - present",
+    description: [
+      "Developing a healthcare analytics platform to analyze and visualize patient data using Python, Pandas, and Matplotlib",
+      "Collaborating with my team to implement machine learning models for predictive analytics in healthcare",
+      "Assisting in the integration of AI-driven solutions to improve patient outcomes and operational efficiency",
+    ],
+    link: [
+      {
+        name: "Website",
+        url: "https://darena.health/",
+      },
+      {
+        name: "Projects",
+        url: "https://github.com/darena-solutions",
+      },
+    ],
+  },
+  {
     img: "digitalnest.png",
     title: "Digital NEST",
     subtitle: "Frontend Web Developer Intern",
@@ -120,21 +141,6 @@ export const experienceData = [
       {
         name: "Poster Summary",
         url: "https://nextcloud.andrewkdinh.com/s/3JKxDdw9NeM234r",
-      },
-    ],
-  },
-  {
-    img: "gilroy-gardens.png",
-    title: "Gilroy Gardens",
-    subtitle: "Foods & Merch Associate",
-    date: "Sep - Dec 2021",
-    description: [
-      "Gained cashier and customer service experience as well as assisted in managing shifts and logistics",
-    ],
-    link: [
-      {
-        name: "Website",
-        url: "https://www.gilroygardens.org/",
       },
     ],
   },
