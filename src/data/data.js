@@ -21,7 +21,7 @@ export const headerLinks = [
 export const experienceData = [
   {
     img: "darenasolutions_logo.jpg",
-    title: "Darena Solutions",
+    title: "Darena Health",
     subtitle: "AI & Data Science Intern - Healthcare Analytics",
     date: "Jun 2025 - present",
     description: [
