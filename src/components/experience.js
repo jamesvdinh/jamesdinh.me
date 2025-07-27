@@ -154,6 +154,7 @@ const ButtonFlex = styled.div`
   padding-right: 1rem;
   transition: all 0.05s ease;
   right: -1.5px;
+  max-width: 200px;
 
   &.active {
     border-right: 2px solid ${palette.accent};
@@ -254,10 +255,10 @@ const Date = styled.h4`
 `
 
 const Description = styled.ul`
-  margin: 10px 0 15px 20px;
+  margin: 15px 15px 20px;
   display: flex;
   flex-flow: column nowrap;
-  gap: 3px;
+  gap: 10px;
 `
 
 const QuoteContainer = styled.div`

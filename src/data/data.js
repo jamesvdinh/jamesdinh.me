@@ -22,12 +22,12 @@ export const experienceData = [
   {
     img: "darenasolutions_logo.jpg",
     title: "Darena Health",
-    subtitle: "AI & Data Science Intern - Healthcare Analytics",
+    subtitle: "AI & Data Science Intern",
     date: "Jun 2025 - present",
     description: [
-      "Developing a healthcare analytics platform to analyze and visualize patient data using Python, Pandas, and Matplotlib",
-      "Collaborating with my team to implement machine learning models for predictive analytics in healthcare",
-      "Assisting in the integration of AI-driven solutions to improve patient outcomes and operational efficiency",
+      "Developed an MCP server to integrate an LLM-powered chatbot with a MeldRx-hosted EHR, enabling real-time access to patient data for cardiovascular risk scoring and clinical trial matching",
+      "Implemented a cardiovascular risk calculator within the chatbot based on the 2013 ACC/AHA Guideline on CVD risk assessment, leveraging FHIR patient data (e.g., age, BP, cholesterol) to provide 10-year disease predictions",
+      "Conducted market research on AI Copilot adoption across healthcare sectors to visualize generational AI trends"
     ],
     link: [
       {
@@ -35,8 +35,8 @@ export const experienceData = [
         url: "https://darena.health/",
       },
       {
-        name: "Projects",
-        url: "https://github.com/darena-solutions",
+        name: "Project Repo",
+        url: "https://github.com/jamesvdinh/cardiovascular-disease-mcp",
       },
     ],
   },
