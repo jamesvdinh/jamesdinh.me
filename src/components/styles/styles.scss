@@ -9,94 +9,101 @@
 
 /* width */
 ::-webkit-scrollbar {
-	width: 15px;
-	transition: all 0.5s;
+  width: 15px;
+  transition: all 0.5s;
 }
 /* Track */
 ::-webkit-scrollbar-track {
-	box-shadow: inset 0 0 2px grey; 
-	background-color: #261C2C;
+  box-shadow: inset 0 0 2px grey;
+  background-color: #261c2c;
 }
 /* Handle */
 ::-webkit-scrollbar-thumb {
-	background: #583868; 
+  background: #583868;
 }
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-	background: #481b5b;
+  background: #481b5b;
 }
 
 .splide__pagination__page {
-    background-color: #b78abea6;
-    transition: all 0.2s;
+  background-color: #b78abea6;
+  transition: all 0.2s;
 
-    &.is-active {
-        background-color: #cd87ec;
-    }
+  &.is-active {
+    background-color: #cd87ec;
+  }
 }
 
-#nextui-tooltip .nextui-c-cFCyVg-bHcqlI-color-secondary {
-    --nextui--tooltipColor: #5c2573;
-    background: #5c2573;
+// #nextui-tooltip .nextui-c-cFCyVg-bHcqlI-color-secondary {
+//   --nextui--tooltipColor: #613773;
+//   background: #613773;
+// }
+
+.text-secondary-foreground {
+  color: #261c2c;
+  background-color: #b78abe;
+  padding: 3px 7px;
+  border-radius: 5px;
 }
 
 .d-flex-2 {
-	display: flex;
-	align-items: center;
+  display: flex;
+  align-items: center;
 }
 
 .timeline-text {
-	width: 50%;
-	padding-left: 30px;
-	-webkit-box-sizing: border-box;
-	box-sizing: border-box;
-	position: relative;
-	display: flex;
+  width: 50%;
+  padding-left: 30px;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  position: relative;
+  display: flex;
 }
 
 .timeline-text h6 {
-	color: #b399dc;
-	display: block;
-	font-size: 1rem;
+  color: #b399dc;
+  display: block;
+  font-size: 1rem;
 }
 .timeline-text span {
-	color: #f0f1f2;
-	display: block;
-	width: 100%;
+  color: #f0f1f2;
+  display: block;
+  width: 100%;
 }
 
 .t-square {
-	content: "";
-	position: absolute;
-	width: 12px;
-	height: 12px;
-	left: -6px;
-	background: #b399dc;
+  content: "";
+  position: absolute;
+  width: 12px;
+  height: 12px;
+  left: -6px;
+  background: #b399dc;
 }
 
 .proper {
-	color: #b399dc;
-	text-decoration: none;
-	transition: all 0.3s ease-out;
+  color: #b399dc;
+  text-decoration: none;
+  transition: all 0.3s ease-out;
 
-	&:hover {
-		filter: brightness(1.3);
-	}
+  &:hover {
+    filter: brightness(1.3);
+  }
 }
 
 .drag {
-	cursor: grab;
+  cursor: grab;
 
-	&:active {
-		cursor: grabbing;
-	}
+  &:active {
+    cursor: grabbing;
+  }
 }
 
 @media all and (max-width: 768px) {
-	.timeline-blank {
-		display: none;
-	}
-	.timeline-text {
-		width: 100%;
-	}
+  .timeline-blank {
+    display: none;
+  }
+  .timeline-text {
+    width: 100%;
+  }
 }

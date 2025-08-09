@@ -10,6 +10,8 @@ import { useStaticQuery, graphql } from "gatsby"
 
 import NavBar from "./navbar"
 import { GlobalStyle } from "./styles/GlobalStyles"
+import "./styles/styles.scss"
+import "./styles/tailwind.css"
 import Header from "./header"
 import Education from "./education"
 import styled from "styled-components"

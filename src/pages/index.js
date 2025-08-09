@@ -2,8 +2,13 @@ import * as React from "react"
 
 import Layout from "../components/layout"
 import Seo from "../components/seo"
+import { HeroUIProvider } from "@heroui/react"
 
-const IndexPage = () => <Layout></Layout>
+const IndexPage = () => (
+  <HeroUIProvider>
+    <Layout />
+  </HeroUIProvider>
+)
 
 /**
  * Head export to define metadata for the page

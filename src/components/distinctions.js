@@ -1,6 +1,5 @@
 import React from "react"
 import styled from "styled-components"
-import "./styles/styles.scss"
 import * as palette from "./styles/GlobalStyles"
 import { distinctionData } from "../data/data"
 

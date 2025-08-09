@@ -5,7 +5,6 @@ import { projectData } from "../data/data"
 import { Splide, SplideSlide } from "@splidejs/react-splide"
 import "@splidejs/react-splide/css"
 import { GatsbyImage } from "gatsby-plugin-image"
-import "./styles/styles.scss"
 import { graphql, useStaticQuery } from "gatsby"
 import LinkIcon from "./linkicon"
 
@@ -29,14 +28,6 @@ const Projects = () => {
       }
     }
   `)
-
-  const showMenu = () => {
-    if (isOpen) {
-      setIsOpen(false)
-    } else {
-      setIsOpen(true)
-    }
-  }
 
   return (
     <>
@@ -98,7 +89,7 @@ const Projects = () => {
           </ProjectEntry>
         ))}
       </ProjectContainer>
-      <MoreButton onClick={showMenu}>
+      <MoreButton onClick={() => {isOpen ? setIsOpen(false) : setIsOpen(true)}}>
         Show {isOpen ? "Less" : "More"}
       </MoreButton>
     </>
