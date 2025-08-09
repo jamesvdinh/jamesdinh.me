@@ -20,6 +20,24 @@ export const headerLinks = [
 
 export const experienceData = [
   {
+    img: "funginstitute_logo.jpg",
+    title: "Fung Institute for Engineering Leadership",
+    subtitle: "Data Analytics & UX Intern",
+    date: "Aug 2025 - present",
+    description: [
+      "A Master's of Engineering program located at UC Berkeley's College of Engineering",
+      "This program offers the Fung Fellowship for Wellness & Technology Innovations, UC Berkeley Master of Engineering graduate program, and research opportunities",
+      "Over 900 alumni and 30 companies were founded through the Fung Institute",
+    ],
+    link: [
+      {
+        name: "Website",
+        url: "https://funginstitute.berkeley.edu/",
+      },
+    ],
+
+  },
+  {
     img: "darenasolutions_logo.jpg",
     title: "Darena Health",
     subtitle: "AI & Data Science Intern",
