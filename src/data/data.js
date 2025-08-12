@@ -267,7 +267,7 @@ export const projectData = [
   },
   {
     title: "ASL Hand Recognition App",
-    url: "https://jamesvdinh.github.io/asl-app/",
+    url: "https://jamesvdinh.github.io/asl-translator/",
     subtitle: "Computer Vision Sign Lanugage Translator",
     tags: [
       "MediaPipe",
@@ -283,12 +283,12 @@ export const projectData = [
     link: [
       {
         name: "Demo",
-        url: "https://jamesvdinh.github.io/",
+        url: "https://jamesvdinh.github.io/asl-translator/",
         size: 22,
       },
       {
         name: "GitHub",
-        url: "https://github.com/jamesvdinh/jamesvdinh.github.io",
+        url: "https://github.com/jamesvdinh/asl-translator",
         size: 22,
       },
       {
