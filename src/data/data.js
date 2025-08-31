@@ -23,11 +23,10 @@ export const experienceData = [
     img: "funginstitute_logo.jpg",
     title: "Fung Institute for Engineering Leadership",
     subtitle: "Data Analytics & UX Intern",
-    date: "Aug 2025 - present",
+    date: "Aug 2025 – present",
     description: [
-      "A Master's of Engineering program located at UC Berkeley's College of Engineering",
-      "This program offers the Fung Fellowship for Wellness & Technology Innovations, UC Berkeley Master of Engineering graduate program, and research opportunities",
-      "Over 900 alumni and 30 companies were founded through the Fung Institute",
+      "Cleaned & aggregated spreadsheet data from pulse surveys; built dashboards that conveyed program metrics to stakeholders in order to improve Capstone resource allocation and quality for over 450 students",
+      "Designed the MAS-E Master's of Engineering program course planner for students & student tracker for internal use",
     ],
     link: [
       {
@@ -40,12 +39,27 @@ export const experienceData = [
   {
     img: "darenasolutions_logo.jpg",
     title: "Darena Health",
-    subtitle: "AI & Data Science Intern",
-    date: "Jun 2025 - present",
-    description: [
-      "Developed an MCP server to integrate an LLM-powered chatbot with a MeldRx-hosted EHR, enabling real-time access to patient data for cardiovascular risk scoring and clinical trial matching",
-      "Implemented a cardiovascular risk calculator within the chatbot based on the 2013 ACC/AHA Guideline on CVD risk assessment, leveraging FHIR patient data (e.g., age, BP, cholesterol) to provide 10-year disease predictions",
-      "Conducted market research on AI Copilot adoption across healthcare sectors to visualize generational AI trends"
+    subtitle: "Software Engineer - Prompt Opinion platform",
+    date: "Jun 2025 – present",
+    hasPrevPositions: true,
+    positions: [
+      {
+        subtitle: "Software Engineer",
+        date: "Aug 2025 – present",
+        description: [
+          "Building MCP tools for LLM integration with EHR systems in Prompt Opinion using the C# .NET framework and FHIR API",
+          "Maintaining default and custom MCP servers for independent developers on the Prompt Opinion platform",
+        ],
+      },
+      {
+        subtitle: "AI & Data Science Intern",
+        date: "Jun – Aug 2025",
+        description: [
+          "Developed an MCP server to integrate an LLM-powered chatbot with a MeldRx-hosted EHR, enabling real-time access to patient data for cardiovascular risk scoring and clinical trial matching",
+          "Implemented a cardiovascular risk calculator within the chatbot based on the 2013 ACC/AHA Guideline on CVD risk assessment, leveraging FHIR patient data (e.g., age, BP, cholesterol) to provide 10-year disease predictions",
+          "Conducted market research on AI Copilot adoption across healthcare sectors to visualize generational AI trends"
+        ]
+      },
     ],
     link: [
       {
@@ -62,7 +76,7 @@ export const experienceData = [
     img: "digitalnest.png",
     title: "Digital NEST",
     subtitle: "Frontend Web Developer Intern",
-    date: "Aug 2023 - Aug 2024",
+    date: "Aug 2023 – Aug 2024",
     description: [
       "Coordinated with clients to produce, develop, and maintain websites using WordPress, JavaScript, and PHP",
       "Developed a dynamic feature map for ParkRX Monterey County to bolster park-going activity from Monterey County residents",
@@ -88,7 +102,7 @@ export const experienceData = [
     img: "catalyzesv.jpg",
     title: "Catalyze SV",
     subtitle: "Frontend Web Developer",
-    date: "Jun - Sep 2023",
+    date: "Jun – Sep 2023",
     description: [
       "Developed an HTML/CSS and JS sort-through filter menu to easily locate nearby projects via Mapbox forward geocoding, which improved user traffic to the site threefold",
       "Worked closely with backend developers to fetch data from the Shape SV database and resolve security issues",
@@ -105,7 +119,7 @@ export const experienceData = [
     img: "gilroy-hacks.png",
     title: "Gilroy Hacks",
     subtitle: "Co-Founder, Event Director",
-    date: "Jan 2022 - Jun 2023",
+    date: "Jan 2022 – Jun 2023",
     description: [
       "Managed event logistics and coordinated outreach for 2 hackathons that served 50+ local students",
       "Registered organization as a 501(c)(3) nonprofit under Hack Club in order to collect tax-deductible donations and facilitate purchases",
@@ -132,7 +146,7 @@ export const experienceData = [
     img: "youth-commission.png",
     title: "Gilroy Youth Commission",
     subtitle: "Youth Commissioner",
-    date: "Oct 2022 - Jun 2023",
+    date: "Oct 2022 – Jun 2023",
     description: [
       "Actively planned and discussed 5+ youth community events serving 300+ total youth across Gilroy",
       "Created a work schedule for the commission, provided feedback and suggestions for future events",
@@ -149,7 +163,7 @@ export const experienceData = [
     img: "gavilan-summer-internship.png",
     title: "Gavilan College Summer Internship",
     subtitle: "Summer Research Intern",
-    date: "Jun - Aug 2022",
+    date: "Jun – Aug 2022",
     description: [
       "Physical analysis of water-powered rockets, advised by Dr. Sewan Fan (Gavilan Physics Dept.)",
       "Constructed a water-powered rocket that saves custom Arduino accelerometer circuit data in order to analyze changes in temperature, height, and pressure",
@@ -169,7 +183,7 @@ export const educationData = [
     img: "ucberkeley.png",
     title: "UC Berkeley",
     subtitle: ["B.A. in Data Science"],
-    date: "Aug 2024 - present",
+    date: "Aug 2024 – present",
     description: [
       "Studying Data Science with a domain emphasis in Applied Mathematics and Modeling",
       "Relevant Coursework - AI/ML, Probability Theory, Data Engineering, Data Structures, Numerical Analysis",
@@ -180,7 +194,7 @@ export const educationData = [
     img: "deanza.png",
     title: "De Anza College",
     subtitle: ["Computer Science Transfer"],
-    date: "Sep 2023 - Jun 2024",
+    date: "Sep 2023 – Jun 2024",
     description: [
       "GPA - 3.9",
       "Relevant Coursework - Calculus, Statistics, Microeconomics, Data Abstraction & Structures, Discrete Mathematics, R Programming, Python Programming, Differential Equations, Linear Algebra",
@@ -195,7 +209,7 @@ export const educationData = [
       "A.A. in Natural Science",
       "A.A. in Liberal Arts: Multiple Subjects",
     ],
-    date: "Aug 2019 - May 2023",
+    date: "Aug 2019 – May 2023",
     description: [
       "GPA - 3.95",
       "Dual Enrollment while in High School",
@@ -207,7 +221,7 @@ export const educationData = [
     img: "geca.jpg",
     title: "Dr. TJ Owens Gilroy Early College Academy",
     subtitle: ["High School Diploma"],
-    date: "Aug 2019 - May 2023",
+    date: "Aug 2019 – May 2023",
     description: [
       "GPA - 3.95 (Unweighted), 4.72 (Weighted)",
       "5 AP-level courses, 7 Honors-level courses, 27 College-level courses",

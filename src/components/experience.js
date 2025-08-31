@@ -71,11 +71,25 @@ const Experience = () => {
               <Date>{experienceData[isActive].date}</Date>
             </TitleContainer>
           </HeadContainer>
-          <Description>
-            {experienceData[isActive].description.map((item, index) => (
-              <li key={index}>{item}</li>
-            ))}
-          </Description>
+          {experienceData[isActive].hasPrevPositions ? (
+            experienceData[isActive].positions.map((item, index) => (
+              <PositionItem key={index}>
+                <Subtitle>{item.subtitle}</Subtitle>
+                <Date>{item.date}</Date>
+                <Description>
+                  {item.description.map((item, index) => (
+                    <li key={index}>{item}</li>
+                  ))}
+                </Description>
+              </PositionItem>
+            )
+          )) :
+            <Description>
+              {experienceData[isActive].description.map((item, index) => (
+                <li key={index}>{item}</li>
+              ))}
+            </Description>
+          }
           {experienceData[isActive].quote && (
             <QuoteContainer>
               <LiaQuoteLeftSolid size={20} />
@@ -228,6 +242,11 @@ const ContentContainer = styled.article`
 const HeadContainer = styled.div`
   display: flex;
   flex-direction: row;
+`
+
+const PositionItem = styled.div`
+  margin: 15px 0;
+  padding-bottom: 5px;
 `
 
 const TitleContainer = styled.div`
