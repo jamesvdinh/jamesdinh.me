@@ -185,7 +185,8 @@ export const educationData = [
     subtitle: ["B.A. in Data Science"],
     date: "Aug 2024 – present",
     description: [
-      "Studying Data Science with a domain emphasis in Applied Mathematics and Modeling",
+      "GPA - 3.76",
+      "Studying Data Science with a focus in Applied Mathematics and Modeling",
       "Relevant Coursework - AI/ML, Probability Theory, Data Engineering, Data Structures, Numerical Analysis",
       "Clubs/Orgs: Cal VSA Lion Dance (Music Lead), VSA, Cal Climbing Club",
     ],
