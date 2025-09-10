@@ -20,6 +20,26 @@ export const headerLinks = [
 
 export const experienceData = [
   {
+    img: "prompt_opinion_logo.jpg",
+    title: "Prompt Opinon",
+    subtitle: "Software Engineer",
+    date: "Sep 2025 – present",
+    description: [
+      "Building MCP tools for LLM integration with EHR systems in Prompt Opinion using the C# .NET framework and FHIR API",
+      "Maintaining default and custom MCP servers for independent developers on open source repositories",
+    ],
+    link: [
+      {
+        name: "Website",
+        url: "https://www.promptopinion.ai/",
+      },
+      {
+        name: "Community Repo",
+        url: "https://github.com/prompt-opinion/po-community-mcp",
+      },
+    ],
+  },
+  {
     img: "funginstitute_logo.jpg",
     title: "Fung Institute for Engineering Leadership",
     subtitle: "Data Analytics & UX Intern",
@@ -39,27 +59,12 @@ export const experienceData = [
   {
     img: "darenasolutions_logo.jpg",
     title: "Darena Health",
-    subtitle: "Software Engineer - Prompt Opinion platform",
-    date: "Jun 2025 – present",
-    hasPrevPositions: true,
-    positions: [
-      {
-        subtitle: "Software Engineer",
-        date: "Aug 2025 – present",
-        description: [
-          "Building MCP tools for LLM integration with EHR systems in Prompt Opinion using the C# .NET framework and FHIR API",
-          "Maintaining default and custom MCP servers for independent developers on the Prompt Opinion platform",
-        ],
-      },
-      {
-        subtitle: "AI & Data Science Intern",
-        date: "Jun – Aug 2025",
-        description: [
-          "Developed an MCP server to integrate an LLM-powered chatbot with a MeldRx-hosted EHR, enabling real-time access to patient data for cardiovascular risk scoring and clinical trial matching",
-          "Implemented a cardiovascular risk calculator within the chatbot based on the 2013 ACC/AHA Guideline on CVD risk assessment, leveraging FHIR patient data (e.g., age, BP, cholesterol) to provide 10-year disease predictions",
-          "Conducted market research on AI Copilot adoption across healthcare sectors to visualize generational AI trends"
-        ]
-      },
+    subtitle: "AI & Data Science Intern",
+    date: "Jun – Aug 2025",
+    description: [
+      "Developed an MCP server to integrate an LLM-powered chatbot with a MeldRx-hosted EHR, enabling real-time access to patient data for cardiovascular risk scoring and clinical trial matching",
+      "Implemented a cardiovascular risk calculator within the chatbot based on the 2013 ACC/AHA Guideline on CVD risk assessment, leveraging FHIR patient data (e.g., age, BP, cholesterol) to provide 10-year disease predictions",
+      "Conducted market research on AI Copilot adoption across healthcare sectors to visualize generational AI trends"
     ],
     link: [
       {
