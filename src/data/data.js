@@ -21,7 +21,7 @@ export const headerLinks = [
 export const experienceData = [
   {
     img: "prompt_opinion_logo.jpg",
-    title: "Prompt Opinon",
+    title: "Prompt Opinion",
     subtitle: "Software Engineer",
     date: "Sep 2025 – present",
     description: [
