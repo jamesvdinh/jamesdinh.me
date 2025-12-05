@@ -25,8 +25,10 @@ export const experienceData = [
     subtitle: "Software Engineer",
     date: "Sep 2025 – present",
     description: [
-      "Building MCP tools for LLM integration with EHR systems in Prompt Opinion using the C# .NET framework and FHIR API",
-      "Maintaining default and custom MCP servers for independent developers on open source repositories",
+      "Engineered and integrated MCP tools and AI Agents in C# (.NET 9), implementing FHIR-compliant API workflows",
+      "Minimized LLM-EHR data retrieval latency through optimized HTTP pipelines of patient data and Vue.js caching",
+      "Developed and maintained full-stack features using Vue.js, TypeScript, Vite, Node.js build tooling, and PostgreSQL",
+      "Deployed to Azure cloud using Docker and GitHub Actions, with automated test and lint pipelines",
     ],
     link: [
       {
@@ -43,10 +45,11 @@ export const experienceData = [
     img: "funginstitute_logo.jpg",
     title: "Fung Institute for Engineering Leadership",
     subtitle: "Data Analytics & UX Intern",
-    date: "Aug 2025 – present",
+    date: "Aug 2025 - present",
     description: [
-      "Cleaned & aggregated spreadsheet data from pulse surveys; built dashboards that conveyed program metrics to stakeholders in order to improve Capstone resource allocation and quality for over 450 students",
-      "Designed the MAS-E Master's of Engineering program course planner for students & student tracker for internal use",
+      "Cleaned, aggregated, and analyzed multi-source pulse-survey data using Python and automated quality checks, producing reliable program metrics that informed Capstone Project resource allocation for 450+ MEng students",
+      "Developed a comprehensive MAS-E course-planning tool with automated prerequisite checks and forecasting logic",
+      "Integrated Capstone metric data flows with Salesforce Data Cloud to unify advising and reporting across the program",
     ],
     link: [
       {
@@ -62,8 +65,8 @@ export const experienceData = [
     subtitle: "AI & Data Science Intern",
     date: "Jun – Aug 2025",
     description: [
-      "Developed an MCP server to integrate an LLM-powered chatbot with a MeldRx-hosted EHR, enabling real-time access to patient data for cardiovascular risk scoring and clinical trial matching",
-      "Implemented a cardiovascular risk calculator within the chatbot based on the 2013 ACC/AHA Guideline on CVD risk assessment, leveraging FHIR patient data (e.g., age, BP, cholesterol) to provide 10-year disease predictions",
+      "Built an MCP server and data-integration pipeline connecting an LLM-powered clinical chatbot to an EHR, enabling real-time retrieval of patient FHIR data for CVD risk scoring and clinical trial matching",
+      "Containerized and deployed the MCP server and data-integration pipeline using Docker and Kubernetes, providing consistent, isolated environments for bidirectional FHIR data exchange and improving stability for new features",
       "Conducted market research on AI Copilot adoption across healthcare sectors to visualize generational AI trends"
     ],
     link: [
@@ -83,8 +86,8 @@ export const experienceData = [
     subtitle: "Frontend Web Developer Intern",
     date: "Aug 2023 – Aug 2024",
     description: [
-      "Coordinated with clients to produce, develop, and maintain websites using WordPress, JavaScript, and PHP",
-      "Developed a dynamic feature map for ParkRX Monterey County to bolster park-going activity from Monterey County residents",
+      "Coordinated with clients in education and recreation to produce, develop, and maintain websites using WordPress, JS, PHP, and SEO optimization, boosting page visits by 200% and sustaining an average 36% bounce rate",
+      "Developed a dynamic feature map using MapBox for ParkRX Monterey County to bolster park-going activity from Monterey County residents",
       "Delegated development workloads on Asana, GitHub, and Figma ",
     ],
     quote: {
@@ -191,9 +194,9 @@ export const educationData = [
     date: "Aug 2024 – present",
     description: [
       "GPA - 3.76",
-      "Studying Data Science with a focus in Applied Mathematics and Modeling",
-      "Relevant Coursework - AI/ML, Probability Theory, Data Engineering, Data Structures, Numerical Analysis",
-      "Clubs/Orgs: Cal VSA Lion Dance (Music Lead), VSA, Cal Climbing Club",
+      "Concentration in Applied Mathematics and Modeling",
+      "Relevant Coursework - ML, Data Engineering, Data Structures, Probability Theory, Numerical Analysis",
+      "Clubs/Orgs: Cal VSA Lion Dance (Music Lead)",
     ],
   },
   {
@@ -246,7 +249,7 @@ export const projectData = [
     tags: ["Flask", "Python", "React", "TypeScript", "NodeJS", "Groq", "Sass"],
     img: ["llm_stock_trading.png"],
     description:
-      "A benchmarker for testing the profit net loss (PNL) of common Large Language Models (LLMs) such as ChatGPT and Llama when prompted to buy/sell stock trades based on news headlines from 2022. Built using Groq for optimized agent/model inference calls and TS/React for the dashboard.",
+      "Built an LLM-driven trading pipeline on Groq for low-latency inference, generating keyword-based stock trades; optimized Flask-React request flow via state memoization, supporting 300+ trade queries per evaluation period.",
     link: [
       {
         name: "GitHub",
@@ -299,7 +302,7 @@ export const projectData = [
     ],
     img: ["asl-pic-1.png", "asl-pic-2.jpg"],
     description:
-      "A web application that assists Deaf/Hard of Hearing individuals in learning American Sign Language (ASL). Utilized MediaPipe and TensorFlow to train a model using a dataset of 87,000 images from the NIDCD. Implemented model in a JavaScript environment to recognize ASL letters from a computer webcam.",
+      "Implemented a feedforward neural network (CNN) with 128-unit and 256-unit ReLU layers that classified inputs across 29 categories on a live camera feed input; Used binary cross-entropy loss & SGD to achieve an AUC of 0.97.",
     link: [
       {
         name: "Demo",
