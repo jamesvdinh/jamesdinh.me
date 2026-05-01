@@ -2,14 +2,14 @@ import React, { useEffect } from "react"
 
 const ResumePage = () => {
   useEffect(() => {
-    window.location.href = "/Resume.pdf"
+    window.location.href = "/James Dinh - Resume.pdf"
   }, [])
 
   return (
     <div>
       Redirecting to résumé...
       <noscript>
-        <a href="/Resume.pdf">Click here to view the résumé.</a>
+        <a href="/James Dinh - Resume.pdf">Click here to view the résumé.</a>
       </noscript>
     </div>
   )
