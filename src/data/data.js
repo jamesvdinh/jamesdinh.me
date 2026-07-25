@@ -20,15 +20,31 @@ export const headerLinks = [
 
 export const experienceData = [
   {
+    img: "distillery_logo.gif",
+    title: "Distillery",
+    subtitle: "Software Engineer Intern",
+    date: "Jun 2026 – present",
+    description: [
+      "Designing and building Proof Engine, a web platform that automates AI-generated brand assets (CEO headshots, quote cards, customer stories) for partner startups via a Gemini API image generation pipeline on Google Cloud",
+      "Built an agentic company research pipeline using Python, Playwright, and web search to scrape and screenshot 75+ partner companies via a GCP service account, with threaded bulk processing and SQLite-backed screenshot retrieval",
+      "Engineered a Streamlit HITL review interface displaying scraped data side-by-side with Playwright screenshots, with a hard approval gate blocking all Google Sheet writes until human verification",
+    ],
+    link: [
+      {
+        name: "Website",
+        url: "https://www.wearedistillery.com/",
+      }
+    ],
+  },
+  {
     img: "prompt_opinion_logo.jpg",
     title: "Prompt Opinion",
     subtitle: "Software Engineer",
-    date: "Sep 2025 – present",
+    date: "Sep – Dec 2025",
     description: [
-      "Engineered and integrated MCP tools and AI Agents in C# (.NET 9), implementing FHIR-compliant API workflows",
-      "Minimized LLM-EHR data retrieval latency through optimized HTTP pipelines of patient data and Vue.js caching",
-      "Developed and maintained full-stack features using Vue.js, TypeScript, Vite, Node.js build tooling, and PostgreSQL",
-      "Deployed to Azure cloud using Docker and GitHub Actions, with automated test and lint pipelines",
+      "Built an MCP server and AI agent tools enabling chatbot integration, orchestrating retrieval of multimodal patient data from an EHR, PostgreSQL database, and open health portals into unified FHIR-compliant REST API workflows",
+      "Designed, developed, and tested full-stack features across a C# (.NET 9) backend and a TypeScript front end, collaborating with Product and Design through the full development lifecycle from user stories to deployment",
+      "Wrote unit tests validating MCP tool inputs and outputs and integration tests in GitHub Actions verifying MCP tool structure, catching regressions before deployment",
     ],
     link: [
       {
@@ -44,12 +60,12 @@ export const experienceData = [
   {
     img: "funginstitute_logo.jpg",
     title: "Fung Institute for Engineering Leadership",
-    subtitle: "Data Analytics & UX Intern",
-    date: "Aug 2025 - present",
+    subtitle: "Full Stack Developer Intern",
+    date: "Aug 2025 – Jul 2026",
     description: [
-      "Cleaned, aggregated, and analyzed multi-source pulse-survey data using Python and automated quality checks, producing reliable program metrics that informed Capstone Project resource allocation for 450+ MEng students",
-      "Developed a comprehensive MAS-E course-planning tool with automated prerequisite checks and forecasting logic",
-      "Integrated Capstone metric data flows with Salesforce Data Cloud to unify advising and reporting across the program",
+      "Cleaned, aggregated, and analyzed student pulse‑survey data using Python and automated quality checks, producing reliable program metrics that informed Capstone Project resource allocation for 450+ MEng students",
+      "Built an interactive keyword-frequency map component in React and D3.js that visualizes live data 225+ Capstone projects, enabling students to identify trending topics and inform their project rankings at a glance",
+      "Developed a comprehensive MAS-E course-planning tool with automated prerequisite checks and forecasting logic, and integrated its data flows with Salesforce Data Cloud to unify advising and reporting across the program"
     ],
     link: [
       {
@@ -62,12 +78,11 @@ export const experienceData = [
   {
     img: "darenasolutions_logo.jpg",
     title: "Darena Health",
-    subtitle: "AI & Data Science Intern",
+    subtitle: "Software Engineer Intern",
     date: "Jun – Aug 2025",
     description: [
-      "Built an MCP server and data-integration pipeline connecting an LLM-powered clinical chatbot to an EHR, enabling real-time retrieval of patient FHIR data for CVD risk scoring and clinical trial matching",
+      "Built an MCP server and retrieval pipeline connecting an LLM-powered clinical chatbot to a FHIR-compliant EHR, enabling real-time patient data retrieval to power CVD risk scoring models and clinical trial matching",
       "Containerized and deployed the MCP server and data-integration pipeline using Docker and Kubernetes, providing consistent, isolated environments for bidirectional FHIR data exchange and improving stability for new features",
-      "Conducted market research on AI Copilot adoption across healthcare sectors to visualize generational AI trends"
     ],
     link: [
       {
@@ -151,23 +166,6 @@ export const experienceData = [
     ],
   },
   {
-    img: "youth-commission.png",
-    title: "Gilroy Youth Commission",
-    subtitle: "Youth Commissioner",
-    date: "Oct 2022 – Jun 2023",
-    description: [
-      "Actively planned and discussed 5+ youth community events serving 300+ total youth across Gilroy",
-      "Created a work schedule for the commission, provided feedback and suggestions for future events",
-      "Totaled 30+ volunteer hours",
-    ],
-    link: [
-      {
-        name: "Website",
-        url: "https://www.cityofgilroy.org/310/Youth-Commission",
-      },
-    ],
-  },
-  {
     img: "gavilan-summer-internship.png",
     title: "Gavilan College Summer Internship",
     subtitle: "Summer Research Intern",
@@ -191,9 +189,9 @@ export const educationData = [
     img: "ucberkeley.png",
     title: "UC Berkeley",
     subtitle: ["B.A. in Data Science"],
-    date: "Aug 2024 – present",
+    date: "Aug 2024 – May 2026",
     description: [
-      "GPA - 3.76",
+      "GPA - 3.68",
       "Concentration in Applied Mathematics and Modeling",
       "Relevant Coursework - ML, Data Engineering, Data Structures, Probability Theory, Numerical Analysis",
       "Clubs/Orgs: Cal VSA Lion Dance (Music Lead)",
@@ -205,7 +203,7 @@ export const educationData = [
     subtitle: ["Computer Science Transfer"],
     date: "Sep 2023 – Jun 2024",
     description: [
-      "GPA - 3.9",
+      "GPA - 3.95",
       "Relevant Coursework - Calculus, Statistics, Microeconomics, Data Abstraction & Structures, Discrete Mathematics, R Programming, Python Programming, Differential Equations, Linear Algebra",
       "Clubs - VSA, Badminton Club, Developer's Guild, DA Web Developers",
     ],
@@ -243,17 +241,61 @@ export const educationData = [
 
 export const projectData = [
   {
+    title: "Spotify Music Trend Analytics Pipeline",
+    url: "https://github.com/jamesvdinh",
+    subtitle: "Real-Time Streaming Pipeline for Music Trend Analysis on GCP",
+    tags: ["Kafka", "PySpark", "Airflow", "BigQuery", "dbt", "D3.js", "GCP", "Python"],
+    img: [],
+    description:
+      "Built an end-to-end real-time analytics pipeline ingesting Spotify API data via Kafka, processing streams with PySpark, orchestrating batch jobs with Airflow, and transforming data in BigQuery using dbt, serving trend insights through an interactive D3.js dashboard deployed on GCP.",
+    link: [
+      {
+        name: "GitHub",
+        url: "https://github.com/jamesvdinh",
+        size: 22,
+      },
+    ],
+  },
+  {
     title: "LLM Stock Trading Benchmarker",
     url: "https://github.com/vkethana/calhacks-24",
     subtitle: "Cal Hacks 11.0 Submission",
     tags: ["Flask", "Python", "React", "TypeScript", "NodeJS", "Groq", "Sass"],
     img: ["llm_stock_trading.png"],
     description:
-      "Built an LLM-driven trading pipeline on Groq for low-latency inference, generating keyword-based stock trades; optimized Flask-React request flow via state memoization, supporting 300+ trade queries per evaluation period.",
+      "Built a full-stack React/Flask app integrating multiple LLM APIs (Groq) into a code-execution pipeline, applying React state memoization and performance tuning to handle 300+ queries per period while minimizing render overflow; developed AI-assisted with Claude and Cursor.",
     link: [
       {
         name: "GitHub",
         url: "https://github.com/vkethana/calhacks-24",
+        size: 22,
+      },
+    ],
+  },
+  {
+    title: "Internal bizzNEST Career Harvest Job Database",
+    url: "",
+    subtitle:
+      "Job Board that Filters Relevant Internship Opportunities for Digital NEST Interns",
+    tags: ["React", "TypeScript", "Node.js", "Docker", "SQLite", "Firebase"],
+    img: [],
+    description:
+      "Built a filterable internship search database in React, TypeScript, and Node.js, collating 200+ listings from LinkedIn and Indeed, containerized with Docker over an SQLite backend. Implemented Firebase OAuth authentication with Captcha and email verification security checks.",
+    link: [],
+  },
+  {
+    title: "MIMIC-IV-Ext Unsupervised Phenotyping of Diabetes Progression",
+    url: "https://github.com/jamesvdinh/diabetes-prog-phenotyping",
+    subtitle:
+      "Data Pipeline Utilizing K-Means & UMAP to Phenotype Diabetic Patients – Research Paper",
+    tags: ["Python", "ETL", "K-Means", "UMAP", "Unsupervised Learning"],
+    img: ["full_cohort_patient_umap_clusters.png", "cluster_comorbidity_heatmap.png"],
+    description:
+      "Designed and implemented a scalable ETL pipeline in Python to extract, clean, and transform heterogeneous clinical records across 46k+ diabetes patients from MIMIC-IV, engineering features for downstream unsupervised segmentation models (K-Means, UMAP) to identify clinically meaningful clusters.",
+    link: [
+      {
+        name: "GitHub",
+        url: "https://github.com/jamesvdinh/diabetes-prog-phenotyping",
         size: 22,
       },
     ],

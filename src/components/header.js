@@ -7,6 +7,11 @@ import { headerLinks } from "../data/data"
 
 const Header = () => {
   const greeting = "Hi, my name is"
+  const titles = [
+    "I'm a Software Engineer.",
+    "I'm an AI Engineer.",
+    "I build intelligent systems.",
+  ]
 
   return (
     <>
@@ -22,24 +27,24 @@ const Header = () => {
               typewriter
                 .changeDelay(50)
                 .changeDeleteSpeed(25)
-                .typeString("I'm a")
-                .typeString(" Full Stack Data Engineer.")
+                .typeString(titles[0])
                 .pauseFor(1000)
-                .deleteChars(25)
+                .deleteChars(titles[0].length)
                 .pauseFor(500)
-                .typeString(" Data Science Student.")
+                .typeString(titles[1])
                 .pauseFor(1000)
-                .deleteChars(24)
+                .deleteChars(titles[1].length)
                 .pauseFor(500)
-                .typeString("an Open Source Contributor.")
+                .typeString(titles[2])
                 .pauseFor(1000)
                 .start()
             }}
           ></Typewriter>
         </Title>
         <Description>
-          Full Stack Data Engineer and Data Science student at UC Berkeley. As
-          an open source contributor, I'm committed to pushing innovative ideas.
+          Software Engineer building AI-powered systems. I turn complex
+          ideas into reliable, production-ready software from LLM agents
+          and MCP integrations to full-stack web applications.
         </Description>
         <HeaderLinks>
           <LinkButton href="/resume" target="_blank" rel="noopener noreferrer">

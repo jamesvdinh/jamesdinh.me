@@ -50,21 +50,31 @@ const Experience = () => {
         </ButtonContainer>
         <ContentContainer>
           <HeadContainer>
-            {data.allFile.edges.map(({ node }) => {
-              if (node.relativePath === experienceData[isActive].img) {
-                return (
-                  <Image key={node.id} className="active">
-                    <GatsbyImage
-                      style={Thumbnail}
-                      image={node.childImageSharp.gatsbyImageData}
-                      loading="lazy"
-                      alt={experienceData[isActive].img}
-                    />
-                  </Image>
-                )
-              }
-              return null // failsafe for null values
-            })}
+            {experienceData[isActive].img?.endsWith(".gif") ? (
+              <Image className="active">
+                <GifThumbnail
+                  src={`/${experienceData[isActive].img}`}
+                  loading="lazy"
+                  alt={experienceData[isActive].img}
+                />
+              </Image>
+            ) : (
+              data.allFile.edges.map(({ node }) => {
+                if (node.relativePath === experienceData[isActive].img) {
+                  return (
+                    <Image key={node.id} className="active">
+                      <GatsbyImage
+                        style={Thumbnail}
+                        image={node.childImageSharp.gatsbyImageData}
+                        loading="lazy"
+                        alt={experienceData[isActive].img}
+                      />
+                    </Image>
+                  )
+                }
+                return null // failsafe for null values
+              })
+            )}
             <TitleContainer>
               <Title>{experienceData[isActive].title}</Title>
               <Subtitle>{experienceData[isActive].subtitle}</Subtitle>
@@ -360,6 +370,15 @@ const Thumbnail = {
   minHeight: "60px",
   borderRadius: "3px",
 }
+
+const GifThumbnail = styled.img`
+  max-width: 75px;
+  max-height: 75px;
+  min-width: 60px;
+  min-height: 60px;
+  border-radius: 3px;
+  object-fit: cover;
+`
 
 const LinkContainer = styled.div`
   display: flex;
