@@ -11,6 +11,8 @@
     "@react-icons/all-files": "^4.1.0",
     "@splidejs/react-splide": "^0.7.12",
     "babel-plugin-styled-components": "^2.1.4",
+    "baseline-browser-mapping": "^2.11.13",
+    "caniuse-lite": "^1.0.30001809",
     "gatsby": "^5.15.0",
     "gatsby-image": "^3.11.0",
     "gatsby-plugin-image": "^3.15.0",
