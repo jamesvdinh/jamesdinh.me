@@ -243,6 +243,7 @@ const Button = styled.button`
 `
 
 const ContentContainer = styled.article`
+  min-width: 350px;
   max-width: 550px;
   padding: 3px 10px;
   margin-left: 10px;

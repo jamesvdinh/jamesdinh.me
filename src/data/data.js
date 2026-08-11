@@ -20,6 +20,22 @@ export const headerLinks = [
 
 export const experienceData = [
   {
+    img: "Collective-logo.jpg",
+    title: "Collective",
+    subtitle: "Software Engineer",
+    date: "Aug 2026 – present",
+    description: [
+      "Joining the engineering team to build agentic AI as native, in-platform functionality on Collective's financial accounting product, replacing dependence on third-party integrations",
+      "Focused on full-stack architecture and UI design to embed applied AI workflows directly into core product surfaces"
+    ],
+    link: [
+      {
+        name: "Website",
+        url: "https://www.collective.com/",
+      }
+    ],
+  },
+  {
     img: "distillery_logo.gif",
     title: "Distillery",
     subtitle: "Software Engineer Intern",
@@ -135,50 +151,6 @@ export const experienceData = [
       {
         name: "Website",
         url: "https://www.catalyzesiliconvalley.org/",
-      },
-    ],
-  },
-  {
-    img: "gilroy-hacks.png",
-    title: "Gilroy Hacks",
-    subtitle: "Co-Founder, Event Director",
-    date: "Jan 2022 – Jun 2023",
-    description: [
-      "Managed event logistics and coordinated outreach for 2 hackathons that served 50+ local students",
-      "Registered organization as a 501(c)(3) nonprofit under Hack Club in order to collect tax-deductible donations and facilitate purchases",
-      "Led 25+ meetings and raised over $2,000 in funding to buy prizes, food, and swag",
-      "Designed website from scratch using HTML, CSS, and JS",
-      "Totaled 150+ volunteer hours",
-    ],
-    link: [
-      {
-        name: "Website",
-        url: "https://gilroyhacks.com/",
-      },
-      {
-        name: "Bank Account",
-        url: "https://hcb.hackclub.com/gilroy-hacks/transactions",
-      },
-      {
-        name: "Budget",
-        url: "https://docs.google.com/spreadsheets/d/1y-clzD7EaTE_OGFx0K5pHwPU3JDCI2Ze8RC6oQMtVhU/edit#gid=1732160294",
-      },
-    ],
-  },
-  {
-    img: "gavilan-summer-internship.png",
-    title: "Gavilan College Summer Internship",
-    subtitle: "Summer Research Intern",
-    date: "Jun – Aug 2022",
-    description: [
-      "Physical analysis of water-powered rockets, advised by Dr. Sewan Fan (Gavilan Physics Dept.)",
-      "Constructed a water-powered rocket that saves custom Arduino accelerometer circuit data in order to analyze changes in temperature, height, and pressure",
-      "Attended meetings every Friday for 3 hours to discuss findings and work on rocket launches, programming, and soldering",
-    ],
-    link: [
-      {
-        name: "Poster Summary",
-        url: "https://nextcloud.andrewkdinh.com/s/3JKxDdw9NeM234r",
       },
     ],
   },

@@ -9,9 +9,10 @@ const Header = () => {
   const greeting = "Hi, my name is"
   const titles = [
     "I'm a Software Engineer.",
-    "I'm an AI Engineer.",
-    "I build intelligent systems.",
+    "Lion Dance Drummer.",
+    "I build things that last.",
   ]
+  const offset = "I'm a ".length;
 
   return (
     <>
@@ -29,11 +30,11 @@ const Header = () => {
                 .changeDeleteSpeed(25)
                 .typeString(titles[0])
                 .pauseFor(1000)
-                .deleteChars(titles[0].length)
+                .deleteChars(titles[0].length - offset)
                 .pauseFor(500)
                 .typeString(titles[1])
                 .pauseFor(1000)
-                .deleteChars(titles[1].length)
+                .deleteChars(titles[1].length + offset)
                 .pauseFor(500)
                 .typeString(titles[2])
                 .pauseFor(1000)
@@ -42,7 +43,7 @@ const Header = () => {
           ></Typewriter>
         </Title>
         <Description>
-          Software Engineer building AI-powered systems. I turn complex
+          Software Engineer at Collective building AI-powered financial workflows. I turn complex
           ideas into reliable, production-ready software from LLM agents
           and MCP integrations to full-stack web applications.
         </Description>
