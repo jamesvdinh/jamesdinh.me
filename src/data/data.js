@@ -217,7 +217,7 @@ export const projectData = [
     url: "https://github.com/jamesvdinh",
     subtitle: "Real-Time Streaming Pipeline for Music Trend Analysis on GCP",
     tags: ["Kafka", "PySpark", "Airflow", "BigQuery", "dbt", "D3.js", "GCP", "Python"],
-    img: [],
+    img: ["spotify-dashboard.png"],
     description:
       "Built an end-to-end real-time analytics pipeline ingesting Spotify API data via Kafka, processing streams with PySpark, orchestrating batch jobs with Airflow, and transforming data in BigQuery using dbt, serving trend insights through an interactive D3.js dashboard deployed on GCP.",
     link: [
