@@ -213,8 +213,29 @@ export const educationData = [
 
 export const projectData = [
   {
+    title: "Travel Planner AI: Claude Code-Inspired Trip Planner",
+    url: "https://jamesvdinh.github.io/buildwithgemini-travel-planner/",
+    subtitle: "An autonomous ReAct travel agent powered by Gemini 3.6 Flash and Google ADK",
+    tags: ["Python", "FastAPI", "JavaScript", "Leaflet", "GCP", "Vertex AI"],
+    img: ["travel-planner-ai-1.png", "travel-planner-ai-2.png"],
+    description:
+      "This is a little project I've been vibe-coding that bridges Markdown trip planners like myself to a Claude Code-inspired agent. It features a dedicated chat window with itinerary context, access to Google Maps data, real-time map plotting, live tool observability, and human-in-the-loop file approvals, just like in Claude Code!",
+    link: [
+      {
+        name: "Demo",
+        url: "https://jamesvdinh.github.io/buildwithgemini-travel-planner/",
+        size: 22,
+      },
+      {
+        name: "GitHub",
+        url: "https://github.com/jamesvdinh/buildwithgemini-travel-planner",
+        size: 22,
+      },
+    ],
+  },
+  {
     title: "Spotify Music Trend Analytics Pipeline",
-    url: "https://github.com/jamesvdinh",
+    url: "https://github.com/jamesvdinh/spotify-trend-dashboard",
     subtitle: "Real-Time Streaming Pipeline for Music Trend Analysis on GCP",
     tags: ["Kafka", "PySpark", "Airflow", "BigQuery", "dbt", "D3.js", "GCP", "Python"],
     img: ["spotify-dashboard.png"],
@@ -223,7 +244,7 @@ export const projectData = [
     link: [
       {
         name: "GitHub",
-        url: "https://github.com/jamesvdinh",
+        url: "https://github.com/jamesvdinh/spotify-trend-dashboard",
         size: 22,
       },
     ],
