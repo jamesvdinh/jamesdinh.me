@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkgatsby_starter_default=self.webpackChunkgatsby_starter_default||[]).push([[480],{3116:function(e,t,a){a.r(t);var r=a(6540);t.default=()=>((0,r.useEffect)(()=>{window.location.href="/James Dinh - Resume.pdf"},[]),r.createElement("div",null,"Redirecting to résumé...",r.createElement("noscript",null,r.createElement("a",{href:"/James Dinh - Resume.pdf"},"Click here to view the résumé."))))}}]);
+//# sourceMappingURL=component---src-pages-resume-js-7810af49c2d9d78d2090.js.map
